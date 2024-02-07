@@ -1,7 +1,9 @@
-# Category mapping
-# Blockchain Categories Mapping
+Categories are used to better define smart contracts and wallets and group them. One contract or wallet address can only be assigned to 1 category. 
+This file contains the category <> main category mapping table as well as definitions of the individual categories.
 
-| Main Category Key | Main Category Name | Sub-category Key              | Sub-category Name                |
+# Category mapping
+
+| Main Category Key | Main Category Name | Category Key                  | Category Name                    |
 |-------------------|--------------------|-------------------------------|----------------------------------|
 | cefi              | CeFi               | mev                           | MEV                              |
 | cefi              | CeFi               | trading                       | Trading                          |
@@ -35,35 +37,35 @@
 | utility           | Utility            | payments                      | Payments                         |
 | utility           | Utility            | other                         | Others                           |
 
-
-# NFT 
+# Category definitions
+## NFT 
 - NFT Fi: Contracts that involve the financialization of NFTs, which includes lending NFTs. 
 - NFT Marketplace: Platform contracts for the sale or minting of NFTs. 
 - ERC721: Contracts that adhere to the ERC721 token standard. This category does not include NFTs received as deposit receipts. 
 - ERC1155: Contracts that adhere to the ERC1155 token standard. This category does not include NFTs received as deposit receipts. 
 
-# Token Transfers 
+## Token Transfers 
 - Native Transfers: All native transfers (primarily ETH transfers, but the native token can vary depending on the L2).
 - ERC20: Contracts that adhere to the ERC20 token standard. This category does not include tokens received as deposit receipts or stablecoins. 
 - Stablecoin: ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency. 
 
-# DeFi
+## DeFi
 - Decentralised Exchange: Contracts whose primary focus is on routing token swaps through liquidity pools (LPs). 
 - Derivative Exchange: Contracts that facilitate the trading of derivatives, which are financial instruments deriving their value from an underlying asset or benchmark. 
 - Lending: Contracts that enable lending with the use of collateral. 
 - Staking: Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking. 
 
-# Social 
+## Social 
 - Community: Contracts designed to support social interactions, networking or education. 
 - Gambling: Contracts that govern games of chance. 
 - Gaming: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone.
 
-# CeFi 
+## CeFi 
 - Trading: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies. 
 - Centralized Exchange: Contracts or wallets under the control of centralized exchanges.
 - MEV: MEV and arbitrage bots.
 
-# Utility 
+## Utility 
 - Oracle: Contracts that feed external, real-world data onto the blockchain. 
 - Developer Tool: Contracts that assist developers in creating, testing and deploying smart contracts. 
 - Middleware: Contracts that facilitate communication and interoperability between different blockchain protocols. 
