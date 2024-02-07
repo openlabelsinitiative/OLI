@@ -1,3 +1,41 @@
+# Category mapping
+# Blockchain Categories Mapping
+
+| Main Category Key | Main Category Name | Sub-category Key              | Sub-category Name                |
+|-------------------|--------------------|-------------------------------|----------------------------------|
+| cefi              | CeFi               | mev                           | MEV                              |
+| cefi              | CeFi               | trading                       | Trading                          |
+| cefi              | CeFi               | cex                           | Centralized Exchange             |
+| cross_chain       | Cross-Chain        | cc_communication              | Cross-Chain Communication        |
+| cross_chain       | Cross-Chain        | bridge                        | Bridge                           |
+| defi              | DeFi               | lending                       | Lending                          |
+| defi              | DeFi               | dex                           | Decentralized Exchange           |
+| defi              | DeFi               | derivative                    | Derivative Exchange              |
+| defi              | DeFi               | staking                       | Staking                          |
+| nft               | NFT                | nft_fi                        | NFT Fi                           |
+| nft               | NFT                | erc721                        | ERC721                           |
+| nft               | NFT                | erc1155                       | ERC1155                          |
+| nft               | NFT                | nft_marketplace               | NFT Marketplace                  |
+| social            | Social             | community                     | Community                        |
+| social            | Social             | gambling                      | Gambling                         |
+| social            | Social             | gaming                        | Gaming                           |
+| token_transfers   | Token Transfers    | native_transfer               | Native Transfers                 |
+| token_transfers   | Token Transfers    | stablecoin                    | Stablecoin                       |
+| token_transfers   | Token Transfers    | erc20                         | ERC20                            |
+| utility           | Utility            | middleware                    | Middleware                       |
+| utility           | Utility            | erc4337                       | Account Abstraction (ERC4337)    |
+| utility           | Utility            | inscriptions                  | Inscriptions                     |
+| utility           | Utility            | oracle                        | Oracle                           |
+| utility           | Utility            | depin                         | Decentralized Phyical Infrastructure |
+| utility           | Utility            | developer_tools               | Developer Tool                   |
+| utility           | Utility            | identity                      | Identity                         |
+| utility           | Utility            | privacy                       | Privacy                          |
+| utility           | Utility            | insurance                     | Insurance                        |
+| utility           | Utility            | airdrop                       | Airdrop                          |
+| utility           | Utility            | payments                      | Payments                         |
+| utility           | Utility            | other                         | Others                           |
+
+
 # NFT 
 - NFT Fi: Contracts that involve the financialization of NFTs, which includes lending NFTs. 
 - NFT Marketplace: Platform contracts for the sale or minting of NFTs. 
@@ -18,11 +56,12 @@
 # Social 
 - Community: Contracts designed to support social interactions, networking or education. 
 - Gambling: Contracts that govern games of chance. 
-- Gaming: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone. 
+- Gaming: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone.
 
 # CeFi 
 - Trading: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies. 
-- Centralized Exchange: Contracts or wallets under the control of centralized exchanges. 
+- Centralized Exchange: Contracts or wallets under the control of centralized exchanges.
+- MEV: MEV and arbitrage bots.
 
 # Utility 
 - Oracle: Contracts that feed external, real-world data onto the blockchain. 
