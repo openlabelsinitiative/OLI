@@ -1,4 +1,5 @@
 # Open Labels Initiative
+*A standardized framework and data structure for EVM address labeling*
 
 ## Goal
 We aim to tackle the issue of isolated and non-standardized contract and wallet labeling datasets within the blockchain data community. By introducing a standardized data model for smart contract and wallet labels we advocate for the consolidation into a single, universally accessible data structure utilized by various data providers. 
