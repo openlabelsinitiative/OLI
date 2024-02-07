@@ -10,11 +10,11 @@ The Ethereum Foundation funded this effort as part of the [Data Collection Grant
 These teams applied for grants with the Ethereum Foundation and started building out the core structure.
 - [growthepie](https://www.growthepie.xyz/): Layer 2 analytics platform with focus on labelling smart contracts on layer 2s.
 
-![Logo](https://www.growthepie.xyz/_next/image?url=%2Flogo_full_light.png&w=640&q=100)
+![growthepie logo](https://www.growthepie.xyz/_next/image?url=%2Flogo_full_light.png&w=640&q=100)
 
 - [walletlabels](https://www.walletlabels.xyz/): Wallet labeling platform with focus on labels for Ethereum as well as social labels / labeling of EOAs.
 
-![Logo](https://pbs.twimg.com/profile_banners/1708156611770933248/1699914583/1080x360)
+![Walletlabels logo](https://pbs.twimg.com/profile_banners/1708156611770933248/1699914583/1080x360)
 
 ## Sponsors
 - [Ethereum Foundation](https://ethereum.foundation/)
@@ -26,3 +26,7 @@ Other data teams that are involved in active feedback for this initiative and/or
 
 ## Datasets 
 OLI won’t store any datasets. This initiative's goal is to align on a standardized data structure for labels which will make it easier to sync different datasets. Databases will still be in the hands of the different data teams. growthepie and walletlabels commit to making their data publicly available via API endpoints and hope that other data teams will join this effort for democratized access to address labels. 
+
+## Data model
+This is the current suggestion for the data model. The full yaml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.yml).
+![OLI Data Model](https://github.com/openlabelsinitiative/oli/blob/main/data_model_diagram.png?raw=true)
