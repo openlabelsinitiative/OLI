@@ -1,5 +1,6 @@
 Tables:
   Chains:
+    Definition: Is used to map addresses to a chain. Chain_id (PK) is based on the chain's id (see chainlist). 
     Fields:
       - chain_id: 
           type: int
@@ -16,6 +17,7 @@ Tables:
       - native_token: string
 
   Addresses:
+    Definition: Represents wallet and smart contract addresses, linked to chains, projects, and categorization. 
     Fields:
       - address: 
           type: string/hex
@@ -44,6 +46,7 @@ Tables:
       - deployer_address: string
 
   Projects:
+    Definition: Information about specific projects (i.e. Uniswap V2), including project name, website link, and documentation.
     Fields:
       - project_id: 
           type: unknown
@@ -64,6 +67,7 @@ Tables:
           key: FK
 
   Categories:
+    Definition: A classification system that can be used for grouping contracts and wallets into specific categories. 
     Fields:
       - category_id: 
           type: string
@@ -79,6 +83,7 @@ Tables:
       - modified_by: string
 
   MainCategories:
+    Definition: A higher-level categorization that can group multiple categories under a broader classification.
     Fields:
       - main_category_id: 
           type: string
@@ -91,6 +96,7 @@ Tables:
       - modified_by: string
 
   TagGroup:
+    Definition: Represents collections of tags that can be applied to other entities in the system for organizational purposes.
     Fields:
       - tag_group_id: 
           type: unknown
@@ -103,6 +109,7 @@ Tables:
       - modified_by: string
 
   Tags:
+    Definition: Individual labels or identifiers that can be applied to data points for sorting, searching, and categorization purposes.
     Fields:
       - tag_id: 
           type: unknown
@@ -121,6 +128,7 @@ Tables:
       - threshold_dict: dict
 
   TagMapping:
+    Definition: A many-to-many relationship table that maps tags to addresses, allowing an address to have multiple tags and a tag to be applied to multiple addresses. 
     Fields:
       - address: 
           type: string/hex
@@ -134,6 +142,7 @@ Tables:
       - modified_by: string
 
   Team:
+    Definition: A group of people or entities working on projects, with a simple structure containing just an ID and a name.
     Fields:
       - team_id: 
           type: unknown
