@@ -187,3 +187,18 @@ Relationships:
         key: project_id
         table: Addresses
         type: many
+      Projects:
+        key: project_id
+        table: Projects
+        type: one
+
+  OneToManyAddressesToCategories:
+    - Addresses:
+        key: category_id
+        table: Addresses
+        type: many
+      Categories:
+        key: category_id
+        table: Categories
+        type: one
+
