@@ -1,0 +1,171 @@
+Tables:
+  Chains:
+    Fields:
+      - chain_id (PK): int
+      - name: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+    OptionalFields:
+      - rpc: list
+      - explorer: string
+      - website: string
+      - native_token: string
+
+  Addresses:
+    Fields:
+      - address (PK): string/hex?
+      - chain_id (FK): int
+      - project_id (FK): ?
+      - category_id (FK): string
+      - is_eoa: bool
+      - name: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+    OptionalFields:
+      - correctness_confidence: int
+      - bytecode: bytes
+      - abi: string
+      - compiler_version: string
+      - deployment_date: date
+      - deployer_address: string
+
+  Projects:
+    Fields:
+      - project_id (PK): ?
+      - name: string
+      - website: string
+      - docs: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+    OptionalFields:
+      - oss_slug: string
+      - token_symbol: string
+      - token_contract_address: string
+      - team_id (FK): ? 
+
+  Categories:
+    Fields:
+      - category_id (PK): string 
+      - name: string
+      - definition: string
+      - main_category_id (string): string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+
+  MainCategories:
+    Fields:
+      - main_category_id (PK): string 
+      - name: string
+      - definition: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+
+  TagGroup:
+    Fields:
+      - tag_group_id (PK): ?
+      - name: string
+      - description: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+
+  Tags:
+    Fields:
+      - tag_id (PK): ?
+      - name: string
+      - tag_group_id (FK): ?
+      - description: string
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+    Optional Fields:
+     - additional_attributes : dict
+     - threshhold_dict : dict
+
+  TagMapping:
+    Fields:
+      - address (FK): string/hex?
+      - tag_id (FK): ? 
+      - created_at: timestamp
+      - created_by: string
+      - modified_at: timestamp
+      - modified_by: string
+
+  Team:
+    Fields:
+      - team_id (PK): ?
+      - name: string
+
+Relationships:
+  ManyToManyTagging:
+    - TagGroup:
+        key: tag_group_id
+        table: TagGroup
+      Tags:
+        key: tag_id
+        table: Tags
+      TagMapping:
+        foreignKeyTagGroup: tag_group_id
+        foreignKeyTags: tag_id
+
+  OneToManyCategorization:
+    - Categories:
+        key: main_category_id
+        table: Categories
+        type: many
+      MainCategories:
+        key: main_category_id
+        table: MainCategories
+        type: one
+
+  OneToManyProjectsToTeams:
+    - Projects:
+        key: team_id
+        table: Projects
+        type: many
+      Team:
+        key: team_id
+        table: Team
+        type: one
+
+  OneToManyAddressesToChains:
+    - Addresses:
+        key: chain_id
+        table: Addresses
+        type: many
+      Chains:
+        key: chain_id
+        table: Chains
+        type: one
+
+  OneToManyAddressesToProjects:
+    - Addresses:
+        key: project_id
+        table: Addresses
+        type: many
+      Projects:
+        key: project_id
+        table: Projects
+        type: one
+
+  OneToManyAddressesToCategories:
+    - Addresses:
+        key: category_id
+        table: Addresses
+        type: many
+      Categories:
+        key: category_id
+        table: Categories
+        type: one
