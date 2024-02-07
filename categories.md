@@ -74,6 +74,6 @@ This file contains the category <> main category mapping table as well as defini
 - Airdrop: Contracts that help to distribute tokens or NFTs to multiple wallet addresses.
 - Inscriptions: Contract that are used for inscribing calldata.
 
-# Cross-Chain 
+## Cross-Chain 
 - Cross-Chain Communication: Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers. 
 - Bridge: Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets. 
