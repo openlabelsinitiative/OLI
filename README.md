@@ -10,11 +10,11 @@ The Ethereum Foundation funded this effort as part of the [Data Collection Grant
 These teams applied for grants with the Ethereum Foundation and started building out the core structure.
 - [growthepie](https://www.growthepie.xyz/): Layer 2 analytics platform with focus on labelling smart contracts on layer 2s.
 
-![growthepie logo](https://www.growthepie.xyz/_next/image?url=%2Flogo_full_light.png&w=640&q=100)
+![growthepie logo](https://i.ibb.co/cbZ5Bqg/growthepie-logo.png)
 
 - [walletlabels](https://www.walletlabels.xyz/): Wallet labeling platform with focus on labels for Ethereum as well as social labels / labeling of EOAs.
 
-![Walletlabels logo](https://pbs.twimg.com/profile_banners/1708156611770933248/1699914583/1080x360)
+![Walletlabels logo](https://i.ibb.co/DMkw90y/Wallet-Labels-logo.png)
 
 ## Sponsors
 - [Ethereum Foundation](https://ethereum.foundation/)
