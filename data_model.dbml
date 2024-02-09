@@ -1,3 +1,5 @@
+// interactive visualization: https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e
+
 Table Chains {
   chain_id int [pk, note: "based on chainlist"]
   name string
