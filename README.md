@@ -19,7 +19,7 @@ These teams applied for grants with the Ethereum Foundation and started building
 ## Sponsors
 - [Ethereum Foundation](https://ethereum.foundation/)
 
-## Core Contributors
+## Contributors
 Other data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
 - [OP Labs](https://www.oplabs.co/)
 - TBD
@@ -28,5 +28,5 @@ Other data teams that are involved in active feedback for this initiative and/or
 OLI won’t store any datasets. This initiative's goal is to align on a standardized data structure for labels which will make it easier to sync different datasets. Databases will still be in the hands of the different data teams. growthepie and walletlabels commit to making their data publicly available via API endpoints and hope that other data teams will join this effort for democratized access to address labels. 
 
 ## Data model
-This is the current suggestion for the data model. The full yaml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.yml).
-![OLI Data Model](https://github.com/openlabelsinitiative/oli/blob/main/data_model_diagram.png?raw=true)
+This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
+This link shows the interactive dbdiagram: [https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e](https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e)
