@@ -1,5 +1,6 @@
 # Open Labels Initiative
 *A standardized framework and data model for EVM address labeling*
+
 [dbdocs](https://dbdocs.io/matthias/OpenLabelsInitiative)
 
 ## Goal
