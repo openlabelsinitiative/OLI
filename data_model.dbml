@@ -1,0 +1,118 @@
+Table Chains {
+  chain_id int [pk, note: "based on chainlist"]
+  name string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table Addresses {
+  address string [primary key]
+  chain_id int 
+  project_id unknown 
+  category_id string
+  is_eoa bool
+  name string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table Projects {
+  project_id unknown [primary key]
+  name string
+  team_id string
+  website string
+  docs string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table Categories {
+  category_id string [primary key]
+  name string
+  definition string
+  main_category_id string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table MainCategories {
+  main_category_id string [primary key]
+  name string
+  definition string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table TagGroup {
+  tag_group_id unknown [primary key]
+  name string
+  description string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table Tags {
+  tag_id unknown [primary key]
+  name string
+  tag_group_id unknown
+  description string
+
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table TagMapping {
+  address string 
+  tag_id unknown
+  
+  created_at timestamp
+  created_by string
+  modified_at timestamp
+  modified_by string
+}
+
+Table Team {
+  team_id unknown [primary key]
+  name string
+}
+
+// Relationships
+// ManyToManyTagging
+Ref: Tags.tag_group_id > TagGroup.tag_group_id
+Ref: TagMapping.tag_id > Tags.tag_id
+Ref: Addresses.address > TagMapping.address
+
+// OneToManyCategorization
+Ref: Categories.main_category_id > MainCategories.main_category_id
+
+// OneToManyProjectsToTeams
+Ref: Projects.team_id > Team.team_id
+
+// OneToManyAddressesToChains
+Ref: Addresses.chain_id > Chains.chain_id
+
+// OneToManyAddressesToProjects
+Ref: Addresses.project_id > Projects.project_id
+
+// OneToManyAddressesToCategories
+Ref: Addresses.category_id > Categories.category_id
