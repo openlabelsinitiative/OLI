@@ -1,0 +1,195 @@
+{
+    "categoryDefinitions": {
+      "cefi": {
+        "mainCategoryName": "CeFi",
+        "subCategories": [
+          {
+            "categoryKey": "mev",
+            "categoryName": "MEV",
+            "description": "MEV and arbitrage bots."
+          },
+          {
+            "categoryKey": "trading",
+            "categoryName": "Trading",
+            "description": "Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies."
+          },
+          {
+            "categoryKey": "cex",
+            "categoryName": "Centralized Exchange",
+            "description": "Contracts or wallets under the control of centralized exchanges."
+          }
+        ]
+      },
+      "defi": {
+        "mainCategoryName": "DeFi",
+        "subCategories": [
+          {
+            "categoryKey": "lending",
+            "categoryName": "Lending",
+            "description": "Contracts that enable lending with the use of collateral."
+          },
+          {
+            "categoryKey": "dex",
+            "categoryName": "Decentralized Exchange",
+            "description": "Contracts whose primary focus is on routing token swaps through liquidity pools (LPs)."
+          },
+          {
+            "categoryKey": "derivative",
+            "categoryName": "Derivative Exchange",
+            "description": "Contracts that facilitate the trading of derivatives, which are financial instruments deriving their value from an underlying asset or benchmark."
+          },
+          {
+            "categoryKey": "staking",
+            "categoryName": "Staking",
+            "description": "Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking."
+          }
+        ]
+      },
+      "nft": {
+        "mainCategoryName": "NFT",
+        "subCategories": [
+          {
+            "categoryKey": "nft_fi",
+            "categoryName": "NFT Fi",
+            "description": "Contracts that involve the financialization of NFTs, which includes lending NFTs."
+          },
+          {
+            "categoryKey": "nft_marketplace",
+            "categoryName": "NFT Marketplace",
+            "description": "Platform contracts for the sale or minting of NFTs."
+          },
+          {
+            "categoryKey": "erc721",
+            "categoryName": "ERC721",
+            "description": "Contracts that adhere to the ERC721 token standard. This category does not include NFTs received as deposit receipts."
+          },
+          {
+            "categoryKey": "erc1155",
+            "categoryName": "ERC1155",
+            "description": "Contracts that adhere to the ERC1155 token standard. This category does not include NFTs received as deposit receipts."
+          }
+        ]
+      },
+      "social": {
+        "mainCategoryName": "Social",
+        "subCategories": [
+          {
+            "categoryKey": "community",
+            "categoryName": "Community",
+            "description": "Contracts designed to support social interactions, networking or education."
+          },
+          {
+            "categoryKey": "gambling",
+            "categoryName": "Gambling",
+            "description": "Contracts that govern games of chance."
+          },
+          {
+            "categoryKey": "gaming",
+            "categoryName": "Gaming",
+            "description": "Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone."
+          }
+        ]
+      },
+      "token_transfers": {
+        "mainCategoryName": "Token Transfers",
+        "subCategories": [
+          {
+            "categoryKey": "native_transfer",
+            "categoryName": "Native Transfers",
+            "description": "All native transfers (primarily ETH transfers, but the native token can vary depending on the L2)."
+          },
+          {
+            "categoryKey": "stablecoin",
+            "categoryName": "Stablecoin",
+            "description": "ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency."
+          },
+          {
+            "categoryKey": "erc20",
+            "categoryName": "ERC20",
+            "description": "Contracts that adhere to the ERC20 token standard. This category does not include tokens received as deposit receipts or stablecoins."
+          }
+        ]
+      },
+      "utility": {
+        "mainCategoryName": "Utility",
+        "subCategories":  [
+          {
+            "categoryKey": "middleware",
+            "categoryName": "Middleware",
+            "description": "Contracts that facilitate communication and interoperability between different blockchain protocols."
+          },
+          {
+            "categoryKey": "erc4337",
+            "categoryName": "Account Abstraction (ERC4337)",
+            "description": "Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts."
+          },
+          {
+            "categoryKey": "inscriptions",
+            "categoryName": "Inscriptions",
+            "description": "Contract that are used for inscribing calldata."
+          },
+          {
+            "categoryKey": "oracle",
+            "categoryName": "Oracle",
+            "description": "Contracts that feed external, real-world data onto the blockchain."
+          },
+          {
+            "categoryKey": "depin",
+            "categoryName": "Decentralized Physical Infrastructure",
+            "description": "Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks."
+          },
+          {
+            "categoryKey": "developer_tools",
+            "categoryName": "Developer Tool",
+            "description": "Contracts that assist developers in creating, testing, and deploying smart contracts."
+          },
+          {
+            "categoryKey": "identity",
+            "categoryName": "Identity",
+            "description": "Contracts that provide digital identification and verification services on the blockchain."
+          },
+          {
+            "categoryKey": "privacy",
+            "categoryName": "Privacy",
+            "description": "Contracts designed to enhance privacy for transactions and interactions on the blockchain."
+          },
+          {
+            "categoryKey": "insurance",
+            "categoryName": "Insurance",
+            "description": "Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations."
+          },
+          {
+            "categoryKey": "airdrop",
+            "categoryName": "Airdrop",
+            "description": "Contracts that help to distribute tokens or NFTs to multiple wallet addresses."
+          },
+          {
+            "categoryKey": "payments",
+            "categoryName": "Payments",
+            "description": "Contracts that facilitate transactions and payments within the blockchain ecosystem."
+          },
+          {
+            "categoryKey": "other",
+            "categoryName": "Others",
+            "description": "Miscellaneous utility contracts that do not fit into the other specified categories."
+          }
+        ]
+      },
+      "cross_chain": {
+        "mainCategoryName": "Cross-Chain",
+        "subCategories": [
+          {
+            "categoryKey": "cc_communication",
+            "categoryName": "Cross-Chain Communication",
+            "description": "Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers."
+          },
+          {
+            "categoryKey": "bridge",
+            "categoryName": "Bridge",
+            "description": "Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets."
+          }
+        ]
+      }
+    }
+  }
+  
