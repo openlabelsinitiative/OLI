@@ -3,7 +3,7 @@ name: Convert DBML to SVG
 on:
   push:
     paths:
-      - 'data_model.dbml'
+      - '**/data_model.dbml'
 
 permissions:
   contents: write  
