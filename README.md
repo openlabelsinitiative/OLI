@@ -12,6 +12,8 @@ The Ethereum Foundation funded this effort as part of the [Data Collection Grant
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
 This link shows the interactive dbdiagram: [https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e](https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e)
 
+![OLI data model](https://github.com/openlabelsinitiative/OLI/blob/main/data_model.png?raw=true)
+
 ## Tooling
 WIP: repository of references to labelling tools
 
