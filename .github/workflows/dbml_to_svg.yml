@@ -1,0 +1,34 @@
+name: Convert DBML to SVG
+
+on:
+  push:
+    paths:
+      - 'data_model.dbml'
+
+permissions:
+  contents: write  
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' 
+
+      - name: Install DBML Renderer
+        run: npm install -g @softwaretechnik/dbml-renderer
+
+      - name: Convert DBML to SVG
+        run: dbml-renderer -i ./data_model.dbml -o ./data_model.svg
+
+
+      - name: Commit and Push SVG Images
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update DBML SVG Diagrams" --allow-empty
+          git push
