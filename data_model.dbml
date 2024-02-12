@@ -137,7 +137,7 @@ Table Team {
 // ManyToManyTagging
 Ref: Tags.tag_group_id > TagGroup.tag_group_id
 Ref: TagMapping.tag_id > Tags.tag_id
-Ref: Addresses.address > TagMapping.address
+Ref: TagMapping.address > Addresses.address
 
 // OneToManyCategorization
 Ref: Categories.main_category_id > MainCategories.main_category_id
