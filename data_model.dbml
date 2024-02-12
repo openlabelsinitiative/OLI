@@ -15,6 +15,8 @@ Project OpenLabelsInitiative {
 Table Chains {
   chain_id int [pk, note: "based on chainlist"]
   name string
+  website string
+  gas_token string
 
   created_at timestamp
   created_by string
@@ -31,6 +33,10 @@ Table Addresses {
   category_id string
   is_eoa bool
   name string
+  bytecode bytea
+  abi string
+  deployment_date timestamp
+  deployer_address unknown
 
   created_at timestamp
   created_by string
@@ -46,6 +52,8 @@ Table Projects {
   team_id string
   website string
   docs string
+  oss_slug string
+  token_symbol string
 
   created_at timestamp
   created_by string
@@ -100,6 +108,7 @@ Table Tags {
   name string
   tag_group_id unknown
   description string
+  additional_attributes json
 
   created_at timestamp
   created_by string
