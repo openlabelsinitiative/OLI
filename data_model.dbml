@@ -92,7 +92,7 @@ enum category_id {
 }
 
 Table Categories {
-  category_id string [pk]
+  category_id category_id [pk]
   name string
   definition string
   main_category_id string
