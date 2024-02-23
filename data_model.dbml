@@ -31,7 +31,7 @@ Table Chains {
 
 Table Addresses {
   address string [pk]
-  chain_id int [pk]
+  chain_slug string [pk]
   project_id unknown 
   category_id string
   is_eoa bool
@@ -119,7 +119,7 @@ Ref: Categories.main_category_id > MainCategories.main_category_id
 Ref: Projects.team_id > Team.team_id
 
 // OneToManyAddressesToChains
-Ref: Addresses.chain_id > Chains.chain_id
+Ref: Addresses.chain_slug > Chains.chain_slug
 
 // OneToManyAddressesToProjects
 Ref: Addresses.project_id > Projects.project_id
