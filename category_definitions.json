@@ -1,191 +1,191 @@
 {
-    "categoryDefinitions": {
+    "category_definitions": {
       "cefi": {
-        "mainCategoryName": "CeFi",
-        "subCategories": [
+        "main_category_name": "CeFi",
+        "categories": [
           {
-            "categoryKey": "mev",
-            "categoryName": "MEV",
+            "category_id": "mev",
+            "name": "MEV",
             "description": "MEV and arbitrage bots."
           },
           {
-            "categoryKey": "trading",
-            "categoryName": "Trading",
+            "category_id": "trading",
+            "name": "Trading",
             "description": "Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies."
           },
           {
-            "categoryKey": "cex",
-            "categoryName": "Centralized Exchange",
+            "category_id": "cex",
+            "name": "Centralized Exchange",
             "description": "Contracts or wallets under the control of centralized exchanges."
           }
         ]
       },
       "defi": {
-        "mainCategoryName": "DeFi",
-        "subCategories": [
+        "main_category_name": "DeFi",
+        "categories": [
           {
-            "categoryKey": "lending",
-            "categoryName": "Lending",
+            "category_id": "lending",
+            "name": "Lending",
             "description": "Contracts that enable lending with the use of collateral."
           },
           {
-            "categoryKey": "dex",
-            "categoryName": "Decentralized Exchange",
+            "category_id": "dex",
+            "name": "Decentralized Exchange",
             "description": "Contracts whose primary focus is on routing token swaps through liquidity pools (LPs)."
           },
           {
-            "categoryKey": "derivative",
-            "categoryName": "Derivative Exchange",
+            "category_id": "derivative",
+            "name": "Derivative Exchange",
             "description": "Contracts that facilitate the trading of derivatives, which are financial instruments deriving their value from an underlying asset or benchmark."
           },
           {
-            "categoryKey": "staking",
-            "categoryName": "Staking",
+            "category_id": "staking",
+            "name": "Staking",
             "description": "Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking."
           }
         ]
       },
       "nft": {
-        "mainCategoryName": "NFT",
-        "subCategories": [
+        "main_category_name": "NFT",
+        "categories": [
           {
-            "categoryKey": "nft_fi",
-            "categoryName": "NFT Fi",
+            "category_id": "nft_fi",
+            "name": "NFT Fi",
             "description": "Contracts that involve the financialization of NFTs, which includes lending NFTs."
           },
           {
-            "categoryKey": "nft_marketplace",
-            "categoryName": "NFT Marketplace",
+            "category_id": "nft_marketplace",
+            "name": "NFT Marketplace",
             "description": "Platform contracts for the sale or minting of NFTs."
           },
           {
-            "categoryKey": "erc721",
-            "categoryName": "ERC721",
+            "category_id": "erc721",
+            "name": "ERC721",
             "description": "Contracts that adhere to the ERC721 token standard. This category does not include NFTs received as deposit receipts."
           },
           {
-            "categoryKey": "erc1155",
-            "categoryName": "ERC1155",
+            "category_id": "erc1155",
+            "name": "ERC1155",
             "description": "Contracts that adhere to the ERC1155 token standard. This category does not include NFTs received as deposit receipts."
           }
         ]
       },
       "social": {
-        "mainCategoryName": "Social",
-        "subCategories": [
+        "main_category_name": "Social",
+        "categories": [
           {
-            "categoryKey": "community",
-            "categoryName": "Community",
+            "category_id": "community",
+            "name": "Community",
             "description": "Contracts designed to support social interactions, networking or education."
           },
           {
-            "categoryKey": "gambling",
-            "categoryName": "Gambling",
+            "category_id": "gambling",
+            "name": "Gambling",
             "description": "Contracts that govern games of chance."
           },
           {
-            "categoryKey": "gaming",
-            "categoryName": "Gaming",
+            "category_id": "gaming",
+            "name": "Gaming",
             "description": "Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone."
           }
         ]
       },
       "token_transfers": {
-        "mainCategoryName": "Token Transfers",
-        "subCategories": [
+        "main_category_name": "Token Transfers",
+        "categories": [
           {
-            "categoryKey": "native_transfer",
-            "categoryName": "Native Transfers",
+            "category_id": "native_transfer",
+            "name": "Native Transfers",
             "description": "All native transfers (primarily ETH transfers, but the native token can vary depending on the L2)."
           },
           {
-            "categoryKey": "stablecoin",
-            "categoryName": "Stablecoin",
+            "category_id": "stablecoin",
+            "name": "Stablecoin",
             "description": "ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency."
           },
           {
-            "categoryKey": "erc20",
-            "categoryName": "ERC20",
+            "category_id": "erc20",
+            "name": "ERC20",
             "description": "Contracts that adhere to the ERC20 token standard. This category does not include tokens received as deposit receipts or stablecoins."
           }
         ]
       },
       "utility": {
-        "mainCategoryName": "Utility",
-        "subCategories":  [
+        "main_category_name": "Utility",
+        "categories":  [
           {
-            "categoryKey": "middleware",
-            "categoryName": "Middleware",
+            "category_id": "middleware",
+            "name": "Middleware",
             "description": "Contracts that facilitate communication and interoperability between different blockchain protocols."
           },
           {
-            "categoryKey": "erc4337",
-            "categoryName": "Account Abstraction (ERC4337)",
+            "category_id": "erc4337",
+            "name": "Account Abstraction (ERC4337)",
             "description": "Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts."
           },
           {
-            "categoryKey": "inscriptions",
-            "categoryName": "Inscriptions",
+            "category_id": "inscriptions",
+            "name": "Inscriptions",
             "description": "Contract that are used for inscribing calldata."
           },
           {
-            "categoryKey": "oracle",
-            "categoryName": "Oracle",
+            "category_id": "oracle",
+            "name": "Oracle",
             "description": "Contracts that feed external, real-world data onto the blockchain."
           },
           {
-            "categoryKey": "depin",
-            "categoryName": "Decentralized Physical Infrastructure",
+            "category_id": "depin",
+            "name": "Decentralized Physical Infrastructure",
             "description": "Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks."
           },
           {
-            "categoryKey": "developer_tools",
-            "categoryName": "Developer Tool",
+            "category_id": "developer_tools",
+            "name": "Developer Tool",
             "description": "Contracts that assist developers in creating, testing, and deploying smart contracts."
           },
           {
-            "categoryKey": "identity",
-            "categoryName": "Identity",
+            "category_id": "identity",
+            "name": "Identity",
             "description": "Contracts that provide digital identification and verification services on the blockchain."
           },
           {
-            "categoryKey": "privacy",
-            "categoryName": "Privacy",
+            "category_id": "privacy",
+            "name": "Privacy",
             "description": "Contracts designed to enhance privacy for transactions and interactions on the blockchain."
           },
           {
-            "categoryKey": "insurance",
-            "categoryName": "Insurance",
+            "category_id": "insurance",
+            "name": "Insurance",
             "description": "Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations."
           },
           {
-            "categoryKey": "airdrop",
-            "categoryName": "Airdrop",
+            "category_id": "airdrop",
+            "name": "Airdrop",
             "description": "Contracts that help to distribute tokens or NFTs to multiple wallet addresses."
           },
           {
-            "categoryKey": "payments",
-            "categoryName": "Payments",
+            "category_id": "payments",
+            "name": "Payments",
             "description": "Contracts that facilitate transactions and payments within the blockchain ecosystem."
           },
           {
-            "categoryKey": "other",
-            "categoryName": "Others",
+            "category_id": "other",
+            "name": "Others",
             "description": "Miscellaneous utility contracts that do not fit into the other specified categories."
           }
         ]
       },
       "cross_chain": {
-        "mainCategoryName": "Cross-Chain",
-        "subCategories": [
+        "main_category_name": "Cross-Chain",
+        "categories": [
           {
-            "categoryKey": "cc_communication",
-            "categoryName": "Cross-Chain Communication",
+            "category_id": "cc_communication",
+            "name": "Cross-Chain Communication",
             "description": "Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers."
           },
           {
-            "categoryKey": "bridge",
-            "categoryName": "Bridge",
+            "category_id": "bridge",
+            "name": "Bridge",
             "description": "Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets."
           }
         ]

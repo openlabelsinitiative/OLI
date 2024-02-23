@@ -57,6 +57,40 @@ Table Projects {
   Note: "Information about specific projects (i.e. Uniswap V2), including project name, website link, and documentation."
 }
 
+enum category_id {
+  mev
+  trading
+  cex
+  lending
+  dex
+  derivative
+  staking
+  nft_fi
+  nft_marketplace
+  erc721
+  erc1155
+  community
+  gambling
+  gaming
+  native_transfer
+  stablecoin
+  erc20
+  middleware
+  erc4337
+  inscriptions
+  oracle
+  depin
+  developer_tools
+  identity
+  privacy
+  insurance
+  airdrop
+  payments
+  other
+  cc_communication
+  bridge
+}
+
 Table Categories {
   category_id string [pk]
   name string
@@ -66,8 +100,18 @@ Table Categories {
   Note: "A classification system that can be used for grouping contracts and wallets into specific categories."
 }
 
+enum main_category_id {
+  cefi
+  defi
+  nft
+  social
+  token_transfers
+  utility
+  cross_chain
+}
+
 Table MainCategories {
-  main_category_id string [pk]
+  main_category_id main_category_id [pk]
   name string
   definition string
 
