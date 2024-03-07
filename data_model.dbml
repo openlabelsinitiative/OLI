@@ -18,45 +18,6 @@ enum chain_vm {
     CairoVM
 }
 
-Table Chains {
-  chain_slug string [pk]
-  evm_chain_id int [note: "see chainlist"]
-  name string
-  website string
-  gas_token string
-  chain_vm chain_vm
-
-  Note: "Is used to map addresses to a chain. Chain_id (PK) is based on the chain's id (see chainlist)."
-}
-
-Table Addresses {
-  address string [pk]
-  chain_slug string [pk]
-  project_id unknown 
-  category_id string
-  is_eoa bool
-  is_proxy bool
-  name string
-  bytecode bytea
-  abi string
-  deployment_date timestamp
-  deployer_address unknown
-
-  Note: "Represents wallet and smart contract addresses, linked to chains, projects, and categorization."
-}
-
-Table Projects {
-  project_id unknown [pk]
-  name string
-  team_id string
-  website string
-  docs string
-  oss_slug string
-  token_symbol string
-
-  Note: "Information about specific projects (i.e. Uniswap V2), including project name, website link, and documentation."
-}
-
 enum category_id {
   mev
   trading
@@ -91,6 +52,46 @@ enum category_id {
   bridge
 }
 
+Table Chains {
+  chain_slug string [pk]
+  evm_chain_id int [note: "see chainlist"]
+  name string
+  website string
+  gas_token string
+  chain_vm chain_vm
+
+  Note: "Is used to map addresses to a chain. Chain_id (PK) is based on the chain's id (see chainlist)."
+}
+
+Table Addresses {
+  address string [pk]
+  chain_slug string [pk]
+  project_id unknown 
+  category_id category_id
+  is_eoa bool
+  is_proxy bool
+  name string
+  bytecode bytea
+  abi string
+  deployment_date timestamp
+  deployer_address unknown
+
+  Note: "Represents wallet and smart contract addresses, linked to chains, projects, and categorization."
+}
+
+Table Projects {
+  project_id unknown [pk]
+  name string
+  team_id string
+  website string
+  docs string
+  oss_slug string
+  token_symbol string
+
+  Note: "Information about specific projects (i.e. Uniswap V2), including project name, website link, and documentation."
+}
+
+/*
 Table Categories {
   category_id category_id [pk]
   name string
@@ -117,6 +118,7 @@ Table MainCategories {
 
   Note: "A higher-level categorization that can group multiple categories under a broader classification."
 }
+*/
 
 Table TagGroup {
   tag_group_id unknown [pk]
@@ -157,7 +159,10 @@ Ref: TagMapping.tag_id > Tags.tag_id
 Ref: TagMapping.address > Addresses.address
 
 // OneToManyCategorization
-Ref: Categories.main_category_id > MainCategories.main_category_id
+// Ref: Categories.main_category_id > MainCategories.main_category_id
+
+// OneToManyAddressesToCategories
+// Ref: Addresses.category_id > Categories.category_id
 
 // OneToManyProjectsToTeams
 Ref: Projects.team_id > Team.team_id
@@ -167,6 +172,3 @@ Ref: Addresses.chain_slug > Chains.chain_slug
 
 // OneToManyAddressesToProjects
 Ref: Addresses.project_id > Projects.project_id
-
-// OneToManyAddressesToCategories
-Ref: Addresses.category_id > Categories.category_id
