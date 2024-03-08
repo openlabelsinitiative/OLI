@@ -12,12 +12,6 @@ Project OpenLabelsInitiative {
   '''
 }
 
-enum chain_vm {
-    EVM
-    SVM
-    CairoVM
-}
-
 enum category_id {
   mev
   trading
@@ -52,20 +46,9 @@ enum category_id {
   bridge
 }
 
-Table Chains {
-  chain_slug string [pk]
-  evm_chain_id int [note: "see chainlist"]
-  name string
-  website string
-  gas_token string
-  chain_vm chain_vm
-
-  Note: "Is used to map addresses to a chain. Chain_id (PK) is based on the chain's id (see chainlist)."
-}
-
 Table Addresses {
   address string [pk]
-  chain_slug string [pk]
+  chain_id string [pk "based on CAIP-2 standard"]
   project_id unknown 
   category_id category_id
   is_eoa bool
@@ -166,9 +149,6 @@ Ref: TagMapping.address > Addresses.address
 
 // OneToManyProjectsToTeams
 Ref: Projects.team_id > Team.team_id
-
-// OneToManyAddressesToChains
-Ref: Addresses.chain_slug > Chains.chain_slug
 
 // OneToManyAddressesToProjects
 Ref: Addresses.project_id > Projects.project_id
