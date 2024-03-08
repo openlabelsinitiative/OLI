@@ -125,7 +125,8 @@
 <text text-anchor="start" x="955.96" y="-2824.73" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">string</text>
 <polygon fill="#e7e2dd" stroke="transparent" points="596.18,-2743.53 596.18,-2803.53 1045.18,-2803.53 1045.18,-2743.53 596.18,-2743.53"/>
 <polygon fill="none" stroke="#29235c" points="596.18,-2743.53 596.18,-2803.53 1045.18,-2803.53 1045.18,-2743.53 596.18,-2743.53"/>
-<text text-anchor="start" x="607.18" y="-2763.73" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">chain_id &#160;&#160;&#160;</text>
+<text text-anchor="start" x="607.18" y="-2764.73" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">chain_id</text>
+<text text-anchor="start" x="726.33" y="-2764.73" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> &#160;&#160;&#160;</text>
 <text text-anchor="start" x="955.96" y="-2764.73" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">string</text>
 <polygon fill="#e7e2dd" stroke="transparent" points="596.18,-2683.53 596.18,-2743.53 1045.18,-2743.53 1045.18,-2683.53 596.18,-2683.53"/>
 <polygon fill="none" stroke="#29235c" points="596.18,-2683.53 596.18,-2743.53 1045.18,-2743.53 1045.18,-2683.53 596.18,-2683.53"/>
