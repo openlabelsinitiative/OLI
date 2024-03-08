@@ -48,7 +48,7 @@ enum category_id {
 
 Table Addresses {
   address string [pk]
-  chain_id string [pk "based on CAIP-2 standard"]
+  chain_id string [pk, note:"based on CAIP-2 standard"]
   project_id unknown 
   category_id category_id
   is_eoa bool
