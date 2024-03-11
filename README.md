@@ -9,7 +9,7 @@ This initiative aims to tackle the issue of isolated and non-standardized contra
 The Ethereum Foundation funded this effort as part of the [Data Collection Grants](https://esp.ethereum.foundation/data-collection-grants). This standardized data structure was part of their [wish list](https://notes.ethereum.org/@drigolvc/DataCollectionWishlist) and other foundations and data teams also expressed interest in the past (as discussed [here](https://twitter.com/tokenterminal/status/1694103939602608540) by TokenTerminal and MSilb7). 
 
 ## Categories
-A big part of the labeling effort is to introduce a standardized set of well-defined categories. This is especially helpful in the context of analytics. The categorie definitions and mappings can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/category_definitions.json).
+A big part of the labeling effort is to introduce a standardized set of well-defined categories. This is especially helpful in the context of analytics. The category definitions and mappings can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/category_definitions.json). Each address can only be assigned to one category. If more categories will become necessary in the future they can be added here via PR.
 
 ## Data model
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
