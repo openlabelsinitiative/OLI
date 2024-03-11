@@ -11,6 +11,9 @@ The Ethereum Foundation funded this effort as part of the [Data Collection Grant
 ## Categories
 A big part of the labeling effort is to introduce a standardized set of well-defined categories. This is especially helpful in the context of analytics. The category definitions and mappings can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/category_definitions.json). Each address can only be assigned to one category. If more categories will become necessary in the future they can be added here via PR.
 
+## Tagging
+Tags are more flexible than categories. Multiple tags can be assigned to a single address and they can also be defined more freely.
+
 ## Data model
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
 This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/OpenLabelsInitiative?view=relationships)
