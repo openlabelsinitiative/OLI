@@ -24,8 +24,6 @@ One big part of tagging is that correct association with projects. Certain tags 
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
 This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/OLI?view=relationships)
 
-![OLI data model](data_model.svg)
-
 ## Tooling
 WIP: a repository of references to labeling tools
 
