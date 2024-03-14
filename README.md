@@ -1,22 +1,25 @@
 # Open Labels Initiative
 *A standardized framework and data model for EVM address labeling*
 
-Full data model documentation: [dbdocs](https://dbdocs.io/matthias/OpenLabelsInitiative)
+Full data model documentation: [dbdocs](https://dbdocs.io/matthias/OLI)
 
 ## Goal
 This initiative aims to tackle the issue of isolated and non-standardized contract and wallet labeling datasets within the blockchain data community. By introducing a standardized data model for smart contract and wallet labels we advocate for the consolidation into a single, universally accessible data structure utilized by various data providers. Additionally, we also aim to function as an aggregator for labeling tools (i.e. automated ERC detection, activity tagging, etc.)
 
 The Ethereum Foundation funded this effort as part of the [Data Collection Grants](https://esp.ethereum.foundation/data-collection-grants). This standardized data structure was part of their [wish list](https://notes.ethereum.org/@drigolvc/DataCollectionWishlist) and other foundations and data teams also expressed interest in the past (as discussed [here](https://twitter.com/tokenterminal/status/1694103939602608540) by TokenTerminal and MSilb7). 
 
-## Categories
-A big part of the labeling effort is to introduce a standardized set of well-defined categories. This is especially helpful in the context of analytics. The category definitions and mappings can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/category_definitions.json). Each address can only be assigned to one category. If more categories will become necessary in the future they can be added here via PR.
-
 ## Tagging
-Tags are more flexible than categories. Multiple tags can be assigned to a single address and they can also be defined more freely.
+After long consideration and lots of helpful feedback from many community members we decided: Tags are the way to go.
+Tags are a very flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned.
 
-## Data model
+In order to keep some structure, OLI will manage and track definition of the oli.TAG namespace. These tags (the tag definition etc, not the actual labels) have to be approved through PRs to the OLI repo. There is also a discussion to make other namespaces (i.e. aave. , or uniswap. ) only available to these specific projects in order to keep the quality of labels as high as possible.
+
+## Projects
+One big part of tagging is that correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. In order to avoid collisions and other issues, a clean project registry is necessary. TBD on next steps here.
+
+## Data model (SQL representation)
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
-This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/OpenLabelsInitiative?view=relationships)
+This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/OLI?view=relationships)
 
 ![OLI data model](data_model.svg)
 
