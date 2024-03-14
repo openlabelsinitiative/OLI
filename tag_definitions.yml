@@ -1,0 +1,66 @@
+Tags:
+- id: oli.is_eoa
+  name: Is EOA
+  description: Is the account an Externally Owned Account (EOA)?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+
+- id: oli.is_contract
+  name: Is Contract
+  description: Is the address a contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+
+- id: oli.deployer_address
+  name: Deployer address
+  description: The address that deployed the contract.
+  type: address
+  creator: OLI
+
+- id: oli.deployer_project
+  name: Deployer Project
+  description: The project that deployed the contract. Link to project registry.
+  type: address
+  creator: OLI
+
+- id: oli.deployment_date
+  name: Deployment Date
+  description: The date the contract was deployed.
+  type: date
+  creator: OLI
+
+- id: oli.is_proxy
+  name: Is Proxy
+  description: Is the contract a proxy contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+
+- id: oli.bytecode
+  name: Bytecode
+  description: The bytecode of the contract. Or link to VERA?
+  type: string
+  creator: OLI
+
+- id: oli.erc_types
+  name: ERC Types
+  description: The types of ERC standards the contract implements.
+  type: string
+  value_set: [ERC20, ERC721, ERC777, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998]
+  creator: OLI
+
+- id: oli.erc20_name
+  name: ERC20 Name
+  description: The name of the ERC20 token.
+  type: string
+  creator: OLI
+
+- id: oli.usage_category
+  name: Usage Category
+  description: The category of usage for the contract.
+  type: string
+  value_set: [mev, trading, cex, dex, lending, derivative, staking, nft_fi, nft_marketplace, erc721, erc1155, community, gambling, gaming, native_transfer, stablecoin, erc20, middleware, erc4337, inscriptions, oracle, depin, developer_tools, identity, privacy, insurance, airdrop, payments, other, cc_communication, bridge]
+  creator: OLI
+

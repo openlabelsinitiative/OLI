@@ -12,7 +12,10 @@ The Ethereum Foundation funded this effort as part of the [Data Collection Grant
 After long consideration and lots of helpful feedback from many community members we decided: Tags are the way to go.
 Tags are a very flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned.
 
-In order to keep some structure, OLI will manage and track definition of the oli.TAG namespace. These tags (the tag definition etc, not the actual labels) have to be approved through PRs to the OLI repo. There is also a discussion to make other namespaces (i.e. aave. , or uniswap. ) only available to these specific projects in order to keep the quality of labels as high as possible.
+In order to keep some structure, OLI will manage and track definition of the oli.TAG namespace. These tags (the tag definition, not the actual labels) have to be approved through PRs to the OLI repo. 
+A list of approved tags can be found here: [here](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
+
+There is also a discussion to make other namespaces (i.e. aave. , or uniswap. ) only available to these specific projects in order to keep the quality of labels as high as possible.
 
 ## Projects
 One big part of tagging is that correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. In order to avoid collisions and other issues, a clean project registry is necessary. TBD on next steps here.
