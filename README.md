@@ -18,6 +18,23 @@ A list of approved tags can be found here: [here](https://github.com/openlabelsi
 
 There is also a discussion to make other namespaces (i.e. aave. , or uniswap. ) only available to these specific projects in order to keep the quality of labels as high as possible.
 
+## Usage
+### Tagging Addresses
+
+1.  **Assigning Tags:** To tag addresses with relevant labels, follow these steps:
+
+    -   Review the list of approved tags available in the `tag_definitions.yml` file.
+    -   Determine the appropriate tags based on the address's activities and characteristics.
+    -   Submit a pull request to the OLI repository to propose new tags or suggest modifications to existing ones.
+2.  **Multiple Tags:** Each address can have multiple tags assigned to it, providing a comprehensive characterization of its role within the blockchain ecosystem.
+
+### Integrating Tags into Applications
+
+1.  **Data Model Integration:** Utilize the standardized data model provided by OLI to incorporate tagged addresses into your applications and platform.
+
+2.  **Filtering and Analysis:** Leverage namespaces to filter and analyze addresses based on specific criteria, such as protocol name, security requirements, or user activity.
+
+
 ## Projects
 One big part of tagging is that correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. In order to avoid collisions and other issues, a clean project registry is necessary. TBD on next steps here.
 
