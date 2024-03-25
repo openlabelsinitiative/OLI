@@ -23,6 +23,7 @@ tags:
   name: Owner Project
   description: The project that owns the contract or eoa. Link to project registry.
   type: address
+  value_set: BASED ON OSS DIRECTORY #https://github.com/opensource-observer/oss-directory
   creator: OLI
 
 - id: oli.deployment_date
@@ -61,7 +62,7 @@ tags:
   name: Usage Category
   description: The category of usage for the contract.
   type: string
-  value_set: [mev, trading, cex, dex, lending, derivative, staking, nft_fi, nft_marketplace, erc721, erc1155, community, gambling, gaming, native_transfer, stablecoin, erc20, middleware, erc4337, inscriptions, oracle, depin, developer_tools, identity, privacy, insurance, airdrop, payments, other, cc_communication, bridge]
+  value_set: BASED ON CATEGORY_DEFINITIONS.YML (i.e. dex, lending, gaming, etc.)
   creator: OLI
 
 - id: oli.version
