@@ -19,9 +19,9 @@ Tags:
   type: address
   creator: OLI
 
-- id: oli.deployer_project
-  name: Deployer Project
-  description: The project that deployed the contract. Link to project registry.
+- id: oli.owner_project
+  name: Owner Project
+  description: The project that owns the contract or eoa. Link to project registry.
   type: address
   creator: OLI
 
