@@ -12,18 +12,6 @@ Project OLI {
   '''
 }
 
-Table Projects {
-  project_slug string [pk]
-  name string
-  github string
-  website string
-  docs string
-  oss_slug string
-  token_symbol string
-
-  Note: "Information about specific projects (i.e. Uniswap), including project name, website link, and documentation."
-}
-
 Table Tags {
   tag_id string [pk]
   name string
