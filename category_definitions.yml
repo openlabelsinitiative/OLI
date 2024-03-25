@@ -1,0 +1,202 @@
+"utility": {
+        "main_category_name": "Utility",
+        "categories":  [
+          {
+            "category_id": "middleware",
+            "name": "Middleware",
+            "description": "Contracts that facilitate communication and interoperability between different blockchain protocols."
+          },
+          {
+            "category_id": "erc4337",
+            "name": "Account Abstraction (ERC4337)",
+            "description": "Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts."
+          },
+          {
+            "category_id": "inscriptions",
+            "name": "Inscriptions",
+            "description": "Contract that are used for inscribing calldata."
+          },
+          {
+            "category_id": "oracle",
+            "name": "Oracle",
+            "description": "Contracts that feed external, real-world data onto the blockchain."
+          },
+          {
+            "category_id": "depin",
+            "name": "Decentralized Physical Infrastructure",
+            "description": "Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks."
+          },
+          {
+            "category_id": "developer_tools",
+            "name": "Developer Tool",
+            "description": "Contracts that assist developers in creating, testing, and deploying smart contracts."
+          },
+          {
+            "category_id": "identity",
+            "name": "Identity",
+            "description": "Contracts that provide digital identification and verification services on the blockchain."
+          },
+          {
+            "category_id": "privacy",
+            "name": "Privacy",
+            "description": "Contracts designed to enhance privacy for transactions and interactions on the blockchain."
+          },
+          {
+            "category_id": "insurance",
+            "name": "Insurance",
+            "description": "Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations."
+          },
+          {
+            "category_id": "airdrop",
+            "name": "Airdrop",
+            "description": "Contracts that help to distribute tokens or NFTs to multiple wallet addresses."
+          },
+          {
+            "category_id": "payments",
+            "name": "Payments",
+            "description": "Contracts that facilitate transactions and payments within the blockchain ecosystem."
+          },
+          {
+            "category_id": "other",
+            "name": "Others",
+            "description": "Miscellaneous utility contracts that do not fit into the other specified categories."
+          }
+        ]
+      },
+      "cross_chain": {
+        "main_category_name": "Cross-Chain",
+        "categories": [
+          {
+            "category_id": "cc_communication",
+            "name": "Cross-Chain Communication",
+            "description": "Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers."
+          },
+          {
+            "category_id": "bridge",
+            "name": "Bridge",
+            "description": "Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets."
+          }
+        ]
+      }
+    
+
+cefi:
+  main_category_name: CeFi
+  categories:
+  - category_id: mev
+    name: MEV
+    description: MEV and arbitrage bots
+  - category_id: trading
+    name: Trading
+    description: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies.
+  - category_id: cex
+    name: Centralized Exchange
+    description: CContracts or wallets under the control of centralized exchanges.
+
+defi:
+  main_category_name: DeFi
+  categories:
+  - category_id: dex
+    name: Decentralized Exchange
+    description: Contracts whose primary focus is on routing token swaps through liquidity pools (LPs).
+  - category_id: lending
+    name: Lending
+    description: Contracts that enable lending with the use of collateral.
+  - category_id: derivative
+    name: Derivative Exchange
+    description: Contracts that facilitate the trading of derivatives, which are financial instruments deriving their value from an underlying asset or benchmark.
+  - category_id: staking
+    name: Staking
+    description: Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking.
+
+nft:
+  main_category_name: NFT
+  categories:
+  - category_id: nft_fi
+    name: NFT Finance
+    description: Contracts that involve the financialization of NFTs, which includes lending NFTs.
+  - category_id: nft_marketplace
+    name: NFT Marketplace
+    description: Platform contracts for the sale or minting of NFTs.
+  - category_id: erc721
+    name: ERC721
+    description: Contracts that adhere to the ERC721 token standard. This category does not include NFTs received as deposit receipts.
+  - category_id: erc1155
+    name: ERC1155
+    description: Contracts that adhere to the ERC1155 token standard. This category does not include NFTs received as deposit receipts.
+
+social:
+  main_category_name: Social
+  categories:
+  - category_id: community
+    name: Community
+    description: Contracts designed to support social interactions, networking or education.
+  - category_id: gambling
+    name: Gambling
+    description: Contracts that govern games of chance.
+  - category_id: gaming
+    name: Gaming
+    description: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone.
+  
+token_transfers:
+  main_category_name: Token Transfers
+  categories:
+  - category_id: native_transfer
+    name: Native Transfer
+    description: All native transfers (primarily ETH transfers, but the native token can vary depending on the L2).
+  - category_id: stablecoin
+    name: Stablecoin
+    description: ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency.
+  - category_id: erc20
+    name: ERC20
+    description: Contracts that adhere to the ERC20 token standard. This category does not include tokens received as deposit receipts or stablecoins.
+
+utility:
+  main_category_name: Utility
+  categories:
+  - category_id: middleware
+    name: Middleware
+    description: Contracts that facilitate communication and interoperability between different blockchain protocols.
+  - category_id: erc4337
+    name: Account Abstraction (ERC4337)
+    description: Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts.
+  - category_id: inscriptions
+    name: Inscriptions
+    description: Contract that are used for inscribing calldata.
+  - category_id: oracle
+    name: Oracle
+    description: Contracts that feed external, real-world data onto the blockchain.
+  - category_id: depin
+    name: Decentralized Physical Infrastructure
+    description: Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks.
+  - category_id: developer_tools
+    name: Developer Tool
+    description: Contracts that assist developers in creating, testing, and deploying smart contracts.
+  - category_id: identity
+    name: Identity
+    description: Contracts that provide digital identification and verification services on the blockchain.
+  - category_id: privacy
+    name: Privacy
+    description: Contracts designed to enhance privacy for transactions and interactions on the blockchain.
+  - category_id: insurance
+    name: Insurance
+    description: Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations.
+  - category_id: airdrop
+    name: Airdrop
+    description: Contracts that help to distribute tokens or NFTs to multiple wallet addresses.
+  - category_id: payments
+    name: Payments
+    description: Contracts that facilitate transactions and payments within the blockchain ecosystem.
+  - category_id: other
+    name: Others
+    description: Miscellaneous utility contracts that do not fit into the other specified categories.
+
+cross_chain:
+  main_category_name: Cross-Chain
+  categories:
+  - category_id: cc_communication
+    name: Cross-Chain Communication
+    description: Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers.
+  - category_id: bridge
+    name: Bridge
+    description: Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets.

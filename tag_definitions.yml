@@ -1,4 +1,4 @@
-Tags:
+tags:
 - id: oli.is_eoa
   name: Is EOA
   description: Is the account an Externally Owned Account (EOA)?
