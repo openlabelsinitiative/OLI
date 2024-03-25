@@ -1,4 +1,10 @@
 tags:
+- id: oli.name
+  name: Name
+  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one word detailed definition into the functionality of the address. As example, the Uniswap router contract would have the name = 'router'.
+  type: string
+  creator: OLI
+
 - id: oli.is_eoa
   name: Is EOA
   description: Is the account an Externally Owned Account (EOA)?
@@ -21,7 +27,7 @@ tags:
 
 - id: oli.owner_project
   name: Owner Project
-  description: The project that owns the contract or eoa. Link to project registry.
+  description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
   type: address
   value_set: BASED ON OSS DIRECTORY #https://github.com/opensource-observer/oss-directory
   creator: OLI
