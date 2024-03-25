@@ -2,6 +2,7 @@
 *A standardized framework and data model for EVM address labeling*
 
 Full data model documentation: [dbdocs](https://dbdocs.io/matthias/OLI)
+
 List of official OLI tags: [tag_defintions.yml](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
 
 ## Goal
@@ -10,12 +11,12 @@ This initiative aims to tackle the issue of isolated and non-standardized contra
 The Ethereum Foundation funded this effort as part of the [Data Collection Grants](https://esp.ethereum.foundation/data-collection-grants). This standardized data structure was part of their [wish list](https://notes.ethereum.org/@drigolvc/DataCollectionWishlist) and other foundations and data teams also expressed interest in the past.
 
 ## Tagging
-All labeling takes place by assigning pre-defined tags with values to addresses. Tags are a very flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned.
+All labeling takes place by assigning pre-defined tags with values to addresses. Tags are a flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned.
 
-In order to keep some structure, OLI will manage and track the definition of the oli.TAG namespace. These tags (the tag definition, not the actual labels) have to be approved through PRs to the OLI repo. 
+To keep some structure, OLI will manage and track the definition of the oli.TAG namespace. These tags (the tag definition, not the actual mapping) have to be approved through PRs to the OLI repo. 
 A list of approved tags can be found here: [here](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
 
-There is also a discussion to make other namespaces (i.e. aave. , or uniswap. ) only available to these specific projects in order to keep the quality of labels as high as possible.
+There is also a discussion to make other namespaces (i.e. aave. , or uniswap) available to these specific projects to keep the quality of labels as high as possible.
 
 ## Usage
 ### Tagging Addresses
@@ -27,8 +28,14 @@ Review the list of approved tags available in the `tag_definitions.yml` file. If
 - **Data Model Integration:** Utilize the standardized data model provided by OLI to incorporate tagged addresses into your applications and platform.
 - **Filtering and Analysis:** Leverage namespaces to filter and analyze addresses based on specific criteria, such as protocol name, security requirements, or user activity. You can use following frontends for ease-of-access: **WIP**
 
-## Projects
-One big part of tagging is the correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. To avoid collisions and other issues, a clean project registry is necessary. TBD on next steps here.
+## Pre-Defined Valuesets
+Certain tags can only take values from pre-defined valuesets. The most important examples are projects and usage categories.
+
+### Projects
+One big part of tagging is the correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. To avoid collisions and other issues, a clean project registry is necessary. The most complete project repository to date is the [OSS-directory](https://github.com/opensource-observer/oss-directory/tree/main). Project names have to be from here.
+
+### Chains
+A clean linking to chains is also required. The most commonly used chain naming standard is [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md). A full registry for EVM-based chains can be found [here](https://github.com/ethereum-lists/chains).
 
 ## Tooling
 WIP: a repository of references to labeling tools
