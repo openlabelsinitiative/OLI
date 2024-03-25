@@ -38,11 +38,11 @@ tags:
   value_set: [true, false]
   creator: OLI
 
-- id: oli.bytecode
-  name: Bytecode
-  description: The bytecode of the contract. Or link to VERA?
-  type: string
-  creator: OLI
+# - id: oli.bytecode
+#   name: Bytecode
+#   description: The bytecode of the contract. Or link to VERA?
+#   type: string
+#   creator: OLI
 
 - id: oli.erc_types
   name: ERC Types
@@ -62,5 +62,11 @@ tags:
   description: The category of usage for the contract.
   type: string
   value_set: [mev, trading, cex, dex, lending, derivative, staking, nft_fi, nft_marketplace, erc721, erc1155, community, gambling, gaming, native_transfer, stablecoin, erc20, middleware, erc4337, inscriptions, oracle, depin, developer_tools, identity, privacy, insurance, airdrop, payments, other, cc_communication, bridge]
+  creator: OLI
+
+- id: oli.version
+  name: Version
+  description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
+  type: int
   creator: OLI
 
