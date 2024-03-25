@@ -16,7 +16,7 @@ All labeling takes place by assigning pre-defined tags with values to addresses.
 To keep some structure, OLI will manage and track the definition of the oli.TAG namespace. These tags (the tag definition, not the actual mapping) have to be approved through PRs to the OLI repo. 
 A list of approved tags can be found here: [here](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
 
-There is also a discussion to make other namespaces (i.e. aave. , or uniswap) available to these specific projects to keep the quality of labels as high as possible.
+There is also a discussion to make other namespaces (i.e. aave, maker, uniswap, etc.) available to these specific projects to keep the quality of labels as high as possible.
 
 ## Usage
 ### Tagging Addresses
