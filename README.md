@@ -1,6 +1,8 @@
 # Open Labels Initiative
 *A standardized framework and data model for EVM address labeling*
 
+**CAREFUL, BREAKING CHANGES MIGHT STILL OCCUR**
+
 Full data model documentation: [dbdocs](https://dbdocs.io/matthias/OLI)
 
 List of official OLI tags: [tag_defintions.yml](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
