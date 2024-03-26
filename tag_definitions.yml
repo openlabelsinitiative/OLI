@@ -1,7 +1,7 @@
 tags:
 - id: oli.name
   name: Name
-  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one word detailed definition into the functionality of the address. As example, the Uniswap router contract would have the name = 'router'.
+  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the name = 'router'.
   type: string
   creator: OLI
 
@@ -12,24 +12,37 @@ tags:
   value_set: [true, false]
   creator: OLI
 
-- id: oli.is_contract
+- id: oli.is_factory_contract
   name: Is Contract
+  description: Is the address a factory contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+
+- id: oli.is_contract
+  name: Is Factory Contract
   description: Is the address a contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
 
+- id: oli.deployment_tx
+  name: Deployer Transaction
+  description: The transaction that deployed the contract.
+  type: bytea
+  creator: OLI
+
 - id: oli.deployer_address
-  name: Deployer address
+  name: Deployer Address
   description: The address that deployed the contract.
-  type: address
+  type: bytea
   creator: OLI
 
 - id: oli.owner_project
   name: Owner Project
   description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
-  type: address
-  value_set: BASED ON OSS DIRECTORY #https://github.com/opensource-observer/oss-directory
+  type: string
+  value_set: https://github.com/opensource-observer/oss-directory
   creator: OLI
 
 - id: oli.deployment_date
@@ -51,9 +64,9 @@ tags:
 #   type: string
 #   creator: OLI
 
-- id: oli.erc_types
-  name: ERC Types
-  description: The types of ERC standards the contract implements.
+- id: oli.erc_type
+  name: ERC Type
+  description: The type of ERC standards the contract implements.
   type: string
   value_set: [ERC20, ERC721, ERC777, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998]
   creator: OLI
@@ -68,7 +81,7 @@ tags:
   name: Usage Category
   description: The category of usage for the contract.
   type: string
-  value_set: BASED ON CATEGORY_DEFINITIONS.YML (i.e. dex, lending, gaming, etc.)
+  value_set: https://github.com/openlabelsinitiative/OLI/blob/main/valuesets/category_definitions.yml
   creator: OLI
 
 - id: oli.version
@@ -76,4 +89,3 @@ tags:
   description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
   type: int
   creator: OLI
-
