@@ -11,7 +11,7 @@ This initiative aims to tackle the issue of isolated and non-standardized contra
 The Ethereum Foundation funded this effort as part of the [Data Collection Grants](https://esp.ethereum.foundation/data-collection-grants). This standardized data structure was part of their [wish list](https://notes.ethereum.org/@drigolvc/DataCollectionWishlist) and other foundations and data teams also expressed interest in the past.
 
 ## Tagging
-All labeling takes place by assigning pre-defined tags with values to addresses. Tags are a flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned.
+All labeling takes place by assigning pre-defined tags with values to addresses. Tags are a flexible solution that isn't as prescriptive as other options. Each address can have multiple tags assigned but each tag_id can only be assigned once per address.
 
 To keep some structure, OLI will manage and track the definition of the oli.TAG namespace. These tags (the tag definition, not the actual mapping) have to be approved through PRs to the OLI repo. 
 A list of approved tags can be found here: [here](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
