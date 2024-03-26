@@ -50,6 +50,13 @@ This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/O
 ## Datasets 
 OLI won’t store any datasets. This initiative's goal is to align on a standardized data structure for labels which will make it easier to sync different datasets. It will also align on the definition of categories and naming conventions. Label databases will still be in the hands of independent data teams. growthepie and walletlabels commit to making their data publicly available via API endpoints and hope that other data teams will join this effort for democratized access to labels. 
 
+## Roadmap
+The current high level vision for the effort can be broken down in 3 steps:
+
+- 1: Alignment on labeling framework and putting all definitions in place: this is where we are at currently and it's almost done. We will probably set up a council that manages the GitHub and new tag_ids/ other changes have to go through it
+- 2: Experimentation with address/tag mappings with different front- and backends. Walletlabels and growthepie will both adapt the new OLI standard and start to experiment with the best ways to crowdsource the labeling effort. We'll run separate frontends and databases that can easily sync from each other. Main challenge is label confidence. Most useful approach is probably to go quality over quantity first. We encourage other data teams to do the same and stress test the framework.
+- 3: Potentially decentralize this effort.  Based on the outcome from step 2 we will re evaluate more decentralized solutions like EAS and others. Ideal outcome would be a framework that allows us to easily read tags and their confidence levels from onchain data.
+
 ## Contributors
 ### Founding members
 These teams applied for grants with the Ethereum Foundation and started building out the core structure.
