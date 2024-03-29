@@ -73,5 +73,7 @@ These teams applied for grants with the Ethereum Foundation and started building
 
 ### Other Contributors
 Other individuals or data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
+
+- Carl Cervone & Raymond Cheng, [Open Source Observer](https://github.com/opensource-observer)
 - Michael Silberling, [OP Labs](https://www.oplabs.co/)
 - TBD
