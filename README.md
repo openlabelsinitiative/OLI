@@ -72,5 +72,6 @@ These teams applied for grants with the Ethereum Foundation and started building
 - [Ethereum Foundation](https://ethereum.foundation/)
 
 ### Other Contributors
-Other data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
+Other individuals or data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
+- Michael Silberling, [OP Labs](https://www.oplabs.co/)
 - TBD
