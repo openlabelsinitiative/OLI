@@ -36,6 +36,9 @@ Certain tags can only take values from pre-defined valuesets. The most important
 ### Projects
 One big part of tagging is the correct association with projects. Certain tags (i.e. oli.deployer_project) link to projects. To avoid collisions and other issues, a clean project registry is necessary. The most complete project repository to date is the [OSS-directory](https://github.com/opensource-observer/oss-directory/tree/main). Project names have to be from here.
 
+### Categories
+For the sake of standardization, we also defined a valueset for categories that have to be used for the oli.usage_category tag. The full list (with hierachy mapping) can be found [here](https://github.com/openlabelsinitiative/OLI/blob/main/valuesets/category_definitions.yml).
+
 ### Chains
 A clean linking to chains is also required. The most commonly used chain naming standard is [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md). A full registry for EVM-based chains can be found [here](https://github.com/ethereum-lists/chains).
 
