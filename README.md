@@ -83,8 +83,6 @@ WIP: a repository of references to labeling tools
 ## Data model
 The dbml definition for the SQL representation of the data model can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
 This link shows the interactive [dbdiagram](https://dbdiagram.io/d/OLI-660bbef003593b6b61f058cb).
-![OLI data model](data_model/data_model.svg)
-
 
 ## Datasets 
 OLI won’t store any datasets. This initiative's goal is to align on a standardized data structure for labels which will make it easier to sync different datasets. It will also align on the definition of categories and naming conventions. Label databases will still be in the hands of independent data teams. growthepie and walletlabels commit to making their data publicly available via API endpoints and hope that other data teams will join this effort for democratized access to labels. 
