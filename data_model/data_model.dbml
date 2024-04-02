@@ -1,5 +1,4 @@
 // interactive visualization: https://dbdiagram.io/d/OLI-660bbef003593b6b61f058cb
-
 // Version: 1.0
 
 Project OLI {
@@ -15,7 +14,7 @@ Project OLI {
 
 Table Tags {
   tag_id string [pk, Note: "A slug that acts as unique identifier for this tag. Namespaces can be assigned."]
-  name string [Note: "The name of this tag in human-readable format."]
+  name string [Note: "The name of the tag in human-readable format."]
   description string [Note: "A short description of this tag and its purpose."]
   type string [Note: "The datatype that associated values can take."]
   value_set list [Note: "If set, this list acts as enums for this tag. Only values from this values set can be assigned."]
