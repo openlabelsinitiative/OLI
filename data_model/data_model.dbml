@@ -13,7 +13,7 @@ Project OLI {
 }
 
 Table Tags {
-  tag_id string [pk, Note: "A slug that acts as unique identifier for this tag. Namespaces can be assigned."]
+  id string [pk, Note: "A slug that acts as unique identifier for this tag. Namespaces can be assigned."]
   name string [Note: "The name of the tag in human-readable format."]
   description string [Note: "A short description of this tag and its purpose."]
   type string [Note: "The datatype that associated values can take."]
