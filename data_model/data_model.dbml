@@ -1,6 +1,8 @@
 // dbdocs: https://dbdocs.io/matthias/OpenLabelsInitiative
 // interactive visualization: https://dbdiagram.io/d/OLI-65c538c3ac844320aec4000e
 
+// Version: 1.0
+
 Project OLI {
   database_type: 'PostgreSQL'
   Note: '''
@@ -13,18 +15,20 @@ Project OLI {
 }
 
 Table Tags {
-  tag_id string [pk]
-  name string
-  description string
-  create string
-  value_set list
+  tag_id string [pk, Note: "A slug that acts as unique identifier for this tag. Namespaces can be assigned."]
+  name string [Note: "The name of this tag in human-readable format."]
+  description string [Note: "A short description of this tag and its purpose."]
+  type string [Note: "The datatype that associated values can take."]
+  value_set list [Note: "If set, this list acts as enums for this tag. Only values from this values set can be assigned."]
+  creator string [Note: "Creator of this tag id."]
+  version float [Note: "The versioning of the tag. Whenever a value set change happens, the versioning will also change."]
 
-  Note: "Individual labels or identifiers that can be applied to data points for sorting, searching, and categorization purposes."
+  Note: "Individual tags or identifiers that can be applied to addresses for sorting, searching, and categorization purposes."
 }
 
 Table TagMapping {
   address string [pk]
-  chain_id string [pk]
+  chain_id string [pk, Note: "Unique chain identifier according to CAIP-2 standard."]
   tag_id string [pk]
   value string
 
