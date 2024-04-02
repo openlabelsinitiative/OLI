@@ -119,3 +119,4 @@ Individuals or data teams that are involved in active feedback for this initiati
 - [Blockscout](https://www.blockscout.com/)
 - [Artemis](https://www.artemis.xyz/)
 - [Routescan](https://routescan.io/)
+- [Guild](https://guild.xyz/)
