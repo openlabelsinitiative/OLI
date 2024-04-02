@@ -120,3 +120,4 @@ Individuals or data teams that are involved in active feedback for this initiati
 - [Allium](https://www.allium.so/)
 - [Blockscout](https://www.blockscout.com/)
 - [Artemis](https://www.artemis.xyz/)
+- [Routescan](https://routescan.io/)
