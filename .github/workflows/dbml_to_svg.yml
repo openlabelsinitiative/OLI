@@ -22,7 +22,7 @@ jobs:
         run: npm install -g @softwaretechnik/dbml-renderer
 
       - name: Convert DBML to SVG
-        run: dbml-renderer -i ./data_model.dbml -o ./data_model.svg
+        run: dbml-renderer -i ./data_model/data_model.dbml -o ./data_model/data_model.svg
 
 
       - name: Commit and Push SVG Images
