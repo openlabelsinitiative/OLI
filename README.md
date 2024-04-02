@@ -3,8 +3,6 @@
 
 **CAREFUL, BREAKING CHANGES MIGHT STILL OCCUR**
 
-Full data model documentation: [dbdocs](https://dbdocs.io/matthias/OLI)
-
 List of official OLI tags: [tag_defintions.yml](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
 
 ## Goal
@@ -47,7 +45,7 @@ WIP: a repository of references to labeling tools
 
 ## Data model (SQL representation)
 This is the current suggestion for the data model. The full dbml definition can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
-This link shows the interactive dbdiagram: [dbdocs](https://dbdocs.io/matthias/OLI?view=relationships)
+This link shows the interactive [dbdiagram](https://dbdiagram.io/d/OLI-660bbef003593b6b61f058cb).
 ![OLI data model](data_model/data_model.svg)
 
 ## Datasets 
@@ -74,7 +72,7 @@ These teams applied for grants with the Ethereum Foundation and started building
 ### Sponsors
 - [Ethereum Foundation](https://ethereum.foundation/)
 
-### Other Contributors
+### Other Supporters
 Other individuals or data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
 
 - Carl Cervone & Raymond Cheng, [Open Source Observer](https://github.com/opensource-observer)
