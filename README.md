@@ -100,7 +100,7 @@ The current high level vision for the effort can be broken down in 3 steps:
 These teams applied for grants with the Ethereum Foundation and started building out the core structure.
 - [growthepie](https://www.growthepie.xyz/): Layer 2 analytics platform with focus on labeling smart contracts on layer 2s.
 
-![growthepie logo](https://i.ibb.co/cbZ5Bqg/growthepie-logo.png)
+![growthepie logo](https://i.ibb.co/54W8j8K/Group-165.png)
 
 - [walletlabels](https://www.walletlabels.xyz/): Wallet labeling platform with focus on labels for Ethereum as well as social labels / labeling of EOAs.
 
