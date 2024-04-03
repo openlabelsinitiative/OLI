@@ -115,6 +115,7 @@ Individuals or data teams that are involved in active feedback for this initiati
 - [Carl Cervone](https://github.com/ccerv1) & [Raymond Cheng](https://github.com/ryscheng) | [Open Source Observer](https://github.com/opensource-observer)
 - [Michael Silberling](https://github.com/MSilb7) | [OP Labs](https://www.oplabs.co/)
 - [Storm](https://github.com/sslivkoff) & [samczsun](https://github.com/samczsun/) | [Paradigm](https://www.paradigm.xyz/)
+- [Dune](https://dune.com/)
 - [Allium](https://www.allium.so/)
 - [Blockscout](https://www.blockscout.com/)
 - [Artemis](https://www.artemis.xyz/)
