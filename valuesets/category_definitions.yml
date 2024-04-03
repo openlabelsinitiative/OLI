@@ -27,7 +27,22 @@ defi:
   - category_id: staking
     name: Staking
     description: Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking.
-
+  - category_id: index
+    name: Index
+    description: Crypto indexes which are designed to represent the overall performance of a specific segment of the cryptocurrency market or the entire market.
+  - categoriy_id: rwa
+    name: Real World Assets
+    description: Contracts for tangible asset management such as real estate. Transforming real-world assets into digital tokens, introducing fractional ownership opportunities, and increasing accessibility to a broader range of investors.
+  - category_id: insurance
+    name: Insurance
+    description: Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations.
+  - category_id: custody
+    name: Custody
+    description: Services involved in the secure storage and management of digital assets on behalf of individuals, institutional investors, or businesses. 
+  - category_id: yield_vaults
+    name: Yield Vaults
+    description: Protocols that specialize in building vaults that maximize yields.
+ 
 nft:
   main_category_name: NFT
   categories:
@@ -37,13 +52,9 @@ nft:
   - category_id: nft_marketplace
     name: NFT Marketplace
     description: Platform contracts for the sale or minting of NFTs.
-  - category_id: erc721
-    name: ERC721
-    description: Contracts that adhere to the ERC721 token standard. This category does not include NFTs received as deposit receipts.
-  - category_id: erc1155
-    name: ERC1155
-    description: Contracts that adhere to the ERC1155 token standard. This category does not include NFTs received as deposit receipts.
-
+  - category_id: non_fungible_tokens
+    name: Non-Fungible Tokens
+    description: Contracts that mostly adhere to the ERC721 or ERC1155 token standard.
 social:
   main_category_name: Social
   categories:
@@ -56,6 +67,10 @@ social:
   - category_id: gaming
     name: Gaming
     description: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone.
+  - category_id: governance
+    name: Governance
+    description: Platforms for managing voting and treasury.
+
   
 token_transfers:
   main_category_name: Token Transfers
@@ -66,9 +81,9 @@ token_transfers:
   - category_id: stablecoin
     name: Stablecoin
     description: ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency.
-  - category_id: erc20
-    name: ERC20
-    description: Contracts that adhere to the ERC20 token standard. This category does not include tokens received as deposit receipts or stablecoins.
+  - category_id: fungible_tokens
+    name: Fungible Tokens
+    description: Contracts that mostly adhere to the ERC20 token standard. This category does not include stablecoins.
 
 utility:
   main_category_name: Utility
@@ -97,15 +112,18 @@ utility:
   - category_id: privacy
     name: Privacy
     description: Contracts designed to enhance privacy for transactions and interactions on the blockchain.
-  - category_id: insurance
-    name: Insurance
-    description: Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations.
   - category_id: airdrop
     name: Airdrop
     description: Contracts that help to distribute tokens or NFTs to multiple wallet addresses.
   - category_id: payments
     name: Payments
     description: Contracts that facilitate transactions and payments within the blockchain ecosystem.
+  - category_id: donation
+    name: Donation
+    description: Fundraising efforts where individuals, organizations, or charitable causes seek financial contributions in the form of digital currencies.
+  - category_id: cybercrime
+    name: Cybercrime
+    description: Contracts specifically designed as malware or used for hacks and exploits.
   - category_id: other
     name: Others
     description: Miscellaneous utility contracts that do not fit into the other specified categories.
