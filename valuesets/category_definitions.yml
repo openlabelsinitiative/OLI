@@ -55,6 +55,7 @@ nft:
   - category_id: non_fungible_tokens
     name: Non-Fungible Tokens
     description: Contracts that mostly adhere to the ERC721 or ERC1155 token standard.
+    
 social:
   main_category_name: Social
   categories:
@@ -71,7 +72,6 @@ social:
     name: Governance
     description: Platforms for managing voting and treasury.
 
-  
 token_transfers:
   main_category_name: Token Transfers
   categories:
