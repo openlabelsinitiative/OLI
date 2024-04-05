@@ -24,7 +24,7 @@ There is also a discussion to make other namespaces (i.e. aave, maker, uniswap, 
 Review the list of approved tags available in the `tag_definitions.yml` file. If your required tag doesn't exist yet, submit a pull request to the OLI repository to propose a new tag or suggest modifications to existing ones.
 - **Assigning Tag Values to Addresses:** To tag addresses with relevant labels, please use one of the frontends provided here: **WIP**
 
-This is an example for tags that are assigned to the [Uniswap V3 Router](https://optimistic.etherscan.io/address/0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45) on Optimism (eip155-10).
+This is an example for tags that are assigned to the [Uniswap V3 Router](https://optimistic.etherscan.io/address/0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45) on OP Mainnet (eip155-10).
 ```
 "TagMapping": [
   {
