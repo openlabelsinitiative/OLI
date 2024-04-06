@@ -81,7 +81,7 @@ A clean linking to chains is also required. The most commonly used chain naming 
 WIP: a repository of references to labeling tools
 
 ## Data model
-The dbml definition for the SQL representation of the data model can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model.dbml).
+The dbml definition for the SQL representation of the data model can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model/data_model.dbml).
 This link shows the interactive [dbdiagram](https://dbdiagram.io/d/OLI-660bbef003593b6b61f058cb).
 
 ## Datasets 
