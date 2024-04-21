@@ -29,8 +29,8 @@ defi:
     description: Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking.
   - category_id: index
     name: Index
-    description: Crypto indexes which are designed to represent the overall performance of a specific segment of the cryptocurrency market or the entire market.
-  - categoriy_id: rwa
+    description: Crypto indexes that are designed to represent the overall performance of a specific segment of the cryptocurrency market or the entire market.
+  - category_id: rwa
     name: Real World Assets
     description: Contracts for tangible asset management such as real estate. Transforming real-world assets into digital tokens, introducing fractional ownership opportunities, and increasing accessibility to a broader range of investors.
   - category_id: insurance
