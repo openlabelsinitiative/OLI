@@ -10,7 +10,7 @@ cefi:
     description: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies.
   - category_id: cex
     name: Centralized Exchange
-    description: CContracts or wallets under the control of centralized exchanges.
+    description: Contracts or wallets under the control of centralized exchanges.
 
 defi:
   main_category_name: DeFi
