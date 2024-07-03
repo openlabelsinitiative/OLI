@@ -102,3 +102,11 @@ tags:
   type: int
   creator: OLI
   version: 1.0
+
+- id: oli.is_safe_contract
+  name: Is Safe Contract
+  description: Is the address a Safe contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+  version: 1.0
