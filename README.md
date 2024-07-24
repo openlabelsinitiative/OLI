@@ -24,39 +24,41 @@ There is also a discussion to make other namespaces (i.e. aave, maker, uniswap, 
 Review the list of approved tags available in the `tag_definitions.yml` file. If your required tag doesn't exist yet, submit a pull request to the OLI repository to propose a new tag or suggest modifications to existing ones.
 - **Assigning Tag Values to Addresses:** To tag addresses with relevant labels, please use one of the frontends provided here: **WIP**
 
-This is an example for tags that are assigned to the [Uniswap V3 Router](https://optimistic.etherscan.io/address/0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45) on OP Mainnet (eip155-10).
+Sample data for tag mappings on OP Mainnet (eip155-10) and Base (eip155-8453) can be found [here](https://github.com/openlabelsinitiative/OLI/tree/main/sample_data).
+
+A short excerpt:
 ```
-"TagMapping": [
-  {
-    "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
-    "chain_id": "eip155-10",
-    "tag_id": "oli.name",
-    "value": "Router 2"
-  },
-  {
-    "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
-    "chain_id": "eip155-10",
-    "tag_id": "oli.is_contract",
-    "value": True
-  },
-  {
-    "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
-    "chain_id": "eip155-10",
-    "tag_id": "oli.owner_project",
-    "value": "uniswap"
-  },
-  {
-    "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
-    "chain_id": "eip155-10",
-    "tag_id": "oli.usage_category",
-    "value": "dex"
-  },
-  {
-    "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
-    "chain_id": "eip155-10",
-    "tag_id": "oli.version",
-    "value": 3
-  }
+[
+    {
+        "address": "0x087000A300DE7200382b55D40045000000E5d60E",
+        "chain_id": "eip155-10",
+        "name": "Aggregate3",
+        "owner_project": "worldcoin",
+        "usage_category": "airdrop",
+        "deployment_tx": "0x0XDD0F9CFB373020DD8D71C22D0853AC5D3BA1911EAD94177EE09737F74A18B3D2",
+        "deployer_address": "0x0X7D896339A80DD38BC3BBB04383894C62B2EF2585",
+        "deployment_date": "2023-09-23 19:55:13"
+    },
+    {
+        "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
+        "chain_id": "eip155-10",
+        "name": "WLD",
+        "owner_project": "worldcoin",
+        "usage_category": "fungible_tokens",
+        "deployment_tx": "0x0X3F3231F6F4A036901A06D79A92EF7FFAEDC81A8470126F4FDB436F7A57213DE8",
+        "deployer_address": "0x0X36BDE71C97B33CC4729CF772AE268934F7AB70B2",
+        "deployment_date": "2023-07-19 13:51:49"
+    },
+    {
+        "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+        "chain_id": "eip155-10",
+        "name": "USDT",
+        "owner_project": "tetherto",
+        "usage_category": "stablecoin",
+        "deployment_tx": null,
+        "deployer_address": null,
+        "deployment_date": null
+    }
 ]
 ```
 
