@@ -35,8 +35,8 @@ A short excerpt:
         "name": "Aggregate3",
         "owner_project": "worldcoin",
         "usage_category": "airdrop",
-        "deployment_tx": "0x0XDD0F9CFB373020DD8D71C22D0853AC5D3BA1911EAD94177EE09737F74A18B3D2",
-        "deployer_address": "0x0X7D896339A80DD38BC3BBB04383894C62B2EF2585",
+        "deployment_tx": "0xdd0f9cfb373020dd8d71c22d0853ac5d3ba1911ead94177ee09737f74a18b3d2",
+        "deployer_address": "0x7d896339A80DD38bC3BbB04383894C62b2eF2585",
         "deployment_date": "2023-09-23 19:55:13"
     },
     {
@@ -45,8 +45,8 @@ A short excerpt:
         "name": "WLD",
         "owner_project": "worldcoin",
         "usage_category": "fungible_tokens",
-        "deployment_tx": "0x0X3F3231F6F4A036901A06D79A92EF7FFAEDC81A8470126F4FDB436F7A57213DE8",
-        "deployer_address": "0x0X36BDE71C97B33CC4729CF772AE268934F7AB70B2",
+        "deployment_tx": "0x3f3231f6f4a036901a06d79a92ef7ffaedc81a8470126f4fdb436f7a57213de8",
+        "deployer_address": "0x36BDE71C97B33Cc4729cf772aE268934f7AB70B2",
         "deployment_date": "2023-07-19 13:51:49"
     },
     {

@@ -5,8 +5,8 @@
         "name": "Universal Router",
         "owner_project": "uniswap",
         "usage_category": "dex",
-        "deployment_tx": "0x07554308E2650C4A0DA846426322D62C2AFC2EC05EACD0F383AB1A8524E1B8DB",
-        "deployer_address": "0x946E9C780F3C79D80E51E68D259D0D7E794F2124",
+        "deployment_tx": "0x07554308e2650c4a0da846426322d62c2afc2ec05eacd0f383ab1a8524e1b8db",
+        "deployer_address": "0x946E9C780F3c79D80e51e68d259d0D7E794F2124",
         "deployment_date": "2024-01-11 20:11:23"
     },
     {
@@ -15,19 +15,9 @@
         "name": "V2 Router02",
         "owner_project": "uniswap",
         "usage_category": "dex",
-        "deployment_tx": "0x039224CE16EBE5574F51DA761ACBDFBD21099D6230C39FCD8FF566BBFD6A50A9",
-        "deployer_address": "0x9FE9EF57C6F17E3C56BEF2DFBFC43F07D4A0E064",
+        "deployment_tx": "0x039224ce16ebe5574f51da761acbdfbd21099d6230c39fcd8ff566bbfd6a50a9",
+        "deployer_address": "0x9FE9EF57c6f17e3c56BEf2DfBfc43F07D4a0E064",
         "deployment_date": "2024-02-08 17:31:41"
-    },
-    {
-        "address": "0x2626664c2603336E57B271c5C0b26F421741e481",
-        "chain_id": "eip155-8453",
-        "name": "SwapRouter02",
-        "owner_project": "uniswap",
-        "usage_category": "dex",
-        "deployment_tx": "0x7B983C25DBF2E48CF06366CE23A75A9DCF048C1C464A979812BFD5B287B281ED",
-        "deployer_address": "0x7AC7499F3754B65CF9089DB328EF51151A78EC00",
-        "deployment_date": "2023-07-16 18:47:21"
     },
     {
         "address": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
@@ -35,9 +25,19 @@
         "name": "EntryPoint v2",
         "owner_project": null,
         "usage_category": "erc4337",
-        "deployment_tx": "0x0XE7D507DDB3E456811E4714C5C9602F01E9730501A738FF64EFA728B3B2E7B89D",
-        "deployer_address": "0x0X433704C40F80CBFF02E86FD36BC8BAC5E31EB0C1",
+        "deployment_tx": "0xe7d507ddb3e456811e4714c5c9602f01e9730501a738ff64efa728b3b2e7b89d",
+        "deployer_address": "0x433704c40F80cBff02e86FD36Bc8baC5e31eB0c1",
         "deployment_date": "2023-07-27 22:48:01"
+    },
+    {
+        "address": "0x2626664c2603336E57B271c5C0b26F421741e481",
+        "chain_id": "eip155-8453",
+        "name": "SwapRouter02",
+        "owner_project": "uniswap",
+        "usage_category": "dex",
+        "deployment_tx": "0x7b983c25dbf2e48cf06366ce23a75a9dcf048c1c464a979812bfd5b287b281ed",
+        "deployer_address": "0x7AC7499f3754B65CF9089db328ef51151a78EC00",
+        "deployment_date": "2023-07-16 18:47:21"
     },
     {
         "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
@@ -45,8 +45,8 @@
         "name": "USDC",
         "owner_project": "circle",
         "usage_category": "stablecoin",
-        "deployment_tx": "0x8AA214F98BCF2984ADD809D10232135CCCC4D6AB97D8477E66475D8BF68DEF34",
-        "deployer_address": "0x6AAFF8AF0AE8017725312C388BA3745DFE91185B",
+        "deployment_tx": "0x8aa214f98bcf2984add809d10232135cccc4d6ab97d8477e66475d8bf68def34",
+        "deployer_address": "0x6aAFF8af0ae8017725312C388bA3745dfE91185B",
         "deployment_date": "2023-08-18 18:36:29"
     },
     {
@@ -55,8 +55,8 @@
         "name": "CUBE",
         "owner_project": "layer3xyz",
         "usage_category": "non_fungible_tokens",
-        "deployment_tx": "0xFDE4F3BD0835999F15FAEA14B6C4662DD50F140D4100A64BEED3E58810237673",
-        "deployer_address": "0xF1C0DF2381AC4A6CAC9C866DDBDE3C3D641A1337",
+        "deployment_tx": "0xfde4f3bd0835999f15faea14b6c4662dd50f140d4100a64beed3e58810237673",
+        "deployer_address": "0xF1C0dF2381Ac4a6Cac9C866DdbdE3c3D641a1337",
         "deployment_date": "2024-01-09 16:32:11"
     },
     {
@@ -65,8 +65,8 @@
         "name": "UniversalRouter",
         "owner_project": "uniswap",
         "usage_category": "dex",
-        "deployment_tx": "0xAED9CA12D91E59BEA86E59C19C6029E4892AD7F9D96B9308CFA7AAB1756DADF8",
-        "deployer_address": "0xBC87B3948FECEBF93F85F69A9814F3DBB413F2F6",
+        "deployment_tx": "0xaed9ca12d91e59bea86e59c19c6029e4892ad7f9d96b9308cfa7aab1756dadf8",
+        "deployer_address": "0xbc87B3948fEcEbF93f85F69a9814f3dbb413f2F6",
         "deployment_date": "2023-07-18 15:28:19"
     },
     {
@@ -75,8 +75,8 @@
         "name": "AggregationRouterV5",
         "owner_project": "1-inch",
         "usage_category": "dex",
-        "deployment_tx": "0xBA970B20C8CB867598F9B5E43F3DD9442994574134C94ECFF6A9D9FBEDE185B0",
-        "deployer_address": "0xCCBDBD9B0309A77FC6A56E087FF2765FF394012E",
+        "deployment_tx": "0xba970b20c8cb867598f9b5e43f3dd9442994574134c94ecff6a9d9fbede185b0",
+        "deployer_address": "0xCCbdBd9B0309a77fC6a56e087Ff2765ff394012e",
         "deployment_date": "2023-08-08 22:19:07"
     },
     {
@@ -85,8 +85,8 @@
         "name": "Diamond",
         "owner_project": "frenpet-xyz",
         "usage_category": "gaming",
-        "deployment_tx": "0x89EE9ED144B7A3997777AD3EC3D9FAE5D5548A49B7BF47E165ACEAF85969393B",
-        "deployer_address": "0x047F606FD5B2BAA5F5C6C4AB8958E45CB6B054B7",
+        "deployment_tx": "0x89ee9ed144b7a3997777ad3ec3d9fae5d5548a49b7bf47e165aceaf85969393b",
+        "deployer_address": "0x047F606fD5b2BaA5f5C6c4aB8958E45CB6B054B7",
         "deployment_date": "2023-11-10 01:19:23"
     },
     {
@@ -95,8 +95,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x07768B7A2D5CFD85984AE12FF8707052C9A4012072B67BAB36D8140894D4E956",
-        "deployer_address": "0x002D650B1BCAE18C2D40EE95ABC4C8F548B2000E",
+        "deployment_tx": "0x07768b7a2d5cfd85984ae12ff8707052c9a4012072b67bab36d8140894d4e956",
+        "deployer_address": "0x002d650B1Bcae18C2D40Ee95ABC4c8F548b2000e",
         "deployment_date": "2024-06-10 13:52:39"
     },
     {
@@ -105,8 +105,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x6A74B4ADB92D2A43091511C498ACE1AC249E23349C45B81E4D98BE23E2C383C9",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
+        "deployment_tx": "0x6a74b4adb92d2a43091511c498ace1ac249e23349c45b81e4d98be23e2c383c9",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
         "deployment_date": "2024-06-25 14:13:41"
     },
     {
@@ -115,8 +115,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x53FE7D6E713A021D4AE0D18822BCEE22DD560AAC1CD9860A7B8A95B67D737AFF",
-        "deployer_address": "0xD7A23F3F45E09110A563758963ACA34EF63373C3",
+        "deployment_tx": "0x53fe7d6e713a021d4ae0d18822bcee22dd560aac1cd9860a7b8a95b67d737aff",
+        "deployer_address": "0xD7a23f3F45e09110A563758963acA34eF63373c3",
         "deployment_date": "2024-06-03 02:21:59"
     },
     {
@@ -135,8 +135,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": "trading",
-        "deployment_tx": "0xC235C8FAE6B8DC295241594A0E7F6F220DEA03CAD772145EC7724BEAE121DD48",
-        "deployer_address": "0xA5FE44D87C42EC4097F8B9CA2DCAF8FA2DC9F811",
+        "deployment_tx": "0xc235c8fae6b8dc295241594a0e7f6f220dea03cad772145ec7724beae121dd48",
+        "deployer_address": "0xa5FE44d87c42ec4097F8B9cA2dcaf8fa2DC9F811",
         "deployment_date": "2024-03-25 14:54:17"
     },
     {
@@ -145,8 +145,8 @@
         "name": "Sniper Bot",
         "owner_project": "sigmabot",
         "usage_category": "dex",
-        "deployment_tx": "0x8921B22626D711B25D72BA56B7A8A89E691D2D3907AB72A12822EF6838C057C3",
-        "deployer_address": "0xB25750FA55B302C9A3997F64D24C0B14AFDD3165",
+        "deployment_tx": "0x8921b22626d711b25d72ba56b7a8a89e691d2d3907ab72a12822ef6838c057c3",
+        "deployer_address": "0xB25750FA55B302c9a3997f64d24c0B14aFDd3165",
         "deployment_date": "2024-03-13 16:00:29"
     },
     {
@@ -155,19 +155,9 @@
         "name": "Exchange Proxy v4",
         "owner_project": "zeroex",
         "usage_category": "dex",
-        "deployment_tx": "0x0X9AA1D14E17926ADDB59B91E373344C301B882735D02D89470D4676BD09A3854A",
-        "deployer_address": "0x0XE750AD66DE350F8110E305FB78EC6A9F594445E3",
+        "deployment_tx": "0x9aa1d14e17926addb59b91e373344c301b882735d02d89470d4676bd09a3854a",
+        "deployer_address": "0xe750ad66DE350F8110E305fb78Ec6A9f594445E3",
         "deployment_date": "2023-07-17 16:07:47"
-    },
-    {
-        "address": "0xCE4cF0d5DA97B7f4de1bA76609F2A1330411e7c0",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xE3C7D677C2029D582567FB853D80EC6EFF026D089F54D85719D128FDD9066BB1",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
-        "deployment_date": "2024-05-25 15:37:51"
     },
     {
         "address": "0x19cEeAd7105607Cd444F5ad10dd51356436095a1",
@@ -175,9 +165,19 @@
         "name": "RouterV2",
         "owner_project": "odos-xyz",
         "usage_category": "dex",
-        "deployment_tx": "0xE71263A842A96D64B1C741E013CAB2EA16CFFA923D62B029877178EF751C90CC",
-        "deployer_address": "0x6DE9109A2333845A15DDE1F2F0C020B37421E1F5",
+        "deployment_tx": "0xe71263a842a96d64b1c741e013cab2ea16cffa923d62b029877178ef751c90cc",
+        "deployer_address": "0x6De9109a2333845A15ddE1f2F0c020b37421e1f5",
         "deployment_date": "2023-07-13 16:53:03"
+    },
+    {
+        "address": "0xCE4cF0d5DA97B7f4de1bA76609F2A1330411e7c0",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xe3c7d677c2029d582567fb853d80ec6eff026d089f54d85719d128fdd9066bb1",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
+        "deployment_date": "2024-05-25 15:37:51"
     },
     {
         "address": "0x4eB3621D59a1c4Ee08140006062D023389344e53",
@@ -185,8 +185,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x4D6D8A1F6DD848B1FB4E8ABCB0D18C6004695BE6643F89EF1165C12435786FE3",
-        "deployer_address": "0x002D650B1BCAE18C2D40EE95ABC4C8F548B2000E",
+        "deployment_tx": "0x4d6d8a1f6dd848b1fb4e8abcb0d18c6004695be6643f89ef1165c12435786fe3",
+        "deployer_address": "0x002d650B1Bcae18C2D40Ee95ABC4c8F548b2000e",
         "deployment_date": "2024-04-20 07:23:37"
     },
     {
@@ -195,8 +195,8 @@
         "name": "SDK",
         "owner_project": "layer-zero",
         "usage_category": "cc_communication",
-        "deployment_tx": "0xA4B66A9ECB5C65C5C482493988BDB959DC70308762A62A97A6A568C843F32197",
-        "deployer_address": "0x9F403140BC0574D7D36EA472B82DAA1BBD4EF327",
+        "deployment_tx": "0xa4b66a9ecb5c65c5c482493988bdb959dc70308762a62a97a6a568c843f32197",
+        "deployer_address": "0x9F403140Bc0574D7d36eA472b82DAa1Bbd4eF327",
         "deployment_date": "2023-07-14 02:29:09"
     },
     {
@@ -205,8 +205,8 @@
         "name": null,
         "owner_project": "dmail-web",
         "usage_category": "community",
-        "deployment_tx": "0xEE158EC610C12EBC86EA849D2153D0AF16FBCC216D1C6E0E4B3C406FBBD4EBA7",
-        "deployer_address": "0x0FF213846D42528A4CA24F8079F85B8044ACFA7B",
+        "deployment_tx": "0xee158ec610c12ebc86ea849d2153d0af16fbcc216d1c6e0e4b3c406fbbd4eba7",
+        "deployer_address": "0x0fF213846D42528A4CA24f8079f85b8044AcfA7B",
         "deployment_date": "2023-10-18 06:02:11"
     },
     {
@@ -215,8 +215,8 @@
         "name": "USDbC",
         "owner_project": "circlefin",
         "usage_category": "stablecoin",
-        "deployment_tx": "0x0XB798C04A57BE6B93FC459D18AF6D1D57299E014CDBAEAF6544D64662AF0794CB",
-        "deployer_address": "0x0X3885226C26C467B342220132EC9D0B311B2DD43C",
+        "deployment_tx": "0xb798c04a57be6b93fc459d18af6d1d57299e014cdbaeaf6544d64662af0794cb",
+        "deployer_address": "0x3885226c26c467B342220132ec9d0b311b2DD43c",
         "deployment_date": "2023-08-01 18:22:41"
     },
     {
@@ -225,8 +225,8 @@
         "name": "Google Cloud Oracle",
         "owner_project": "layer-zero",
         "usage_category": "cc_communication",
-        "deployment_tx": "0x7384B8D83EFAD30D236DE96D3FD3250CF6346D0E8740CA2DF34C7A92FB83309D",
-        "deployer_address": "0x5EE2B0FD8D964CB50E787DB4FF176D7BBB0FD180",
+        "deployment_tx": "0x7384b8d83efad30d236de96d3fd3250cf6346d0e8740ca2df34c7a92fb83309d",
+        "deployer_address": "0x5EE2B0fd8d964cB50e787DB4fF176D7bbb0fD180",
         "deployment_date": "2023-09-09 00:24:23"
     },
     {
@@ -235,8 +235,8 @@
         "name": "Seadrop",
         "owner_project": "open-sea",
         "usage_category": "nft_marketplace",
-        "deployment_tx": "0x0X4ED0C1A72A4D28EE4BF85EF5C3EF5503F069184D7B2461B9C71FF8097ABFC166",
-        "deployer_address": "0x0X63B81972320B5B8D1C1FC90E29F145380B5B9BD4",
+        "deployment_tx": "0x4ed0c1a72a4d28ee4bf85ef5c3ef5503f069184d7b2461b9c71ff8097abfc166",
+        "deployer_address": "0x63B81972320b5B8d1C1fC90E29F145380b5B9bD4",
         "deployment_date": "2023-07-14 15:46:07"
     },
     {
@@ -245,19 +245,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x4E6BA7AFCFEB345A5F3EBBDCA43BF414C8401954A1F7149870D39316FA8836B4",
-        "deployer_address": "0x8CABD1833C116A33B953DAA4E2A6FAB6211B6044",
+        "deployment_tx": "0x4e6ba7afcfeb345a5f3ebbdca43bf414c8401954a1f7149870d39316fa8836b4",
+        "deployer_address": "0x8CABd1833c116A33b953DAa4E2A6FAB6211b6044",
         "deployment_date": "2024-06-04 22:12:51"
-    },
-    {
-        "address": "0xD1253aFc33386D9F0d546f1e5B105b328Ba1557a",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0x9F2A9F426985C2DF85A8685A7D4DB7C3E4C07207BE57D7C811551170146AB6A5",
-        "deployer_address": "0x43C58D32F1C842011C27FFF9BEC17A35089F4048",
-        "deployment_date": "2024-04-10 18:27:01"
     },
     {
         "address": "0x042c37762d1D126Bc61Eac2F5cEb7a96318f5DB9",
@@ -265,9 +255,19 @@
         "name": null,
         "owner_project": "tarot-finance",
         "usage_category": null,
-        "deployment_tx": "0x0X8B5B215CCA75485701330E6C0DFD2499F22AD1FA71761271FD037235E2C66ADE",
-        "deployer_address": "0x0X5B0390BCCCA1F040D8993EB6E4CE8DED93721765",
+        "deployment_tx": "0x8b5b215cca75485701330e6c0dfd2499f22ad1fa71761271fd037235e2c66ade",
+        "deployer_address": "0x5b0390bccCa1F040d8993eB6e4ce8DeD93721765",
         "deployment_date": "2024-01-29 15:21:11"
+    },
+    {
+        "address": "0xD1253aFc33386D9F0d546f1e5B105b328Ba1557a",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0x9f2a9f426985c2df85a8685a7d4db7c3e4c07207be57d7c811551170146ab6a5",
+        "deployer_address": "0x43C58D32f1C842011c27FFf9Bec17A35089F4048",
+        "deployment_date": "2024-04-10 18:27:01"
     },
     {
         "address": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
@@ -275,8 +275,8 @@
         "name": "Router",
         "owner_project": "aerodrome-finance",
         "usage_category": "dex",
-        "deployment_tx": "0x65EAA9AD6A9811C7A7E2B896CB0D074A1CD948DD8252734DFA830A68B3C5CD03",
-        "deployer_address": "0xE83F922C34A1962E9AE9F52B59E18239764F2818",
+        "deployment_tx": "0x65eaa9ad6a9811c7a7e2b896cb0d074a1cd948dd8252734dfa830a68b3c5cd03",
+        "deployer_address": "0xe83f922C34A1962e9aE9F52B59e18239764f2818",
         "deployment_date": "2023-08-28 02:42:53"
     },
     {
@@ -285,19 +285,9 @@
         "name": "LiFiDiamond",
         "owner_project": "lifinance",
         "usage_category": "bridge",
-        "deployment_tx": "0x0X598D00B97A13516605977159679F258C57F0680B8F5A6D7571E087A326B53573",
-        "deployer_address": "0x0X11F11121DF7256C40339393B0FB045321022CE44",
+        "deployment_tx": "0x598d00b97a13516605977159679f258c57f0680b8f5a6d7571e087a326b53573",
+        "deployer_address": "0x11F11121DF7256C40339393b0FB045321022ce44",
         "deployment_date": "2023-08-15 08:40:07"
-    },
-    {
-        "address": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-        "chain_id": "eip155-8453",
-        "name": "FriendtechSharesV1",
-        "owner_project": "friend-tech",
-        "usage_category": "community",
-        "deployment_tx": "0xA7EBA644182D78C4568364E00B0320A9FDE9C1FE779CDBEC6941FB7443D14C01",
-        "deployer_address": "0xDD9176EA3E7559D6B68B537EF555D3E89403F742",
-        "deployment_date": "2023-08-10 06:50:27"
     },
     {
         "address": "0x5FF292d70bA9cD9e7CCb313782811b3D7120535f",
@@ -305,9 +295,19 @@
         "name": null,
         "owner_project": "avantis-labs",
         "usage_category": null,
-        "deployment_tx": "0x95CE909B7A741A51DD7885005ACFCFE1914804F333518868C387E91EC7AA5577",
-        "deployer_address": "0xDEF54C048119EE522D73D8BA08F4641578DA142F",
+        "deployment_tx": "0x95ce909b7a741a51dd7885005acfcfe1914804f333518868c387e91ec7aa5577",
+        "deployer_address": "0xDef54C048119eE522D73d8bA08F4641578da142f",
         "deployment_date": "2024-01-27 07:45:49"
+    },
+    {
+        "address": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
+        "chain_id": "eip155-8453",
+        "name": "FriendtechSharesV1",
+        "owner_project": "friend-tech",
+        "usage_category": "community",
+        "deployment_tx": "0xa7eba644182d78c4568364e00b0320a9fde9c1fe779cdbec6941fb7443d14c01",
+        "deployer_address": "0xdd9176eA3E7559D6B68b537eF555D3e89403f742",
+        "deployment_date": "2023-08-10 06:50:27"
     },
     {
         "address": "0x0389879e0156033202C44BF784ac18fC02edeE4f",
@@ -315,8 +315,8 @@
         "name": "Route Processor 4",
         "owner_project": "sushi",
         "usage_category": "dex",
-        "deployment_tx": "0x541F3F0FABD8E6F389DFE9A5A5D65C9F7EEA2E4EDABF7FA53C2B7D6C133CC346",
-        "deployer_address": "0x69AEA8E393E14945EC22F33B422E7269967E6327",
+        "deployment_tx": "0x541f3f0fabd8e6f389dfe9a5a5d65c9f7eea2e4edabf7fa53c2b7d6c133cc346",
+        "deployer_address": "0x69aea8e393e14945EC22f33B422e7269967e6327",
         "deployment_date": "2024-02-25 11:27:37"
     },
     {
@@ -325,8 +325,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xC44993B21C86E51EE740737DB98FC06F45833BFE11A8CF67B523B82EE0F5210D",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
+        "deployment_tx": "0xc44993b21c86e51ee740737db98fc06f45833bfe11a8cf67b523b82ee0f5210d",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
         "deployment_date": "2024-04-30 03:19:53"
     },
     {
@@ -335,8 +335,8 @@
         "name": "Clubs",
         "owner_project": "friend-tech",
         "usage_category": "community",
-        "deployment_tx": "0xAB49C03EADBA232C9CECEEAABAD7BDACDD306D8AA7102F7D5A747206D736BABA",
-        "deployer_address": "0xC1E747389C47EE3F0046969291E42023D9567934",
+        "deployment_tx": "0xab49c03eadba232c9ceceeaabad7bdacdd306d8aa7102f7d5a747206d736baba",
+        "deployer_address": "0xc1E747389c47Ee3F0046969291e42023D9567934",
         "deployment_date": "2024-05-02 16:51:05"
     },
     {
@@ -345,8 +345,8 @@
         "name": "Degen",
         "owner_project": "degen-token",
         "usage_category": "fungible_tokens",
-        "deployment_tx": "0xCEA27F1618E28ECC59B2FAED86CDEC29A92218261FE9EFE374A39201E93545C5",
-        "deployer_address": "0x3C12B77AE8B7DD1FEB63D1D6A2A819ACDA0A41D2",
+        "deployment_tx": "0xcea27f1618e28ecc59b2faed86cdec29a92218261fe9efe374a39201e93545c5",
+        "deployer_address": "0x3C12B77aE8B7DD1FEB63D1D6a2A819AcdA0a41d2",
         "deployment_date": "2024-01-07 15:25:35"
     },
     {
@@ -355,8 +355,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x1086BCC713E7B3F3E3BADF7897B7F6E0F553E89E3D37B09B7EE91ED976E3E138",
-        "deployer_address": "0xED55E260CD9EC62815CF6FDD75C5020DA3B062D0",
+        "deployment_tx": "0x1086bcc713e7b3f3e3badf7897b7f6e0f553e89e3d37b09b7ee91ed976e3e138",
+        "deployer_address": "0xED55E260cD9Ec62815Cf6fDd75C5020Da3B062D0",
         "deployment_date": "2023-11-17 00:06:39"
     },
     {
@@ -365,8 +365,8 @@
         "name": "V2 Router02",
         "owner_project": "uniswap",
         "usage_category": "dex",
-        "deployment_tx": "0xBB673C483292E03D202E95A023048B8BDA459BF12402E7688F7E10BE8B4DC67D",
-        "deployer_address": "0xF87BC5535602077D340806D71F805EA9907A843D",
+        "deployment_tx": "0xbb673c483292e03d202e95a023048b8bda459bf12402e7688f7e10be8b4dc67d",
+        "deployer_address": "0xf87BC5535602077d340806D71f805EA9907a843D",
         "deployment_date": "2023-08-14 22:23:01"
     },
     {
@@ -375,8 +375,8 @@
         "name": "NonfungiblePositionManager",
         "owner_project": "uniswap",
         "usage_category": "dex",
-        "deployment_tx": "0xEAE91B4BABC87902B6D1AC992A8CF7463A2C5B105907237BFDECAD8136471FB3",
-        "deployer_address": "0x7AC7499F3754B65CF9089DB328EF51151A78EC00",
+        "deployment_tx": "0xeae91b4babc87902b6d1ac992a8cf7463a2c5b105907237bfdecad8136471fb3",
+        "deployer_address": "0x7AC7499f3754B65CF9089db328ef51151a78EC00",
         "deployment_date": "2023-07-16 18:39:35"
     },
     {
@@ -385,8 +385,8 @@
         "name": "RouterETH",
         "owner_project": "stargate-finance",
         "usage_category": "bridge",
-        "deployment_tx": "0x2A4CD177AB46B17EF5546843E497A5737F97EBC2E062B4D3BB7B82D91054F895",
-        "deployer_address": "0x1D7C6783328C145393E84FB47A7F7C548F5EE28D",
+        "deployment_tx": "0x2a4cd177ab46b17ef5546843e497a5737f97ebc2e062b4d3bb7b82d91054f895",
+        "deployer_address": "0x1D7C6783328C145393e84fb47a7f7C548f5Ee28d",
         "deployment_date": "2023-08-03 16:56:37"
     },
     {
@@ -395,8 +395,8 @@
         "name": "MetaAggregationRouterV2",
         "owner_project": "kyber-swap",
         "usage_category": "dex",
-        "deployment_tx": "0x984C6462905C694BB7F1182EB12EE17ED9B0A9FC749D80A4E81956AB02620F81",
-        "deployer_address": "0x1874028262F1F4B2DD1F2700A72EE8B9B7C69090",
+        "deployment_tx": "0x984c6462905c694bb7f1182eb12ee17ed9b0a9fc749d80a4e81956ab02620f81",
+        "deployer_address": "0x1874028262F1F4B2DD1F2700A72Ee8b9b7C69090",
         "deployment_date": "2023-08-22 07:15:25"
     },
     {
@@ -405,8 +405,8 @@
         "name": null,
         "owner_project": "across",
         "usage_category": null,
-        "deployment_tx": "0xE01559BB814C22BA6BAD9D9C09D7BB2026313CE01F349DFCDE30FC452CAD7BD8",
-        "deployer_address": "0x9A8F92A830A5CB89A3816E3D267CB7791C16B04D",
+        "deployment_tx": "0xe01559bb814c22ba6bad9d9c09d7bb2026313ce01f349dfcde30fc452cad7bd8",
+        "deployer_address": "0x9A8f92a830A5cB89a3816e3D267CB7791c16b04D",
         "deployment_date": "2023-08-04 03:18:23"
     },
     {
@@ -415,8 +415,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xEAEC0C836AE3EF42EC5E93850D2DF84B0893988D73F0A48A99B4AFC55199AA72",
-        "deployer_address": "0x84032C3A46E6D14EB7249F6EC90E28A5A3948C4B",
+        "deployment_tx": "0xeaec0c836ae3ef42ec5e93850d2df84b0893988d73f0a48a99b4afc55199aa72",
+        "deployer_address": "0x84032C3A46E6D14eb7249f6Ec90E28A5A3948C4b",
         "deployment_date": "2024-06-24 09:11:07"
     },
     {
@@ -425,8 +425,8 @@
         "name": "Router",
         "owner_project": "okx",
         "usage_category": "dex",
-        "deployment_tx": "0x7109CB328D7DADC20F3C8056760669D82E01622439DF0A3A9C03E9ED64BE319E",
-        "deployer_address": "0x06C95A3934D94D5AE5BF54731BD2840CEFEE6F87",
+        "deployment_tx": "0x7109cb328d7dadc20f3c8056760669d82e01622439df0a3a9c03e9ed64be319e",
+        "deployer_address": "0x06C95a3934d94d5ae5bf54731bD2840ceFee6F87",
         "deployment_date": "2023-07-31 10:53:47"
     },
     {
@@ -435,8 +435,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xF64BF173A5749EC4B81234D2E49CF454B59FD96C437D4D9E1BB17F7A1E90AAFF",
-        "deployer_address": "0xAD33802231D755C5924E6C0DE0E7F37DBBE1A475",
+        "deployment_tx": "0xf64bf173a5749ec4b81234d2e49cf454b59fd96c437d4d9e1bb17f7a1e90aaff",
+        "deployer_address": "0xAd33802231D755c5924E6c0de0E7F37dBbe1a475",
         "deployment_date": "2024-04-01 06:14:23"
     },
     {
@@ -445,9 +445,19 @@
         "name": "Aggregation Router V6",
         "owner_project": "1-inch",
         "usage_category": "dex",
-        "deployment_tx": "0x57ED1CAFCE33FE6741CB1AC6932B482990038D1470FB8052D48D588A4BF22300",
-        "deployer_address": "0x323D2567433FA40F4DE372E53C4B996BF9A7100D",
+        "deployment_tx": "0x57ed1cafce33fe6741cb1ac6932b482990038d1470fb8052d48d588a4bf22300",
+        "deployer_address": "0x323D2567433fa40f4De372E53C4B996Bf9A7100d",
         "deployment_date": "2024-02-12 14:56:01"
+    },
+    {
+        "address": "0x6814acc39d3fBFC0581c0bC8aB6942e8B6b0D43d",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0x84362a610b372abc1db5d0c36fccb223ffdbda92c63b9414da1ed1f35685243b",
+        "deployer_address": "0xF447e2805f08E710fee5815A75e9CC40591e989A",
+        "deployment_date": "2024-04-25 13:19:25"
     },
     {
         "address": "0x31C7a231aBFA07E42Af4f620e0193a426E82c7F7",
@@ -455,8 +465,8 @@
         "name": "Faulty Router",
         "owner_project": null,
         "usage_category": "dex",
-        "deployment_tx": "0x0297BE1EDE03E7A15FE972A34234F78390FC6FB9C5CB3AEDD1F86023DF247ADF",
-        "deployer_address": "0x369B23F0036D13AF1293F4C35251B5918CD52175",
+        "deployment_tx": "0x0297be1ede03e7a15fe972a34234f78390fc6fb9c5cb3aedd1f86023df247adf",
+        "deployer_address": "0x369b23F0036D13aF1293f4C35251b5918cD52175",
         "deployment_date": "2024-03-29 16:14:17"
     },
     {
@@ -465,8 +475,8 @@
         "name": "EIP-4844 is Based",
         "owner_project": "base-org",
         "usage_category": "non_fungible_tokens",
-        "deployment_tx": "0xBF0941986C3A6F4C12E8E3297A21D0B32D7B8C1FE9EE0453AEB403C3374F54E8",
-        "deployer_address": "0x83957EF9DF51257BD59743FCBDE02F2752D6498D",
+        "deployment_tx": "0xbf0941986c3a6f4c12e8e3297a21d0b32d7b8c1fe9ee0453aeb403c3374f54e8",
+        "deployer_address": "0x83957ef9df51257bD59743FcBde02f2752d6498D",
         "deployment_date": "2024-03-13 16:26:47"
     },
     {
@@ -475,19 +485,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": "trading",
-        "deployment_tx": "0x6AFEDBD160B7702AB90C9E10E00EC56D832E712A88C5F4B8957FEB193A7F84D7",
-        "deployer_address": "0xADE256E1C2763B8766EFE1EEB7C578D93F621F6F",
+        "deployment_tx": "0x6afedbd160b7702ab90c9e10e00ec56d832e712a88c5f4b8957feb193a7f84d7",
+        "deployer_address": "0xade256E1c2763B8766eFE1eEb7C578D93f621f6f",
         "deployment_date": "2024-05-27 23:03:45"
-    },
-    {
-        "address": "0x6814acc39d3fBFC0581c0bC8aB6942e8B6b0D43d",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0x84362A610B372ABC1DB5D0C36FCCB223FFDBDA92C63B9414DA1ED1F35685243B",
-        "deployer_address": "0xF447E2805F08E710FEE5815A75E9CC40591E989A",
-        "deployment_date": "2024-04-25 13:19:25"
     },
     {
         "address": "0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86",
@@ -495,8 +495,8 @@
         "name": "SmartRouter",
         "owner_project": "pancakeswap",
         "usage_category": "dex",
-        "deployment_tx": "0xAB9000EF41B812C5142F6770604E8F4A4F33B995B2C2F0734F522901DF551C2B",
-        "deployer_address": "0x3AF75AF6F056D4D72C1675DA919AEBF908A109D6",
+        "deployment_tx": "0xab9000ef41b812c5142f6770604e8f4a4f33b995b2c2f0734f522901df551c2b",
+        "deployer_address": "0x3af75af6F056d4D72c1675dA919aebF908A109D6",
         "deployment_date": "2023-08-21 10:59:55"
     },
     {
@@ -505,29 +505,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x06F3C9DC01F0E79631C4144E62BE1386A28952DAF344B39454659C3CDE74CD79",
-        "deployer_address": "0xAD33802231D755C5924E6C0DE0E7F37DBBE1A475",
+        "deployment_tx": "0x06f3c9dc01f0e79631c4144e62be1386a28952daf344b39454659c3cde74cd79",
+        "deployer_address": "0xAd33802231D755c5924E6c0de0E7F37dBbe1a475",
         "deployment_date": "2024-04-13 15:08:21"
-    },
-    {
-        "address": "0x0000000000000068F116a894984e2DB1123eB395",
-        "chain_id": "eip155-8453",
-        "name": "Seaport V15",
-        "owner_project": "open-sea",
-        "usage_category": "nft_marketplace",
-        "deployment_tx": "0x0X41FACE614C9081B75B9F7AF976B62BC005C76D0498E262ED540E65889AD5E929",
-        "deployer_address": "0x0X63B81972320B5B8D1C1FC90E29F145380B5B9BD4",
-        "deployment_date": "2024-03-15 20:30:57"
-    },
-    {
-        "address": "0x1A8f43e01B78979EB4Ef7feBEC60F32c9A72f58E",
-        "chain_id": "eip155-8453",
-        "name": "Order Manager",
-        "owner_project": "bitkeep",
-        "usage_category": "dex",
-        "deployment_tx": "0x0X3F71317B014772752ABF185ED0AA41E6D1E28158F1CD0261FF96A996C5A0AF09",
-        "deployer_address": "0x0X3DF3C01B72DC5D63565AF0BCB20D847227C2201A",
-        "deployment_date": "2023-08-22 06:39:31"
     },
     {
         "address": "0x000000338300A9a80000C868A40085B15dd000D0",
@@ -535,9 +515,39 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x30C34697D874B61D4CE6F338CB91370EDE81EBF2FF4358292D17311A0B2AD41C",
-        "deployer_address": "0x9F37D91B4981A0C48DAE098281AABBF020C7AD15",
+        "deployment_tx": "0x30c34697d874b61d4ce6f338cb91370ede81ebf2ff4358292d17311a0b2ad41c",
+        "deployer_address": "0x9F37D91b4981a0C48DAe098281AaBbf020C7aD15",
         "deployment_date": "2024-03-20 21:38:31"
+    },
+    {
+        "address": "0x0000000000000068F116a894984e2DB1123eB395",
+        "chain_id": "eip155-8453",
+        "name": "Seaport V15",
+        "owner_project": "open-sea",
+        "usage_category": "nft_marketplace",
+        "deployment_tx": "0x41face614c9081b75b9f7af976b62bc005c76d0498e262ed540e65889ad5e929",
+        "deployer_address": "0x63B81972320b5B8d1C1fC90E29F145380b5B9bD4",
+        "deployment_date": "2024-03-15 20:30:57"
+    },
+    {
+        "address": "0x585fd0fdf3F9BC442F74F80E0F92E8450337632e",
+        "chain_id": "eip155-8453",
+        "name": "VirtualAssetEvents",
+        "owner_project": null,
+        "usage_category": "gaming",
+        "deployment_tx": "0xb528b3f3ba5d1c8a859b6eee117878c10e1c493425e913e443e4d28c7b851913",
+        "deployer_address": "0xb5B968c31832800eCfedebb05fE1Fe741d387BF4",
+        "deployment_date": "2024-07-02 19:31:55"
+    },
+    {
+        "address": "0x1A8f43e01B78979EB4Ef7feBEC60F32c9A72f58E",
+        "chain_id": "eip155-8453",
+        "name": "Order Manager",
+        "owner_project": "bitkeep",
+        "usage_category": "dex",
+        "deployment_tx": "0x3f71317b014772752abf185ed0aa41e6d1e28158f1cd0261ff96a996c5a0af09",
+        "deployer_address": "0x3DF3c01b72dC5d63565Af0bCB20d847227c2201A",
+        "deployment_date": "2023-08-22 06:39:31"
     },
     {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
@@ -545,8 +555,8 @@
         "name": "AERO",
         "owner_project": "aerodrome-finance",
         "usage_category": "fungible_tokens",
-        "deployment_tx": "0x5727B7B346EB94D6F139E10E7AC922158DACD84F5D2844C01CF815B29D9BA58C",
-        "deployer_address": "0xE83F922C34A1962E9AE9F52B59E18239764F2818",
+        "deployment_tx": "0x5727b7b346eb94d6f139e10e7ac922158dacd84f5d2844c01cf815b29d9ba58c",
+        "deployer_address": "0xe83f922C34A1962e9aE9F52B59e18239764f2818",
         "deployment_date": "2023-08-28 02:40:47"
     },
     {
@@ -555,8 +565,8 @@
         "name": "Order Manager",
         "owner_project": null,
         "usage_category": "dex",
-        "deployment_tx": "0xAABE125BF27AD4AC919A3E1BADF18FCD57817B225AC4EA29576FD4178AFE3D0B",
-        "deployer_address": "0x3D203C9B27CE7706EA32E792CC9D9ABEF015F780",
+        "deployment_tx": "0xaabe125bf27ad4ac919a3e1badf18fcd57817b225ac4ea29576fd4178afe3d0b",
+        "deployer_address": "0x3d203c9b27Ce7706ea32e792cC9D9ABEF015f780",
         "deployment_date": "2024-02-15 21:23:01"
     },
     {
@@ -565,19 +575,9 @@
         "name": "Order Manager",
         "owner_project": "bitkeep",
         "usage_category": "dex",
-        "deployment_tx": "0x0XF83D8B9D0258DA6DD18632AA0AD3310EA737E726636F6E2D67FF655640A72349",
-        "deployer_address": "0x0X3DF3C01B72DC5D63565AF0BCB20D847227C2201A",
+        "deployment_tx": "0xf83d8b9d0258da6dd18632aa0ad3310ea737e726636f6e2d67ff655640a72349",
+        "deployer_address": "0x3DF3c01b72dC5d63565Af0bCB20d847227c2201A",
         "deployment_date": "2024-02-23 09:28:33"
-    },
-    {
-        "address": "0x585fd0fdf3F9BC442F74F80E0F92E8450337632e",
-        "chain_id": "eip155-8453",
-        "name": "VirtualAssetEvents",
-        "owner_project": null,
-        "usage_category": "gaming",
-        "deployment_tx": "0x0XB528B3F3BA5D1C8A859B6EEE117878C10E1C493425E913E443E4D28C7B851913",
-        "deployer_address": "0x0XB5B968C31832800ECFEDEBB05FE1FE741D387BF4",
-        "deployment_date": "2024-07-02 19:31:55"
     },
     {
         "address": "0x5e6bB47D89Fea09cf5a75ea7E3Fa2e804798Eb55",
@@ -585,19 +585,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": "trading",
-        "deployment_tx": "0x6422898DE8EF595379B18AC9D7D625605CF13B418DB74922A969243092BE0B96",
-        "deployer_address": "0x9921446A126711189CC635E531FE7FD27BC50A97",
+        "deployment_tx": "0x6422898de8ef595379b18ac9d7d625605cf13b418db74922a969243092be0b96",
+        "deployer_address": "0x9921446a126711189cC635E531fe7FD27BC50a97",
         "deployment_date": "2024-04-11 07:34:31"
-    },
-    {
-        "address": "0x0bD4887f7D41B35CD75DFF9FfeE2856106f86670",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xFA05C4A82780FC9F210DC951605AC6114765704C0433BB526EAF5B2052A663B2",
-        "deployer_address": "0xC1E747389C47EE3F0046969291E42023D9567934",
-        "deployment_date": "2024-05-02 16:51:03"
     },
     {
         "address": "0x6Cb442acF35158D5eDa88fe602221b67B400Be3E",
@@ -605,9 +595,19 @@
         "name": "UniversalRouter",
         "owner_project": "aerodrome-finance",
         "usage_category": "dex",
-        "deployment_tx": "0x8CCE9700DC1252BEBD66545063C83EC64F88F0CB15C1E36AD65AE032BA131AA4",
-        "deployer_address": "0x51CA29D9828867C363572C37C424E3D6B380C61E",
+        "deployment_tx": "0x8cce9700dc1252bebd66545063c83ec64f88f0cb15c1e36ad65ae032ba131aa4",
+        "deployer_address": "0x51ca29d9828867C363572C37c424E3d6b380c61e",
         "deployment_date": "2024-04-30 11:41:59"
+    },
+    {
+        "address": "0x0bD4887f7D41B35CD75DFF9FfeE2856106f86670",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xfa05c4a82780fc9f210dc951605ac6114765704c0433bb526eaf5b2052a663b2",
+        "deployer_address": "0xc1E747389c47Ee3F0046969291e42023D9567934",
+        "deployment_date": "2024-05-02 16:51:03"
     },
     {
         "address": "0x3a23F943181408EAC424116Af7b7790c94Cb97a5",
@@ -615,8 +615,8 @@
         "name": "SocketGateway",
         "owner_project": "socket",
         "usage_category": "cc_communication",
-        "deployment_tx": "0x0X77C8206E66B3D5C5EDA5031BEC9D2D2E3CF2955B68F916F09D0646D67FCC5482",
-        "deployer_address": "0x0XE8DD38E673A93CCFC2E3D7053EFCCB5C93F49365",
+        "deployment_tx": "0x77c8206e66b3d5c5eda5031bec9d2d2e3cf2955b68f916f09d0646d67fcc5482",
+        "deployer_address": "0xe8dD38E673A93ccFC2E3d7053efcCb5c93F49365",
         "deployment_date": "2023-07-29 09:53:05"
     },
     {
@@ -625,8 +625,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x0A680AFFAA48A8CA527DFB1C74EF693D5E2AB59B789682BA686D862943DC308A",
-        "deployer_address": "0x84032C3A46E6D14EB7249F6EC90E28A5A3948C4B",
+        "deployment_tx": "0x0a680affaa48a8ca527dfb1c74ef693d5e2ab59b789682ba686d862943dc308a",
+        "deployer_address": "0x84032C3A46E6D14eb7249f6Ec90E28A5A3948C4b",
         "deployment_date": "2024-07-08 03:44:03"
     },
     {
@@ -635,19 +635,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x837CE1EF23B1D6E40CF8DD467D3BB9B1F9BF92E5432076263C50C7CA1BD66705",
-        "deployer_address": "0x21B92A8FE81F6F300C03D8A3A403AAC32C2FACC2",
+        "deployment_tx": "0x837ce1ef23b1d6e40cf8dd467d3bb9b1f9bf92e5432076263c50c7ca1bd66705",
+        "deployer_address": "0x21b92A8FE81f6F300c03D8a3A403aaC32C2fAcc2",
         "deployment_date": "2024-03-24 01:01:49"
-    },
-    {
-        "address": "0xB815e2C839fDafe8Fbb8589EdbB214B8B64843f6",
-        "chain_id": "eip155-8453",
-        "name": "Faulty Router",
-        "owner_project": null,
-        "usage_category": "dex",
-        "deployment_tx": "0x5800336371F619EC7AEC4F0DD5DB51193D939D5BFB69FC41A9F1E37D10D2ECB7",
-        "deployer_address": "0x2B99708E8D3CCCD41BAAEAC4FD6057D3B9A91ADD",
-        "deployment_date": "2024-03-29 22:15:55"
     },
     {
         "address": "0xE7351Fd770A37282b91D153Ee690B63579D6dd7f",
@@ -655,49 +645,19 @@
         "name": "DIn: Destination",
         "owner_project": "debridge-finance",
         "usage_category": "bridge",
-        "deployment_tx": "0x88D3E0FA2C6BC19EEF96D0E59A3C69499C6C3CC41EBD89026241ED52EF22AE91",
-        "deployer_address": "0xBDA458DFC28021DEBD72060671FC350FA5CB39E5",
+        "deployment_tx": "0x88d3e0fa2c6bc19eef96d0e59a3c69499c6c3cc41ebd89026241ed52ef22ae91",
+        "deployer_address": "0xbda458dfc28021dEbD72060671Fc350fA5CB39e5",
         "deployment_date": "2023-08-01 11:59:17"
     },
     {
-        "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
+        "address": "0xB815e2C839fDafe8Fbb8589EdbB214B8B64843f6",
         "chain_id": "eip155-8453",
-        "name": "Brett",
-        "owner_project": null,
-        "usage_category": "fungible_tokens",
-        "deployment_tx": "0x9C18C50988784C501E7FF16E913F2BA5C6B6E504ED6D7D63914326368A278B50",
-        "deployer_address": "0x46F64BEC31EAF281176F9BB5899107A80E932B45",
-        "deployment_date": "2024-02-24 06:47:51"
-    },
-    {
-        "address": "0x32AED3Bce901DA12ca8489788F3A99fCe1056e14",
-        "chain_id": "eip155-8453",
-        "name": "Router",
-        "owner_project": "paraswap",
-        "usage_category": "dex",
-        "deployment_tx": "0x954CA145BA39CEB6B300E49BC9807B70C50527AFFF5B4737EA91DA2D3FA87FFD",
-        "deployer_address": "0xEC219699D2FAEB3F416C116DE60CDB4AAF2F8D7C",
-        "deployment_date": "2023-07-19 12:13:33"
-    },
-    {
-        "address": "0x818e30dC91322DD3dCF2F8906c8294f49ccdc101",
-        "chain_id": "eip155-8453",
-        "name": "Order Manager",
+        "name": "Faulty Router",
         "owner_project": null,
         "usage_category": "dex",
-        "deployment_tx": "0xDDB5B17D2EB61E2AE46080EDA6407299E1C972ADDB350A5ACAC3B73002943B93",
-        "deployer_address": "0x0084E3C31055DBDE417ACDE052FB1CEDA813FDB0",
-        "deployment_date": "2024-02-05 18:06:23"
-    },
-    {
-        "address": "0x3B9728bD65Ca2c11a817ce39A6e91808CceeF6FD",
-        "chain_id": "eip155-8453",
-        "name": "IHF",
-        "owner_project": null,
-        "usage_category": "fungible_tokens",
-        "deployment_tx": "0x853BF4C76C3286F2CD11F20DA455BA889A8D745A2479D53BAAAD673D9755A33A",
-        "deployer_address": "0x4EE2ACF64A2C0DB6A1DA0A4B534B08F036D0DA41",
-        "deployment_date": "2024-06-03 07:30:15"
+        "deployment_tx": "0x5800336371f619ec7aec4f0dd5db51193d939d5bfb69fc41a9f1e37d10d2ecb7",
+        "deployer_address": "0x2B99708E8D3CccD41baAeac4FD6057D3B9A91aDd",
+        "deployment_date": "2024-03-29 22:15:55"
     },
     {
         "address": "0x10547695106686D1bB4fDFfE86AADA2C2bAc80f6",
@@ -705,9 +665,59 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x13EA221D6A3826701BBBAFD8D423FA449EF9533B30DE3281E5238F51E2E7DFEF",
-        "deployer_address": "0xF5B101554674B35ADDB61035D3426703304CC947",
+        "deployment_tx": "0x13ea221d6a3826701bbbafd8d423fa449ef9533b30de3281e5238f51e2e7dfef",
+        "deployer_address": "0xF5B101554674B35addb61035d3426703304Cc947",
         "deployment_date": "2024-06-23 16:52:51"
+    },
+    {
+        "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
+        "chain_id": "eip155-8453",
+        "name": "Brett",
+        "owner_project": null,
+        "usage_category": "fungible_tokens",
+        "deployment_tx": "0x9c18c50988784c501e7ff16e913f2ba5c6b6e504ed6d7d63914326368a278b50",
+        "deployer_address": "0x46F64BeC31Eaf281176f9bb5899107A80e932B45",
+        "deployment_date": "2024-02-24 06:47:51"
+    },
+    {
+        "address": "0xeC63739dCC1dFD84dcB2617Af57ba5c481A1F6aE",
+        "chain_id": "eip155-8453",
+        "name": "VirtualAssetEvents",
+        "owner_project": null,
+        "usage_category": "gaming",
+        "deployment_tx": "0xee5baf4331b5648bf30c34dcd1e8e7dcc16395e9f1cd779eabe18c9351796f0f",
+        "deployer_address": "0xb5B968c31832800eCfedebb05fE1Fe741d387BF4",
+        "deployment_date": "2024-07-09 07:46:49"
+    },
+    {
+        "address": "0x32AED3Bce901DA12ca8489788F3A99fCe1056e14",
+        "chain_id": "eip155-8453",
+        "name": "Router",
+        "owner_project": "paraswap",
+        "usage_category": "dex",
+        "deployment_tx": "0x954ca145ba39ceb6b300e49bc9807b70c50527afff5b4737ea91da2d3fa87ffd",
+        "deployer_address": "0xEc219699D2FAEB3F416C116dE60Cdb4AAF2f8D7c",
+        "deployment_date": "2023-07-19 12:13:33"
+    },
+    {
+        "address": "0x3B9728bD65Ca2c11a817ce39A6e91808CceeF6FD",
+        "chain_id": "eip155-8453",
+        "name": "IHF",
+        "owner_project": null,
+        "usage_category": "fungible_tokens",
+        "deployment_tx": "0x853bf4c76c3286f2cd11f20da455ba889a8d745a2479d53baaad673d9755a33a",
+        "deployer_address": "0x4EE2Acf64A2C0DB6a1dA0a4b534B08F036D0Da41",
+        "deployment_date": "2024-06-03 07:30:15"
+    },
+    {
+        "address": "0x818e30dC91322DD3dCF2F8906c8294f49ccdc101",
+        "chain_id": "eip155-8453",
+        "name": "Order Manager",
+        "owner_project": null,
+        "usage_category": "dex",
+        "deployment_tx": "0xddb5b17d2eb61e2ae46080eda6407299e1c972addb350a5acac3b73002943b93",
+        "deployer_address": "0x0084e3C31055DBde417acDe052FB1cEdA813FdB0",
+        "deployment_date": "2024-02-05 18:06:23"
     },
     {
         "address": "0x1Fba6b0BBae2B74586fBA407Fb45Bd4788B7b130",
@@ -715,8 +725,8 @@
         "name": "Router",
         "owner_project": "bananagun",
         "usage_category": "dex",
-        "deployment_tx": "0xA926AC270D386B959343F29545BAC05A711C9DC6E363F7FF05A9ABA224C0B6EF",
-        "deployer_address": "0x37AAB97476BA8DC785476611006FD5DDA4EED66B",
+        "deployment_tx": "0xa926ac270d386b959343f29545bac05a711c9dc6e363f7ff05a9aba224c0b6ef",
+        "deployer_address": "0x37aAb97476bA8dC785476611006fD5dDA4eed66B",
         "deployment_date": "2024-03-05 19:27:35"
     },
     {
@@ -725,8 +735,8 @@
         "name": "Coin Earnings",
         "owner_project": "coinbase",
         "usage_category": "non_fungible_tokens",
-        "deployment_tx": "0x0X82D43C902D45310C611B17AD06AC45436B0E1548DBB7CA2D0D49BE3548B9B7D3",
-        "deployer_address": "0x0X52E6DE8B2AE95257E70B0E4B2321263A69594623",
+        "deployment_tx": "0x82d43c902d45310c611b17ad06ac45436b0e1548dbb7ca2d0d49be3548b9b7d3",
+        "deployer_address": "0x52E6De8B2AE95257E70B0E4B2321263a69594623",
         "deployment_date": "2024-02-15 23:32:45"
     },
     {
@@ -735,9 +745,19 @@
         "name": "Order Manager",
         "owner_project": null,
         "usage_category": "dex",
-        "deployment_tx": "0x22A6AB03C341B7E298B74513360219F93C5F22B35AA8CA917F5F823E374C703B",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
+        "deployment_tx": "0x22a6ab03c341b7e298b74513360219f93c5f22b35aa8ca917f5f823e374c703b",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
         "deployment_date": "2023-12-26 06:17:13"
+    },
+    {
+        "address": "0x6FBBa99eDD2Dd9f9dE4A6d7B7511752a32470322",
+        "chain_id": "eip155-8453",
+        "name": "Order Manager",
+        "owner_project": null,
+        "usage_category": "trading",
+        "deployment_tx": "0xa7a330fc72651037df63d6931d83e5bc27dba8f62bc65615f5b591a0f4855966",
+        "deployer_address": "0xEd564c8eb6fA88330fDD696d225049540b7bA6Bd",
+        "deployment_date": "2024-04-10 13:54:27"
     },
     {
         "address": "0xBCe954fBbE0C57e826e95b5aA03dA9ECDbc990Da",
@@ -745,8 +765,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x667B6C4C84414254D50195AB2E80D4400D063C1D8F707944EF841FFB602C69CD",
-        "deployer_address": "0x78EFA4004C5DA42C928D92BE3CD0183E3EA306EB",
+        "deployment_tx": "0x667b6c4c84414254d50195ab2e80d4400d063c1d8f707944ef841ffb602c69cd",
+        "deployer_address": "0x78eFa4004c5Da42C928D92bE3CD0183E3Ea306EB",
         "deployment_date": "2024-05-26 11:35:59"
     },
     {
@@ -755,19 +775,19 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x801C076084EB65C2895D8EA3C3D66F983B3266B270F9B1C27E54EBC1053C07B7",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
+        "deployment_tx": "0x801c076084eb65c2895d8ea3c3d66f983b3266b270f9b1c27e54ebc1053c07b7",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
         "deployment_date": "2024-04-19 03:33:49"
     },
     {
-        "address": "0x6FBBa99eDD2Dd9f9dE4A6d7B7511752a32470322",
+        "address": "0x5292d78c51FC76223a1Dd8236fA1ce80e3Ef4f68",
         "chain_id": "eip155-8453",
-        "name": "Order Manager",
+        "name": null,
         "owner_project": null,
-        "usage_category": "trading",
-        "deployment_tx": "0xA7A330FC72651037DF63D6931D83E5BC27DBA8F62BC65615F5B591A0F4855966",
-        "deployer_address": "0xED564C8EB6FA88330FDD696D225049540B7BA6BD",
-        "deployment_date": "2024-04-10 13:54:27"
+        "usage_category": null,
+        "deployment_tx": "0xbebcbf34af6758d085a64e971342a4a330034f7f5a6ee139fd748ffcb8fd1df6",
+        "deployer_address": "0x4Dd633BDBF175Df2157b5d88AFe1C0F9E9eB2f3d",
+        "deployment_date": "2024-04-26 15:48:39"
     },
     {
         "address": "0xFf404f58Aea7cA290DaBB6F62b8287FCE28A6863",
@@ -775,29 +795,9 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x4858F51793C0611C34B73B2796C367AB3FA035B98123D52228627F147D6F126C",
-        "deployer_address": "0x072EE9B012178945359D1DD0B1BACC98303236D0",
+        "deployment_tx": "0x4858f51793c0611c34b73b2796c367ab3fa035b98123d52228627f147d6f126c",
+        "deployer_address": "0x072ee9b012178945359d1dd0B1BACC98303236D0",
         "deployment_date": "2024-04-09 06:31:33"
-    },
-    {
-        "address": "0xeC63739dCC1dFD84dcB2617Af57ba5c481A1F6aE",
-        "chain_id": "eip155-8453",
-        "name": "VirtualAssetEvents",
-        "owner_project": null,
-        "usage_category": "gaming",
-        "deployment_tx": "0x0XEE5BAF4331B5648BF30C34DCD1E8E7DCC16395E9F1CD779EABE18C9351796F0F",
-        "deployer_address": "0x0XB5B968C31832800ECFEDEBB05FE1FE741D387BF4",
-        "deployment_date": "2024-07-09 07:46:49"
-    },
-    {
-        "address": "0xF5306fF1D4585721a512d08ed545f4F35dE272F9",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xF3FC860F8E30D2B929E2752882ED2482B49887826A20707AF8650990CDF4C755",
-        "deployer_address": "0x78EFA4004C5DA42C928D92BE3CD0183E3EA306EB",
-        "deployment_date": "2024-05-19 03:50:27"
     },
     {
         "address": "0x26637c9fDbD5Ecdd76a9E21Db7ea533e1B0713b6",
@@ -805,8 +805,8 @@
         "name": "Check In",
         "owner_project": "owlto-finance",
         "usage_category": "community",
-        "deployment_tx": "0x1D9AE1401AFA40DCB0B767ABBA87A6952641CC70D7E00C2C098FC7F5298DC663",
-        "deployer_address": "0x1B2EBFB9D27E298388625457B18D78AA5D4ED4B7",
+        "deployment_tx": "0x1d9ae1401afa40dcb0b767abba87a6952641cc70d7e00c2c098fc7f5298dc663",
+        "deployer_address": "0x1B2EBfb9D27E298388625457b18d78aa5D4ed4B7",
         "deployment_date": "2024-03-20 08:56:45"
     },
     {
@@ -815,8 +815,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xEC13E846DCCD80EC5A4984BDAA5A4EC30B8E280F18AC3B1306AA1FDA9DA3A0B9",
-        "deployer_address": "0xFBDBF7FFEB9F7C84AE917B5C85FCC24651B5D22D",
+        "deployment_tx": "0xec13e846dccd80ec5a4984bdaa5a4ec30b8e280f18ac3b1306aa1fda9da3a0b9",
+        "deployer_address": "0xFBdBf7FFEB9f7c84ae917B5C85fcC24651b5d22D",
         "deployment_date": "2024-05-13 22:01:31"
     },
     {
@@ -825,9 +825,19 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xBC3065903C59F125984400FD25E9699C84754EDAA1153E1F61B85764C7AC1203",
-        "deployer_address": "0xF7FAFF5C982CE9049BD13F3A82FE2AA429ED45DF",
+        "deployment_tx": "0xbc3065903c59f125984400fd25e9699c84754edaa1153e1f61b85764c7ac1203",
+        "deployer_address": "0xF7FafF5C982cE9049Bd13f3A82FE2aA429Ed45dF",
         "deployment_date": "2023-08-08 03:31:39"
+    },
+    {
+        "address": "0xF5306fF1D4585721a512d08ed545f4F35dE272F9",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xf3fc860f8e30d2b929e2752882ed2482b49887826a20707af8650990cdf4c755",
+        "deployer_address": "0x78eFa4004c5Da42C928D92bE3CD0183E3Ea306EB",
+        "deployment_date": "2024-05-19 03:50:27"
     },
     {
         "address": "0xAfb89a09D82FBDE58f18Ac6437B3fC81724e4dF6",
@@ -835,49 +845,9 @@
         "name": "DOG",
         "owner_project": null,
         "usage_category": "fungible_tokens",
-        "deployment_tx": "0x0X4E11AFA1C6DBE1539AD7EC5D1B770B2936C038EF766D5FFB264CF4CA2D98FFB0",
-        "deployer_address": "0x0X1D4B9B250B1BD41DAA35D94BF9204EC1B0494EE3",
+        "deployment_tx": "0x4e11afa1c6dbe1539ad7ec5d1b770b2936c038ef766d5ffb264cf4ca2d98ffb0",
+        "deployer_address": "0x1d4B9b250B1Bd41DAA35d94BF9204Ec1b0494eE3",
         "deployment_date": "2023-08-28 10:23:01"
-    },
-    {
-        "address": "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-        "chain_id": "eip155-8453",
-        "name": "Router",
-        "owner_project": "stargate-finance",
-        "usage_category": "dex",
-        "deployment_tx": "0xC57FFC414A5DFB71D97C463C897DB895B846D9BBB34AF5A4295C7EA33809BADF",
-        "deployer_address": "0x1D7C6783328C145393E84FB47A7F7C548F5EE28D",
-        "deployment_date": "2023-07-24 23:50:31"
-    },
-    {
-        "address": "0x5292d78c51FC76223a1Dd8236fA1ce80e3Ef4f68",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xBEBCBF34AF6758D085A64E971342A4A330034F7F5A6EE139FD748FFCB8FD1DF6",
-        "deployer_address": "0x4DD633BDBF175DF2157B5D88AFE1C0F9E9EB2F3D",
-        "deployment_date": "2024-04-26 15:48:39"
-    },
-    {
-        "address": "0x0000000000002Bdbf1Bf3279983603Ec279CC6dF",
-        "chain_id": "eip155-8453",
-        "name": "Multicaller",
-        "owner_project": "solady-vectorized",
-        "usage_category": "developer_tools",
-        "deployment_tx": "0x0X72C0BA19A1A72BC48DAEAE3E63B6D0D21C0AA20D333F4D2A5F256DA2579AD375",
-        "deployer_address": "0x0X1F5D295778796A8B9F29600A585AB73D452ACB1C",
-        "deployment_date": "2023-12-01 04:25:59"
-    },
-    {
-        "address": "0xAaB5A48CFC03Efa9cC34A2C1aAcCCB84b4b770e4",
-        "chain_id": "eip155-8453",
-        "name": "MultiSigOracle",
-        "owner_project": "layer-zero",
-        "usage_category": "cc_communication",
-        "deployment_tx": "0xDF4F9A2B9AAB5BF88FD46197D873DD62BAC0856C54AD72713605757775543AF6",
-        "deployer_address": "0x9F403140BC0574D7D36EA472B82DAA1BBD4EF327",
-        "deployment_date": "2023-07-14 02:34:33"
     },
     {
         "address": "0xD85Ee50da419cc5Af83a1e70A91d5C630b8C650a",
@@ -885,69 +855,29 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xECF16536C9BA50A76E18246B7A03B263D3A3E974CFA39FEB0BCA6934FEB9A0B3",
-        "deployer_address": "0xED55E260CD9EC62815CF6FDD75C5020DA3B062D0",
+        "deployment_tx": "0xecf16536c9ba50a76e18246b7a03b263d3a3e974cfa39feb0bca6934feb9a0b3",
+        "deployer_address": "0xED55E260cD9Ec62815Cf6fDd75C5020Da3B062D0",
         "deployment_date": "2024-06-05 08:29:05"
     },
     {
-        "address": "0x524254eedCd8221f8993BA234cB53771E68dcf4c",
+        "address": "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
         "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xD68512E9CEFB8945E99FD09B276384926C1B95E50A9E5C98942BE2CB49185FC4",
-        "deployer_address": "0x88E407F72661183CCE95AD6F719A92B04B996690",
-        "deployment_date": "2024-04-03 02:36:03"
+        "name": "Router",
+        "owner_project": "stargate-finance",
+        "usage_category": "dex",
+        "deployment_tx": "0xc57ffc414a5dfb71d97c463c897db895b846d9bbb34af5a4295c7ea33809badf",
+        "deployer_address": "0x1D7C6783328C145393e84fb47a7f7C548f5Ee28d",
+        "deployment_date": "2023-07-24 23:50:31"
     },
     {
-        "address": "0x4E5a7BC09C3144E5F5263509D261253f1480c674",
+        "address": "0x0000000000002Bdbf1Bf3279983603Ec279CC6dF",
         "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xA574237BCA5EAEF3F7D7374080B3E5B33B44C576E25F28A73AC0390E74D8B40D",
-        "deployer_address": "0xF0B874B406BF088734217B948AE98B4556BC5408",
-        "deployment_date": "2024-05-15 15:31:29"
-    },
-    {
-        "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0x03FA1020EA97D772D7A0F8F0D717DD75B7039C7679DF2B22F32D1F0B50ECF4F0",
-        "deployer_address": "0x48608159077516AFE77A04EBC0448EC32E6670C1",
-        "deployment_date": "2024-01-12 10:26:27"
-    },
-    {
-        "address": "0xD93cb7092Fc1767D53BEA920E229996befdEB4C9",
-        "chain_id": "eip155-8453",
-        "name": "VirtualAssetEvents",
-        "owner_project": null,
-        "usage_category": "gaming",
-        "deployment_tx": "0x0XE6D4A268623B3F818C37C38010BD6B497A770628168949C7AD69E32346B94DCC",
-        "deployer_address": "0x0XB5B968C31832800ECFEDEBB05FE1FE741D387BF4",
-        "deployment_date": "2024-07-02 19:34:13"
-    },
-    {
-        "address": "0x827922686190790b37229fd06084350E74485b72",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": "aerodrome-finance",
-        "usage_category": null,
-        "deployment_tx": "0xBBFB0DC32E306D817063859E0CE2D4C3E24453AF539DCCDE54A05CA8956D4FF5",
-        "deployer_address": "0x51CA29D9828867C363572C37C424E3D6B380C61E",
-        "deployment_date": "2024-04-30 11:33:05"
-    },
-    {
-        "address": "0xBf250AE227De43deDaF01ccBFD8CC83027efc1E2",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0xBA65DDC54CEB1FAE81F776AD6EE43DCA7FB8C258DE13C15ED4531209D9119B5C",
-        "deployer_address": "0xC1E747389C47EE3F0046969291E42023D9567934",
-        "deployment_date": "2024-05-02 16:51:05"
+        "name": "Multicaller",
+        "owner_project": "solady-vectorized",
+        "usage_category": "developer_tools",
+        "deployment_tx": "0x72c0ba19a1a72bc48daeae3e63b6d0d21c0aa20d333f4d2a5f256da2579ad375",
+        "deployer_address": "0x1F5D295778796a8b9f29600A585Ab73D452AcB1c",
+        "deployment_date": "2023-12-01 04:25:59"
     },
     {
         "address": "0x3EA5fF7cD3000eDE819fe74FCcd911537946217F",
@@ -955,9 +885,69 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x4EE6EB6E402E7723FC69D2BC9DBAEE9056BB5ACFC237E129AA4819ADC16C1581",
-        "deployer_address": "0x20328BA6871D5E0D1CC4F90C303F14B0DD82E3D1",
+        "deployment_tx": "0x4ee6eb6e402e7723fc69d2bc9dbaee9056bb5acfc237e129aa4819adc16c1581",
+        "deployer_address": "0x20328Ba6871D5e0d1Cc4F90c303f14B0DD82e3D1",
         "deployment_date": "2024-07-17 02:59:17"
+    },
+    {
+        "address": "0xAaB5A48CFC03Efa9cC34A2C1aAcCCB84b4b770e4",
+        "chain_id": "eip155-8453",
+        "name": "MultiSigOracle",
+        "owner_project": "layer-zero",
+        "usage_category": "cc_communication",
+        "deployment_tx": "0xdf4f9a2b9aab5bf88fd46197d873dd62bac0856c54ad72713605757775543af6",
+        "deployer_address": "0x9F403140Bc0574D7d36eA472b82DAa1Bbd4eF327",
+        "deployment_date": "2023-07-14 02:34:33"
+    },
+    {
+        "address": "0x4E5a7BC09C3144E5F5263509D261253f1480c674",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xa574237bca5eaef3f7d7374080b3e5b33b44c576e25f28a73ac0390e74d8b40d",
+        "deployer_address": "0xf0b874b406BF088734217b948Ae98B4556BC5408",
+        "deployment_date": "2024-05-15 15:31:29"
+    },
+    {
+        "address": "0xD93cb7092Fc1767D53BEA920E229996befdEB4C9",
+        "chain_id": "eip155-8453",
+        "name": "VirtualAssetEvents",
+        "owner_project": null,
+        "usage_category": "gaming",
+        "deployment_tx": "0xe6d4a268623b3f818c37c38010bd6b497a770628168949c7ad69e32346b94dcc",
+        "deployer_address": "0xb5B968c31832800eCfedebb05fE1Fe741d387BF4",
+        "deployment_date": "2024-07-02 19:34:13"
+    },
+    {
+        "address": "0x524254eedCd8221f8993BA234cB53771E68dcf4c",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xd68512e9cefb8945e99fd09b276384926c1b95e50a9e5c98942be2cb49185fc4",
+        "deployer_address": "0x88e407F72661183ccE95AD6f719a92b04b996690",
+        "deployment_date": "2024-04-03 02:36:03"
+    },
+    {
+        "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0x03fa1020ea97d772d7a0f8f0d717dd75b7039c7679df2b22f32d1f0b50ecf4f0",
+        "deployer_address": "0x48608159077516aFE77A04ebC0448eC32E6670c1",
+        "deployment_date": "2024-01-12 10:26:27"
+    },
+    {
+        "address": "0x827922686190790b37229fd06084350E74485b72",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": "aerodrome-finance",
+        "usage_category": null,
+        "deployment_tx": "0xbbfb0dc32e306d817063859e0ce2d4c3e24453af539dccde54a05ca8956d4ff5",
+        "deployer_address": "0x51ca29d9828867C363572C37c424E3d6b380c61e",
+        "deployment_date": "2024-04-30 11:33:05"
     },
     {
         "address": "0xF2c4EBA901f4B75B7392A0D2e4b94A3166B5DfF7",
@@ -965,8 +955,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0xED6ED946C9E7F4D28ED52D52FEE581F64F9714E4FFB711332218FBF5CAA61944",
-        "deployer_address": "0x3824EF35BB0A672737546F4C14903F0CD6B30F67",
+        "deployment_tx": "0xed6ed946c9e7f4d28ed52d52fee581f64f9714e4ffb711332218fbf5caa61944",
+        "deployer_address": "0x3824ef35BB0a672737546f4c14903f0cd6b30F67",
         "deployment_date": "2024-06-13 19:10:27"
     },
     {
@@ -975,9 +965,29 @@
         "name": "Relay1 BalanceV2",
         "owner_project": "gelato",
         "usage_category": "developer_tools",
-        "deployment_tx": "0x0XFAE8669C3162BD1660BFCDE563AE582A6B5FE152FE39F575A43E17D34DFDE1CE",
-        "deployer_address": "0x0X417B4ADC279743FC49F047C323FC668DB9E600D8",
+        "deployment_tx": "0xfae8669c3162bd1660bfcde563ae582a6b5fe152fe39f575a43e17d34dfde1ce",
+        "deployer_address": "0x417B4Adc279743FC49F047C323FC668db9E600D8",
         "deployment_date": "2024-01-31 10:04:49"
+    },
+    {
+        "address": "0xadDafc51C4eF9fE05daeFcCcE67EFB9874b17DaC",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xd23ec6888c56996f0fc870c475efc847bcc781134429bff5403e9ec2415ad0ce",
+        "deployer_address": "0x20328Ba6871D5e0d1Cc4F90c303f14B0DD82e3D1",
+        "deployment_date": "2024-07-18 22:29:55"
+    },
+    {
+        "address": "0xBf250AE227De43deDaF01ccBFD8CC83027efc1E2",
+        "chain_id": "eip155-8453",
+        "name": null,
+        "owner_project": null,
+        "usage_category": null,
+        "deployment_tx": "0xba65ddc54ceb1fae81f776ad6ee43dca7fb8c258de13c15ed4531209d9119b5c",
+        "deployer_address": "0xc1E747389c47Ee3F0046969291e42023D9567934",
+        "deployment_date": "2024-05-02 16:51:05"
     },
     {
         "address": "0xBfBC4aa18A36A07a8aa563B0a0fc1be2c3f85072",
@@ -985,18 +995,8 @@
         "name": null,
         "owner_project": null,
         "usage_category": null,
-        "deployment_tx": "0x9EB6555B2256A5D59DF6929A43BC6DFE769C19432A0A724B638EC869E12E4E0C",
-        "deployer_address": "0xB835AF52422A14C917D4B37B36C9A73D24770261",
+        "deployment_tx": "0x9eb6555b2256a5d59df6929a43bc6dfe769c19432a0a724b638ec869e12e4e0c",
+        "deployer_address": "0xb835AF52422a14C917d4b37b36c9a73d24770261",
         "deployment_date": "2024-05-01 15:03:33"
-    },
-    {
-        "address": "0x0Da2b06DBB440bB29DD821b62Bc136c75B422c43",
-        "chain_id": "eip155-8453",
-        "name": null,
-        "owner_project": null,
-        "usage_category": null,
-        "deployment_tx": "0x95C53DAD7620739392BD80D3892359EB0EFAC3C08937A1A843DCD40AD17150B5",
-        "deployer_address": "0x8BCDAC28E9A44FEC39D50FE87546505FF365D741",
-        "deployment_date": "2024-04-12 11:39:55"
     }
 ]
