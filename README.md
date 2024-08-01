@@ -1,8 +1,6 @@
 # Open Labels Initiative
 *A standardized framework and data model for EVM address labeling*
 
-**CAREFUL, BREAKING CHANGES MIGHT STILL OCCUR**
-
 List of official OLI tags: [tag_defintions.yml](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml).
 
 ## Goal
@@ -80,7 +78,7 @@ For the sake of standardization, we also defined a valueset for categories that 
 A clean linking to chains is also required. The most commonly used chain naming standard is [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md). A full registry for EVM-based chains can be found [here](https://github.com/ethereum-lists/chains).
 
 ## Tooling
-WIP: a repository of references to labeling tools
+- [growthepie - Layer 2 Smart Contract Labels](https://labels.growthepie.xyz/)
 
 ## Data model
 The dbml definition for the SQL representation of the data model can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model/data_model.dbml).
