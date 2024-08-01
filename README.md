@@ -16,6 +16,9 @@ A list of approved tags can be found here: [here](https://github.com/openlabelsi
 
 There is also a discussion to make other namespaces (i.e. aave, maker, uniswap, etc.) available to these specific projects to keep the quality of labels as high as possible.
 
+## Tooling
+- [growthepie - Layer 2 Smart Contract Labels](https://labels.growthepie.xyz/)
+
 ## Usage
 ### Tagging Addresses
 - **Defining Tags:**
@@ -76,9 +79,6 @@ For the sake of standardization, we also defined a valueset for categories that 
 
 ### Chains
 A clean linking to chains is also required. The most commonly used chain naming standard is [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md). A full registry for EVM-based chains can be found [here](https://github.com/ethereum-lists/chains).
-
-## Tooling
-- [growthepie - Layer 2 Smart Contract Labels](https://labels.growthepie.xyz/)
 
 ## Data model
 The dbml definition for the SQL representation of the data model can be found [here](https://github.com/openlabelsinitiative/oli/blob/main/data_model/data_model.dbml).
