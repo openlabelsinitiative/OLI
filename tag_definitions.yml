@@ -110,3 +110,27 @@ tags:
   value_set: [true, false]
   creator: OLI
   version: 1.0
+
+- id: oli.is_audited
+  name: Is Audited
+  description: Link to information on security audit or audit report. Preferably uses EIP-7512.
+  type: string
+  creator: OLI
+  version: 1.0
+
+- id: oli.is_contract_monitored
+  name: Is Smart Contract Monitored
+  description: Link to information on how contract is actively by smart contract contract monitoring service.
+  type: string
+  creator: OLI
+  version: 1.0
+
+- id: oli.is_source_code_verified
+  name: Is the contract cource code verified
+  description: Link to contract source code verification, e.g. block explorer or source code verification service
+  type: string
+  creator: OLI
+  version: 1.0
+
+
+
