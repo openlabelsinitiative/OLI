@@ -67,12 +67,6 @@ tags:
   creator: OLI
   version: 1.0
 
-# - id: oli.bytecode
-#   name: Bytecode
-#   description: The bytecode of the contract. Or link to VERA?
-#   type: string
-#   creator: OLI
-
 - id: oli.erc_type
   name: ERC Type
   description: The type of ERC standards the contract implements.
@@ -93,13 +87,6 @@ tags:
   description: The category of usage for the contract.
   type: string
   value_set: https://github.com/openlabelsinitiative/OLI/blob/main/valuesets/category_definitions.yml
-  creator: OLI
-  version: 1.0
-
-- id: oli.version
-  name: Version
-  description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
-  type: int
   creator: OLI
   version: 1.0
 
