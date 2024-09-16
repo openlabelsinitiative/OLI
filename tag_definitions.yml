@@ -14,17 +14,17 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_factory_contract
-  name: Is Factory Contract
-  description: Is the address a factory contract?
+- id: oli.is_contract
+  name: Is Contract
+  description: Is the address a contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
   version: 1.0
 
-- id: oli.is_contract
-  name: Is Contract
-  description: Is the address a contract?
+- id: oli.is_factory_contract
+  name: Is Factory Contract
+  description: Is the address a factory contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
@@ -67,6 +67,14 @@ tags:
   creator: OLI
   version: 1.0
 
+- id: oli.is_safe_contract
+  name: Is Safe Contract
+  description: Is the address a Safe contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+  version: 1.0
+
 - id: oli.erc_type
   name: ERC Type
   description: The type of ERC standards the contract implements.
@@ -90,10 +98,10 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_safe_contract
-  name: Is Safe Contract
-  description: Is the address a Safe contract?
-  type: boolean
-  value_set: [true, false]
+- id: oli.version
+  name: Version
+  description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
+  type: int
   creator: OLI
   version: 1.0
+
