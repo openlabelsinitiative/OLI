@@ -14,17 +14,17 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_factory_contract
-  name: Is Factory Contract
-  description: Is the address a factory contract?
+- id: oli.is_contract
+  name: Is Contract
+  description: Is the address a contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
   version: 1.0
 
-- id: oli.is_contract
-  name: Is Contract
-  description: Is the address a contract?
+- id: oli.is_factory_contract
+  name: Is Factory Contract
+  description: Is the address a factory contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
@@ -67,11 +67,13 @@ tags:
   creator: OLI
   version: 1.0
 
-# - id: oli.bytecode
-#   name: Bytecode
-#   description: The bytecode of the contract. Or link to VERA?
-#   type: string
-#   creator: OLI
+- id: oli.is_safe_contract
+  name: Is Safe Contract
+  description: Is the address a Safe contract?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
+  version: 1.0
 
 - id: oli.erc_type
   name: ERC Type
@@ -103,10 +105,3 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_safe_contract
-  name: Is Safe Contract
-  description: Is the address a Safe contract?
-  type: boolean
-  value_set: [true, false]
-  creator: OLI
-  version: 1.0
