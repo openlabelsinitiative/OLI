@@ -69,11 +69,12 @@ A short excerpt:
 ## Contributors
 - [growthepie](https://www.growthepie.xyz/): Layer 2 analytics platform with focus on labeling smart contracts on layer 2s.
 
-![growthepie logo](https://i.ibb.co/54W8j8K/Group-165.png)
+<img src="https://i.ibb.co/54W8j8K/Group-165.png" alt="growthepie logo" width="300">
 
 - [walletlabels](https://www.walletlabels.xyz/): Wallet labeling platform with focus on labels for Ethereum as well as social labels / labeling of EOAs.
 
-![Walletlabels logo](https://i.ibb.co/DMkw90y/Wallet-Labels-logo.png)
+<img src="https://i.ibb.co/DMkw90y/Wallet-Labels-logo.png" alt="Walletlabels logo" width="300">
+
 
 ### Sponsors
 
