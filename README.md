@@ -18,7 +18,8 @@ Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an 
 * `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](https://github.com/openlabelsinitiative/oli/blob/main/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed project based labelling. 
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 
-![Data Model](data_model/data_model.svg){width=400px}
+<img src="data_model/data_model.svg" alt="Data Model" width="400">
+
 
 ## Datasets 
 OLI doesn't store any datasets, these will remain with independent data teams. The goal is to align on a data structure for labels.  This will simplify syncing datasets across the ecosystem, avoiding the need to start from scratch. OLI recommends following the approach used by growthepie and walletlabels, and to commit on making their data publicly available through API endpoints to support democratized access to labels.
