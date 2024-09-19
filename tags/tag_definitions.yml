@@ -1,12 +1,12 @@
 tags:
-- id: oli.name
+- tag_id: oli.name
   name: Name
   description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the name = 'router'.
   type: string(40)
   creator: OLI
   version: 1.0
 
-- id: oli.is_eoa
+- tag_id: oli.is_eoa
   name: Is EOA
   description: Is the account an Externally Owned Account (EOA)?
   type: boolean
@@ -14,7 +14,7 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_contract
+- tag_id: oli.is_contract
   name: Is Contract
   description: Is the address a contract?
   type: boolean
@@ -22,7 +22,7 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_factory_contract
+- tag_id: oli.is_factory_contract
   name: Is Factory Contract
   description: Is the address a factory contract?
   type: boolean
@@ -30,21 +30,21 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.deployment_tx
+- tag_id: oli.deployment_tx
   name: Deployment Transaction
   description: The transaction that deployed the contract.
   type: bytea
   creator: OLI
   version: 1.0
 
-- id: oli.deployer_address
+- tag_id: oli.deployer_address
   name: Deployer Address
   description: The address that deployed the contract.
   type: bytea
   creator: OLI
   version: 1.0
 
-- id: oli.owner_project
+- tag_id: oli.owner_project
   name: Owner Project
   description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
   type: string
@@ -52,14 +52,14 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.deployment_date
+- tag_id: oli.deployment_date
   name: Deployment Date
   description: The date the contract was deployed.
   type: date
   creator: OLI
   version: 1.0
 
-- id: oli.is_proxy
+- tag_id: oli.is_proxy
   name: Is Proxy
   description: Is the contract a proxy contract?
   type: boolean
@@ -67,7 +67,7 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.is_safe_contract
+- tag_id: oli.is_safe_contract
   name: Is Safe Contract
   description: Is the address a Safe contract?
   type: boolean
@@ -75,7 +75,7 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.erc_type
+- tag_id: oli.erc_type
   name: ERC Type
   description: The type of ERC standards the contract implements.
   type: string
@@ -83,14 +83,14 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.erc20_name
+- tag_id: oli.erc20_name
   name: ERC20 Name
   description: The name of the ERC20 token.
   type: string
   creator: OLI
   version: 1.0
 
-- id: oli.usage_category
+- tag_id: oli.usage_category
   name: Usage Category
   description: The category of usage for the contract.
   type: string
@@ -98,7 +98,7 @@ tags:
   creator: OLI
   version: 1.0
 
-- id: oli.version
+- tag_id: oli.version
   name: Version
   description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
   type: int
