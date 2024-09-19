@@ -25,9 +25,9 @@ Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an 
 OLI doesn't store any datasets, these will remain with independent data teams. The goal is to align on a data structure for labels.  This will simplify syncing datasets across the ecosystem, avoiding the need to start from scratch. OLI recommends following the approach used by growthepie and walletlabels, and to commit on making their data publicly available through API endpoints to support democratized access to labels.
 
 ### Example Datasets
-Datasets can be stored like in the Data Model defined or the tag_id can be melted into columns, which is especially usefull for when not all tag_ids are relevant to be stored. 
+Datasets can be stored according to the defined OLI Data Model, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.
 
-We have uploaded some OLI compliant sample data for [OP Mainnet (eip155-10)](sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
+We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155-10)](sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
 
 A short excerpt:
 ```
