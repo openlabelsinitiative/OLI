@@ -105,3 +105,26 @@ tags:
   creator: OLI
   version: 1.0
 
+- tag_id: oli.audit
+  name: Audit
+  description: Link to information on security audit or audit report.
+  type: string
+  creator: OLI
+  version: 1.0
+
+- tag_id: oli.contract_monitored
+  name: Smart Contract Monitoring
+  description: Link to information on whether the contract is actively monitored by smart contract monitoring services.
+  type: string
+  creator: OLI
+  version: 1.0
+
+- tag_id: oli.source_code_verified
+  name: Verified Source Code
+  description: Link to verified source code, e.g., through a source code verification service or block explorer.
+  type: string
+  creator: OLI
+  version: 1.0
+
+
+
