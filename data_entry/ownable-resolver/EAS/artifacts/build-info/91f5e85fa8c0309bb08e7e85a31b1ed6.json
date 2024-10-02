@@ -1,0 +1,234 @@
+{
+	"id": "91f5e85fa8c0309bb08e7e85a31b1ed6",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"EAS/ISemver.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\n/// @title ISemver\n/// @notice A semver interface.\ninterface ISemver {\n    /// @notice Returns the full semver contract version.\n    /// @return Semver contract version as a string.\n    function version() external view returns (string memory);\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"EAS/ISemver.sol": {
+				"ISemver": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "version",
+							"outputs": [
+								{
+									"internalType": "string",
+									"name": "",
+									"type": "string"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"version()": {
+								"returns": {
+									"_0": "Semver contract version as a string."
+								}
+							}
+						},
+						"title": "ISemver",
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"version()": "54fd4d50"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"version()\":{\"returns\":{\"_0\":\"Semver contract version as a string.\"}}},\"title\":\"ISemver\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"version()\":{\"notice\":\"Returns the full semver contract version.\"}},\"notice\":\"A semver interface.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"EAS/ISemver.sol\":\"ISemver\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"EAS/ISemver.sol\":{\"keccak256\":\"0x6c6073e407395170dfc58d74be5e4cba5d2f6680d2c9aeade07e591dd7c6d5bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40f57462c6e329fcf5960e75e9f9a405429f416fec1debcfd4c79c2f10c04dd4\",\"dweb:/ipfs/QmehZy36QoFsBKMMbCo5Jmta5y3uU3so4e4C14MHzx2VDp\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"version()": {
+								"notice": "Returns the full semver contract version."
+							}
+						},
+						"notice": "A semver interface.",
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"EAS/ISemver.sol": {
+				"ast": {
+					"absolutePath": "EAS/ISemver.sol",
+					"exportedSymbols": {
+						"ISemver": [
+							9
+						]
+					},
+					"id": 10,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ISemver",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "58:51:0",
+								"text": "@title ISemver\n @notice A semver interface."
+							},
+							"fullyImplemented": false,
+							"id": 9,
+							"linearizedBaseContracts": [
+								9
+							],
+							"name": "ISemver",
+							"nameLocation": "119:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 3,
+										"nodeType": "StructuredDocumentation",
+										"src": "133:106:0",
+										"text": "@notice Returns the full semver contract version.\n @return Semver contract version as a string."
+									},
+									"functionSelector": "54fd4d50",
+									"id": 8,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "version",
+									"nameLocation": "253:7:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "260:2:0"
+									},
+									"returnParameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 6,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 8,
+												"src": "286:13:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 5,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "286:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "285:15:0"
+									},
+									"scope": 9,
+									"src": "244:57:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 10,
+							"src": "109:194:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "33:270:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
