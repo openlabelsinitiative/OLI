@@ -140,3 +140,6 @@ cross_chain:
   - category_id: bridge
     name: Bridge
     description: Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets.
+  - category_id: settlement
+    name: Settlement & DA 
+    description: Contracts used by scaling solutions (L2s, L3s) to post proofs, states, and data availability to the host chain. 
