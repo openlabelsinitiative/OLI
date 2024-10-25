@@ -24,7 +24,7 @@ tags:
 
 - tag_id: oli.is_factory_contract
   name: Is Factory Contract
-  description: Is the address a factory contract?
+  description: Is the address a factory contract? Does it have functions which are able to deploy another contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
@@ -68,7 +68,7 @@ tags:
   version: 1.0
 
 - tag_id: oli.is_safe_contract
-  name: Multisig
+  name: Is Multisig
   description: Is the address a Safe or Multisig contract?
   type: boolean
   value_set: [true, false]
