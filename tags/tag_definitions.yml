@@ -68,8 +68,8 @@ tags:
   version: 1.0
 
 - tag_id: oli.is_safe_contract
-  name: Is Safe Contract
-  description: Is the address a Safe contract?
+  name: Multisig
+  description: Is the address a Safe or Multisig contract?
   type: boolean
   value_set: [true, false]
   creator: OLI
