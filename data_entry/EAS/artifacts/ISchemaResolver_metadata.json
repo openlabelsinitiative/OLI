@@ -1,46 +1,10 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.27+commit.40a35a09"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "contract IEAS",
-						"name": "eas",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "AccessDenied",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "InsufficientValue",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "InvalidEAS",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "InvalidLength",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "NotPayable",
-				"type": "error"
-			},
 			{
 				"inputs": [
 					{
@@ -360,10 +324,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -414,7 +374,7 @@
 					}
 				}
 			},
-			"title": "A schema resolver that checks whether the sender is the owner of the contract behind attestation.recipient.",
+			"title": "ISchemaResolver",
 			"version": 1
 		},
 		"userdoc": {
@@ -439,12 +399,13 @@
 					"notice": "Returns the full semver contract version."
 				}
 			},
+			"notice": "The interface of an optional schema resolver.",
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"ownable-resolver.sol": "OwnerRecipientResolver"
+			"EAS/ISchemaResolver.sol": "ISchemaResolver"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -458,68 +419,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@openzeppelin/contracts/access/Ownable.sol": {
-			"keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
-				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
-			]
-		},
-		"@openzeppelin/contracts/utils/Context.sol": {
-			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
-				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
-			]
-		},
-		"@openzeppelin/contracts/utils/Strings.sol": {
-			"keccak256": "0x55f102ea785d8399c0e58d1108e2d289506dde18abc6db1b7f68c1f9f9bc5792",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://6e52e0a7765c943ef14e5bcf11e46e6139fa044be564881378349236bf2e3453",
-				"dweb:/ipfs/QmZEeeXoFPW47amyP35gfzomF9DixqqTEPwzBakv6cZw6i"
-			]
-		},
-		"@openzeppelin/contracts/utils/math/Math.sol": {
-			"keccak256": "0x005ec64c6313f0555d59e278f9a7a5ab2db5bdc72a027f255a37c327af1ec02d",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://4ece9f0b9c8daca08c76b6b5405a6446b6f73b3a15fab7ff56e296cbd4a2c875",
-				"dweb:/ipfs/QmQyRpyPRL5SQuAgj6SHmbir3foX65FJjbVTTQrA2EFg6L"
-			]
-		},
-		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
-			"keccak256": "0x5f7e4076e175393767754387c962926577f1660dd9b810187b9002407656be72",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://7d533a1c97cd43a57cd9c465f7ee8dd0e39ae93a8fb8ff8e5303a356b081cdcc",
-				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
-			]
-		},
 		"EAS/Common.sol": {
 			"keccak256": "0x9007deeeb757cfd4c504887f0c82b49f43fe92de13f4ffd9400f457d8c5276c6",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://949de4842085918b42d71c50f837b468e77871fc1417f480d2a6618f75eeb57d",
 				"dweb:/ipfs/QmbyYxXLvryZBHdNKijCmZzwsgU4bnTXszyA38F5Xdg5h1"
-			]
-		},
-		"EAS/IEAS.sol": {
-			"keccak256": "0xdc4fed434a7d7907767ba1dc6a8e9ddc94ede6df08fbea5d827077ef22e8bd8c",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://297555c22ff767608088c01ba2efe6da4dff7e95b7eb614e09d72cb36d0c989b",
-				"dweb:/ipfs/QmQ7YWcBxiaf2mXZL1VLFsYSJPtVTHbWSBuimATVLMC7U4"
-			]
-		},
-		"EAS/ISchemaRegistry.sol": {
-			"keccak256": "0x9f23d5b875dd34e36512ff4ba75615ac5eb56ee20c6451ef2b70da99d95bf006",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://ad6ef991e5d45128cd5632b88088b4c2fc65153f1da313fb6b603f7db0f27749",
-				"dweb:/ipfs/QmQGxZEmQ7xYiCVQFEp9N2jjBtJYKd1CYNUNGoGYmV2F47"
 			]
 		},
 		"EAS/ISchemaResolver.sol": {
@@ -536,30 +441,6 @@
 			"urls": [
 				"bzz-raw://40f57462c6e329fcf5960e75e9f9a405429f416fec1debcfd4c79c2f10c04dd4",
 				"dweb:/ipfs/QmehZy36QoFsBKMMbCo5Jmta5y3uU3so4e4C14MHzx2VDp"
-			]
-		},
-		"EAS/SchemaResolver.sol": {
-			"keccak256": "0xb6dc636c973996ca481d6522decae3ecae8c043c8d2ca5228e8f53a6c0210951",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://5a7f2f9db27662ba6aea6be58351e1cc834a1c84122a6cecfcb6d293628a1364",
-				"dweb:/ipfs/QmTkQ7gDaJaY4tgneQyNxmbz9AovJQmMfuZgG8akbAqu5K"
-			]
-		},
-		"EAS/Semver.sol": {
-			"keccak256": "0xcb67b60a08b4acb41ccda1ee2a44bb3d4291f3da9ecd60eed49991bdbfafb972",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://eea3e91b983ce442be39c0a88c93627043d1c6de342be99562916a948a5933e3",
-				"dweb:/ipfs/QmTFeE2vsjwn1pNeSMWAoQ4NivUTHza5DYMgJA854Ddx8F"
-			]
-		},
-		"ownable-resolver.sol": {
-			"keccak256": "0xcc7c94f5c6175bf58d550a8a1376a34af81c94b76f95b097a266b7e5b34a59e4",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://55753db971de8a9f74d847ceb2a51bc75a746a48a388cb170f418f84af776559",
-				"dweb:/ipfs/Qmecz5nqbAAwnTPvaVUVVHfkX1Wbj4idsUb8rGZ7YqCSgV"
 			]
 		}
 	},

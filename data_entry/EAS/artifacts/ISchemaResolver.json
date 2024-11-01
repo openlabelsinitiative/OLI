@@ -1,0 +1,382 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"attest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": "e60c3505",
+			"isPayable()": "ce46e046",
+			"multiAttest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": "91db0b7e",
+			"multiRevoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": "88e5b2d9",
+			"revoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": "e49617e1",
+			"version()": "54fd4d50"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "bytes32",
+							"name": "uid",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "schema",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "uint64",
+							"name": "time",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "expirationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "revocationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "refUID",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "address",
+							"name": "recipient",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "attester",
+							"type": "address"
+						},
+						{
+							"internalType": "bool",
+							"name": "revocable",
+							"type": "bool"
+						},
+						{
+							"internalType": "bytes",
+							"name": "data",
+							"type": "bytes"
+						}
+					],
+					"internalType": "struct Attestation",
+					"name": "attestation",
+					"type": "tuple"
+				}
+			],
+			"name": "attest",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "isPayable",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "bytes32",
+							"name": "uid",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "schema",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "uint64",
+							"name": "time",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "expirationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "revocationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "refUID",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "address",
+							"name": "recipient",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "attester",
+							"type": "address"
+						},
+						{
+							"internalType": "bool",
+							"name": "revocable",
+							"type": "bool"
+						},
+						{
+							"internalType": "bytes",
+							"name": "data",
+							"type": "bytes"
+						}
+					],
+					"internalType": "struct Attestation[]",
+					"name": "attestations",
+					"type": "tuple[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "values",
+					"type": "uint256[]"
+				}
+			],
+			"name": "multiAttest",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "bytes32",
+							"name": "uid",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "schema",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "uint64",
+							"name": "time",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "expirationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "revocationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "refUID",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "address",
+							"name": "recipient",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "attester",
+							"type": "address"
+						},
+						{
+							"internalType": "bool",
+							"name": "revocable",
+							"type": "bool"
+						},
+						{
+							"internalType": "bytes",
+							"name": "data",
+							"type": "bytes"
+						}
+					],
+					"internalType": "struct Attestation[]",
+					"name": "attestations",
+					"type": "tuple[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "values",
+					"type": "uint256[]"
+				}
+			],
+			"name": "multiRevoke",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "bytes32",
+							"name": "uid",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "schema",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "uint64",
+							"name": "time",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "expirationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "uint64",
+							"name": "revocationTime",
+							"type": "uint64"
+						},
+						{
+							"internalType": "bytes32",
+							"name": "refUID",
+							"type": "bytes32"
+						},
+						{
+							"internalType": "address",
+							"name": "recipient",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "attester",
+							"type": "address"
+						},
+						{
+							"internalType": "bool",
+							"name": "revocable",
+							"type": "bool"
+						},
+						{
+							"internalType": "bytes",
+							"name": "data",
+							"type": "bytes"
+						}
+					],
+					"internalType": "struct Attestation",
+					"name": "attestation",
+					"type": "tuple"
+				}
+			],
+			"name": "revoke",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "version",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}
