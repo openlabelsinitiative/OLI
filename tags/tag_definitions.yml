@@ -73,10 +73,34 @@ tags:
   value_set: [ERC20, ERC173, ERC223, ERC621, ERC677, ERC721, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1203, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC1820, ERC4626]
   creator: OLI
 
-- tag_id: oli.contract_metadata
-  name: Contract Metadata
-  description: Static metadata of the contract; for ERC20s this includes name, symbol and decimals. Also includes implementations of metadata extensions like ERC721Metadata or ERC1155Metadata.
-  type: json
+- tag_id: erc20.name
+  name: ERC20 Name
+  description: The name of the token assigned through the ERC20 standard.
+  type: string
+  creator: OLI
+
+- tag_id: erc20.symbol
+  name: ERC20 Symbol
+  description: The symbol of the token assigned through the ERC20 standard.
+  type: string
+  creator: OLI
+
+- tag_id: erc20.decimals
+  name: ERC20 Decimals
+  description: The number of decimals of the token assigned through the ERC20 standard.
+  type: int
+  creator: OLI
+
+- tag_id: erc721.name
+  name: ERC721 Name
+  description: The name of the collection assigned through the ERC721 standard.
+  type: string
+  creator: OLI
+
+- tag_id: erc721.symbol
+  name: ERC721 Symbol
+  description: The symbol of the collection assigned through the ERC721 standard.
+  type: string
   creator: OLI
 
 - tag_id: oli.usage_category
