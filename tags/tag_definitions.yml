@@ -1,10 +1,10 @@
+version: 1.0.0
 tags:
 - tag_id: oli.name
   name: Name
   description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the name = 'router'.
   type: string(40)
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.is_eoa
   name: Is EOA
@@ -12,7 +12,6 @@ tags:
   type: boolean
   value_set: [true, false]
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.is_contract
   name: Is Contract
@@ -20,7 +19,6 @@ tags:
   type: boolean
   value_set: [true, false]
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.is_factory_contract
   name: Is Factory Contract
@@ -28,21 +26,18 @@ tags:
   type: boolean
   value_set: [true, false]
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.deployment_tx
   name: Deployment Transaction
   description: The transaction that deployed the contract.
   type: bytea
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.deployer_address
   name: Deployer Address
   description: The address that deployed the contract.
   type: bytea
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.owner_project
   name: Owner Project
@@ -50,14 +45,12 @@ tags:
   type: string
   value_set: https://github.com/opensource-observer/oss-directory
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.deployment_date
   name: Deployment Date
   description: The date the contract was deployed.
   type: date
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.is_proxy
   name: Is Proxy
@@ -65,7 +58,6 @@ tags:
   type: boolean
   value_set: [true, false]
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.is_safe_contract
   name: Is Multisig
@@ -73,22 +65,19 @@ tags:
   type: boolean
   value_set: [true, false]
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.erc_type
   name: ERC Type
-  description: The type of ERC standards the contract implements.
+  description: Array of all ERC standards the contract implements.
   type: string
   value_set: [ERC20, ERC721, ERC777, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC173, ERC1820, ERC223, ERC621, ERC677, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998]
   creator: OLI
-  version: 1.0
 
-- tag_id: oli.erc20_name
-  name: ERC20 Name
-  description: The name of the ERC20 token.
-  type: string
+- tag_id: oli.contract_metadata
+  name: Contract Metadata
+  description: Static metadata of the contract; for ERC20s this includes name, symbol and decimals. Also includes implementations of metadata extensions like ERC721Metadata or ERC1155Metadata.
+  type: json
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.usage_category
   name: Usage Category
@@ -96,35 +85,30 @@ tags:
   type: string
   value_set: https://github.com/openlabelsinitiative/OLI/blob/main/valuesets/category_definitions.yml
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.version
   name: Version
   description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
   type: int
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.audit
   name: Audit
   description: Link to information on security audit or audit report.
   type: string
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.contract_monitored
   name: Smart Contract Monitoring
   description: Link to information on whether the contract is actively monitored by smart contract monitoring services.
   type: string
   creator: OLI
-  version: 1.0
 
 - tag_id: oli.source_code_verified
   name: Verified Source Code
   description: Link to verified source code, e.g., through a source code verification service or block explorer.
   type: string
   creator: OLI
-  version: 1.0
 
 
 
