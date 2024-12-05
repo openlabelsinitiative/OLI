@@ -84,11 +84,10 @@ The [Ethereum Foundation](https://ethereum.foundation/) funded this effort as pa
 Individuals or data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
 
 - [Carl Cervone](https://github.com/ccerv1) & [Raymond Cheng](https://github.com/ryscheng) | [Open Source Observer](https://github.com/opensource-observer)
+- [Hildobby](https://x.com/hildobby_) | [Dragonfly](https://x.com/dragonfly_xyz)
 - [Michael Silberling](https://github.com/MSilb7) | [OP Labs](https://www.oplabs.co/)
-- [Storm](https://github.com/sslivkoff) & [samczsun](https://github.com/samczsun/) | [Paradigm](https://www.paradigm.xyz/)
-- [Dune](https://dune.com/)
-- [Allium](https://www.allium.so/)
+- [Storm](https://github.com/sslivkoff) & [Samczsun](https://github.com/samczsun/) | [Paradigm](https://www.paradigm.xyz/)
+- Simon Brown | [Consensys](https://consensys.io/)
+- [Ethereum Attestation Service](https://attest.org/)
 - [Blockscout](https://www.blockscout.com/)
-- [Artemis](https://www.artemis.xyz/)
-- [Routescan](https://routescan.io/)
 - [Guild](https://guild.xyz/)

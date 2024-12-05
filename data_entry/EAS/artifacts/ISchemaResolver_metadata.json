@@ -1,0 +1,448 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "uid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "schema",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint64",
+								"name": "time",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "expirationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "revocationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "refUID",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "attester",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "revocable",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Attestation",
+						"name": "attestation",
+						"type": "tuple"
+					}
+				],
+				"name": "attest",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isPayable",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "uid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "schema",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint64",
+								"name": "time",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "expirationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "revocationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "refUID",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "attester",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "revocable",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Attestation[]",
+						"name": "attestations",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "values",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiAttest",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "uid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "schema",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint64",
+								"name": "time",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "expirationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "revocationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "refUID",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "attester",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "revocable",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Attestation[]",
+						"name": "attestations",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "values",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiRevoke",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "uid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "schema",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint64",
+								"name": "time",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "expirationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "revocationTime",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "refUID",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "attester",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "revocable",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Attestation",
+						"name": "attestation",
+						"type": "tuple"
+					}
+				],
+				"name": "revoke",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "version",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"attest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": {
+					"params": {
+						"attestation": "The new attestation."
+					},
+					"returns": {
+						"_0": "Whether the attestation is valid."
+					}
+				},
+				"isPayable()": {
+					"returns": {
+						"_0": "Whether the resolver supports ETH transfers."
+					}
+				},
+				"multiAttest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": {
+					"params": {
+						"attestations": "The new attestations.",
+						"values": "Explicit ETH amounts which were sent with each attestation."
+					},
+					"returns": {
+						"_0": "Whether all the attestations are valid."
+					}
+				},
+				"multiRevoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": {
+					"params": {
+						"attestations": "The existing attestations to be revoked.",
+						"values": "Explicit ETH amounts which were sent with each revocation."
+					},
+					"returns": {
+						"_0": "Whether the attestations can be revoked."
+					}
+				},
+				"revoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": {
+					"params": {
+						"attestation": "The existing attestation to be revoked."
+					},
+					"returns": {
+						"_0": "Whether the attestation can be revoked."
+					}
+				},
+				"version()": {
+					"returns": {
+						"_0": "Semver contract version as a string."
+					}
+				}
+			},
+			"title": "ISchemaResolver",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"attest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": {
+					"notice": "Processes an attestation and verifies whether it's valid."
+				},
+				"isPayable()": {
+					"notice": "Checks if the resolver can be sent ETH."
+				},
+				"multiAttest((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": {
+					"notice": "Processes multiple attestations and verifies whether they are valid."
+				},
+				"multiRevoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes)[],uint256[])": {
+					"notice": "Processes revocation of multiple attestation and verifies they can be revoked."
+				},
+				"revoke((bytes32,bytes32,uint64,uint64,uint64,bytes32,address,address,bool,bytes))": {
+					"notice": "Processes an attestation revocation and verifies if it can be revoked."
+				},
+				"version()": {
+					"notice": "Returns the full semver contract version."
+				}
+			},
+			"notice": "The interface of an optional schema resolver.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EAS/ISchemaResolver.sol": "ISchemaResolver"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EAS/Common.sol": {
+			"keccak256": "0x9007deeeb757cfd4c504887f0c82b49f43fe92de13f4ffd9400f457d8c5276c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://949de4842085918b42d71c50f837b468e77871fc1417f480d2a6618f75eeb57d",
+				"dweb:/ipfs/QmbyYxXLvryZBHdNKijCmZzwsgU4bnTXszyA38F5Xdg5h1"
+			]
+		},
+		"EAS/ISchemaResolver.sol": {
+			"keccak256": "0x4df78a9ec7244d6f75d58b01c223e865316e16a071eb9d36d28adddcb784d787",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0399b3b62b3f95f12a6f09c397249dbf7f517fc6a2a0bc1be1cd0cc962d85888",
+				"dweb:/ipfs/QmYozmYWNnntXQaiVigovQRJuVoxHg78btYxZrLwMDQfx8"
+			]
+		},
+		"EAS/ISemver.sol": {
+			"keccak256": "0x6c6073e407395170dfc58d74be5e4cba5d2f6680d2c9aeade07e591dd7c6d5bf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40f57462c6e329fcf5960e75e9f9a405429f416fec1debcfd4c79c2f10c04dd4",
+				"dweb:/ipfs/QmehZy36QoFsBKMMbCo5Jmta5y3uU3so4e4C14MHzx2VDp"
+			]
+		}
+	},
+	"version": 1
+}
