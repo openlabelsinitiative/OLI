@@ -23,6 +23,12 @@ This project allows bulk attesting and uploading of labels to the OLI data pool 
 
 ## Usage
 
+0. Navigate to the repository:
+
+   ```bash
+   cd data_pool/bulk_attesting
+   ```
+   
 1. Install the required packages by running:
 
    ```bash
@@ -85,7 +91,7 @@ This project allows bulk attesting and uploading of labels to the OLI data pool 
    - **Address Fields**: Any field requiring an address cannot be left empty. If no value is available, use `0x0000000000000000000000000000000000000000`.
    - **Uint Fields**: Any `uint` fields, such as `deployment_date` or `erc20_decimals`, should be set to `0` if no value is provided.
    - **String Fields**: These can be left as `null` if no value is provided.
-   
+
    For more details on the attestation format, see [data_pool README.md](../README.md).
 
 2. Place your converted CSV file in the project root directory.
