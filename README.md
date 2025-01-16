@@ -15,7 +15,7 @@ Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an 
 
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
 * `chain_id`: unique identifier as defined by [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) or [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md)
-* `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](https://github.com/openlabelsinitiative/OLI/blob/main/tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed project based labelling. 
+* `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](https://github.com/openlabelsinitiative/OLI/blob/main/data_model/tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed project based labelling. 
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 
 <img src="data_model/img/data_model.svg" alt="Data Model" width="400">
