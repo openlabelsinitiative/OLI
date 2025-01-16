@@ -18,7 +18,7 @@ Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an 
 * `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](https://github.com/openlabelsinitiative/OLI/blob/main/tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed project based labelling. 
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 
-<img src="data_model/data_model.svg" alt="Data Model" width="400">
+<img src="data_model/img/data_model.svg" alt="Data Model" width="400">
 
 
 ## Datasets 

@@ -33,3 +33,37 @@ version_history:
             "contract_monitored": "string",
             "source_code_verified": "string"
           }
+  - version: "0.1.1"
+    date: "2025-01-15"
+    schemas:
+      - chain: "Optimism"
+        chain_id: "10"
+        schema_hash: "0x5283a290268ebd286c379b633b1f8f8241edb577a074d67a3ceea636461dd13f"
+        custom_resolver: "0xedfea228da3bdb0efd231707b2ee588224ee0886"
+        schema: |
+          {
+            "chain_id": "uint256",
+            "is_owner": "bool",
+            "is_eoa": "uint8",
+            "is_contract": "uint8",
+            "is_factory_contract": "uint8",
+            "is_proxy": "uint8",
+            "is_safe_contract": "uint8",
+            "name": "string",
+            "deployment_tx": "string",
+            "deployer_address": "address",
+            "owner_project": "string",
+            "deployment_date": "uint256",
+            "erc_type": "uint16[]",
+            "erc20_symbol": "string",
+            "erc20_decimals": "uint8",
+            "erc721_name": "string",
+            "erc721_symbol": "string",
+            "erc1155_name": "string",
+            "erc1155_symbol": "string",
+            "usage_category": "string",
+            "version": "uint8",
+            "audit": "string",
+            "contract_monitored": "string",
+            "source_code_verified": "string"
+          }
