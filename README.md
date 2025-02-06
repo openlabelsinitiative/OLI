@@ -23,7 +23,7 @@ Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an 
 
 ## The 3 pillars of OLI
   - **OLI Data Model:** We all speak the same language when it comes to labels. This framework allows us to easily sync labels between different databases and align on the valuesets. More in [data_model](data_model/readme.md).
-  - **Labels Pool:** A publicly accessible database of attested labels. Raw and simple. We use attestations to collect labels from anyone out there willing to share labels. All of these attestations will be accessible to anyone.
+  - **Label Pool:** A publicly accessible database of attested labels. Raw and simple. We use attestations to collect labels from anyone out there willing to share labels. All of these attestations will be accessible to anyone.
   - **Label Confidence:** Use-case optimized trust algorithms applied to the raw labels. This way raw labels become useful labels, optimized either for analytics, security, or other use-cases.
 
 ![OLI pillars](src/images/oli_pillars.png)
