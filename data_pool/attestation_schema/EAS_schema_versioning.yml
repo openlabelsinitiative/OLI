@@ -67,3 +67,15 @@ version_history:
             "contract_monitored": "string",
             "source_code_verified": "string"
           }
+  - version: "0.2.0"
+    date: "2025-02-07"
+    schemas:
+      - chain: "Base"
+        chain_id: "8453"
+        schema_hash: ""
+        custom_resolver: ""
+        schema: |
+          {
+            "chain_id": "uint256",
+            "tags_json": "string"
+          }
