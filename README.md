@@ -18,7 +18,7 @@ The OLI repository functions as the community maintainer of the OLI framework. A
 ![OLI pillars](src/images/oli_pillars.png)
 
 ## OLI-Compliant Tools
-- [growthepie - L2 Smart Contract Explorer](https://labels.growthepie.xyz/)
+- [growthepie - Smart Contract Explorer](https://labels.growthepie.xyz/)
 - ...
 - *please list your projects here*
 
