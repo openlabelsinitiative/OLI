@@ -54,7 +54,7 @@ Ensure your wallet is connected and you are on the correct network (optimism).
 
       - **String Fields**: These can be left as `null` if no value is provided.
 
-      - Refer to [tag_definitions.yml](../data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
+      - Refer to [tag_definitions.yml](../1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
 
 4. **Sign and Submit Onchain or Offchain:**
    - Select your preferred submission method: onchain or offchain. Default should be set to offchain.

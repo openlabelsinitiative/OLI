@@ -22,6 +22,10 @@ Each `tag_id` is linked to a `value` in the OLI-framework, allowing it to flexib
 - **`creator`**: entity responsible for creating the tag
 - **`version`**: version of this `tag_id`
 
+Sample tags include: name, is_eoa, is_contract, owner_project, erc_type, usage_category, and many more.
+
+These tags will be expanded based on the need from the community.
+
 #### Predefined Value Sets
 Certain tags can only take values from predefined value sets specified in the `tag_definitions.yml` file under the `value_set` key. Examples of such tags include the `tag_ids`: `oli.owner_project` and `oli.usage_category`. 
 
@@ -36,7 +40,7 @@ An example of an internal value set is `oli.usage_category`, for which we define
 ## Example Datasets
 Datasets can be stored according to the defined OLI Data Model, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.
 
-We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155-10)](sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
+We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155-10)](1_data_model/sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](1_data_model/sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
 
 A short excerpt:
 ```
