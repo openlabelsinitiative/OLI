@@ -1,19 +1,32 @@
-# Label Pool Overview
+# Open Labels Initiative: Label Pool
 
-** OLI DATA ENTRY IS CURRENTLY IN BETA **
+The Label Pool is a neutral entry point and a shared data pool for OLI-compliant labels. While the [OLI Data Model](/././1_data_model/README.md) defines how labels are stored, the Label Pool provides the tools and guidelines for contributing contract labels as part of a collaborative community effort.
 
-OLI Data Entry focuses specifically on the process of data entry for address labels. While the broader OLI framework defines how labels are stored, OLI Data Entry provides the tools and guidelines necessary for labeling EVM smart contracts as part of a collaborative community effort.
-
-This repository provides the latest schemas for attestations and a step by step workflow for creating and retrieving contract labels. The goal is to establish a single, decentralized point of data entry, ensuring an open and fair system where:
+The goal with Label Pool is to establish a single, decentralized point of data entry, ensuring an open and fair system where:
 
 - **Labelers / Data Submitters** fill the Label Pool with labels
-- **Data Consumers** can reliably and transparently access this information without needing to access multiple sources for labels
+- **Data Consumers** can reliably and transparently access this information without needing to search around for labels.
 
-With OLI Data Entry, we try to fix the labeling challenge by providing a straightforward, fair and universally accessible solution, enabling everyone to benefit from crowdsourced contract labels.
+With the Label Pool, we address the problem of isolated and unstandardized labels in the web3 space by providing a straightforward, fair and universally accessible solution — enabling everyone to benefit from crowdsourced address labels.
 
-## Data Submission: Attesting
+## Accessing The Label Pool
 
-Users can label a contract by attesting to the [EAS smart contract](https://github.com/ethereum-attestation-service/eas-contracts?tab=readme-ov-file#optimism). There are multiple ways to attest, and we present two options here: using the EAS front end or a bulk attestation tool. Whichever method you choose, ensure that you are attesting to the [latest OLI schema hash](attestation_schema/EAS_schema_versioning.yml).
+Users can submit a label to the Data Pool by attesting to the [EAS smart contract](https://github.com/ethereum-attestation-service/eas-contracts?tab=readme-ov-file#base) using the [latest OLI schema hash](attestation_schema/EAS_schema_versioning.yml). To allign with the Web3 ethos, all attestations are public, timestamped and signed by an EOA, ensuring transparency and traceability of the contribution's source. *Currently both onchain and offchain attestations are allowed. With lower gas fees we are moving towards full onchain attestations soon.* 
+
+To simplify the labeling process, we provide various tools for submitting and retrieving labels from the Data Pool. Since the system is permissionless, anyone can build their own custom implementation. Below are the tools we offer to make connecting to the Data Pool easier:
+
+### Contributing Labels to The Data Pool
+
+1. **[EAS Frontend Implementation](https://base.easscan.org/attestation/attestWithSchema/0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68)** (*onchain & offchain*): A basic frontend that allows users to attest individual labels, featuring a wallet connect button. *To be replaced by our own custom white label front end soon*.
+2. **[Bulk TypeScript Attestation Script](tooling_attesting/bulk_offchain_typescript/README.md)** (*offchain*): Utilizes the EAS SDK to sign attestations and pins them to the EAS IPFS server.
+3. **[Bulk Python Attestation Script](tooling_attesting/bulk_onchain_python/README.md)** (*onchain*): Uses Web3.py to interact with the blockchain and submit attestations.
+
+### Retrieving Labels From The Data Pool
+
+1. **[GraphQL](https://base.easscan.org/graphql)**: Provided by the EAS, this GraphQL endpoint allows querying all attestations with custom filters.  
+2. **[GraphQL Python Quick Start](tooling_retrieval/graphql_python/README.md)**: A Jupyter Notebook with basic examples for querying the GraphQL endpoint and applying filters.  
+
+### User Segmentation 
 
 We identified 3 core user types as label submitters. They mostly differ in terms of label volume that they submit.
 
@@ -22,48 +35,3 @@ We identified 3 core user types as label submitters. They mostly differ in terms
   | **High-volume labelers** | High (1000+)       | Data teams & indexing companies that have automated and highly optimized scripts running to label a high number of smart contracts. | Automated via data-pipelines |
   | **Casual labelers**      | Medium (5-1000)    | Individuals who have a set of labels they want to submit. Could be analysts collecting labels manually or dApp teams that deployed multiple contracts and want to share metadata. | CSV/JSON upload |
   | **Single labelers**      | Low (1-5)         | Individuals submitting a very small amount of labels, usually smart contract deployers who want to make metadata on their smart contract available. | Frontend with dropdowns |
-
-### **Attesting: EAS Front End**
-
-1. **EAS Front-End:**
-While our custom white label front end is under development, please use the EAS dApp [here](https://optimism.easscan.org/attestation/attestWithSchema/0x5283a290268ebd286c379b633b1f8f8241edb577a074d67a3ceea636461dd13f) and make sure you are attesting to the [latest schema hash](attestation_schema/EAS_schema_versioning.yml).
-
-2. **Connect Your Wallet:**
-Ensure your wallet is connected and you are on the correct network (optimism).
-
-3. **Create an Attestation**
-
-    - **Recipient**: Enter the address to be labeled.
-
-    - **Chain ID**: Provide the chain ID corresponding to the location of the address/contract you want to label.
-
-    - **Ownership Proof**: If you are the owner of the contract you are labeling, toggle this option to `True`. This will prove that you are the owner and that your label is of high quality. Otherwise, set it to `False`.
-      - This feature only works if you are on the same chain where the contract is deployed.
-      - The address from which you send the transaction must also be the owner of the contract you are attesting. The contract must implement the OpenZeppelin `Ownable.sol` extension.  
-
-    - **OLI-Compliant Labels**: Provide as much detail as possible for each label in the attestation. Leaving fields blank, especially if they are unknown, is acceptable. Some fields require a value, therefore it is important to note:
-
-      - **Boolean Values**: Columns representing boolean values (e.g., `is_owner`, `is_eoa`) are using `uint8` format:
-        - `0` = No Value
-        - `1` = True
-        - `2` = False
-      
-      - **Address Fields**: Any field requiring an address cannot be left empty. If no value is available, use `0x0000000000000000000000000000000000000000`
-
-      - **Uint Fields**: Any `uint` fields, such as `deployment_date` or `erc20_decimals`, should be set to `0` if no value is provided.
-
-      - **String Fields**: These can be left as `null` if no value is provided.
-
-      - Refer to [tag_definitions.yml](../1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
-
-4. **Sign and Submit Onchain or Offchain:**
-   - Select your preferred submission method: onchain or offchain. Default should be set to offchain.
-   - Use your wallet to sign the attestation.
-
-### **Attesting: Bulk Attesting**
-
-To bulk attest a CSV file, refer to the directory [bulk_attesting](bulk_attesting/README.md). This TypeScript project provides all the necessary tools to use ethers for signing and submitting the labels.
-
-## Data Retrieval
-
-WIP
