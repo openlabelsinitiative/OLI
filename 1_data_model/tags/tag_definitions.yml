@@ -1,8 +1,8 @@
-version: 0.1.0
+version: 0.1.1
 tags:
-- tag_id: oli.name
-  name: Name
-  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the name = 'router'.
+- tag_id: oli.contract_name
+  name: Contract Name
+  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the contract_name = 'router'.
   type: string(40)
   creator: OLI
 
@@ -49,7 +49,7 @@ tags:
 - tag_id: oli.deployment_date
   name: Deployment Date
   description: The date the contract was deployed.
-  type: date
+  type: date (YYYY-MM-DD HH:MM:SS)
   creator: OLI
 
 - tag_id: oli.is_proxy

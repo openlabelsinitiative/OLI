@@ -1,38 +1,21 @@
 version_history:
-  - version: "0.1.0"
-    date: "2024-12-05"
+
+  - version: "1.0.0"
+    date: "2025-02-10"
     schemas:
-      - chain: "Optimism"
-        chain_id: "10"
-        schema_hash: "0xacb55ee4f0b0bf4987ba23f863e41e78ea1863e1c5aa881c520d16dae76a0c7b"
-        custom_resolver: "0xedfea228da3bdb0efd231707b2ee588224ee0886"
+      - chain: "Base"
+        chain_id: "8453"
+        schema_hash: "0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68"
+        custom_resolver: null
+        revocable: true
         schema: |
           {
-            "chain_id": "uint256",
-            "is_owner": "bool",
-            "is_eoa": "uint8",
-            "is_contract": "uint8",
-            "is_factory_contract": "uint8",
-            "is_proxy": "uint8",
-            "is_safe_contract": "uint8",
-            "name": "string",
-            "deployment_tx": "string",
-            "deployer_address": "address",
-            "owner_project": "string",
-            "deployment_date": "uint256",
-            "erc_type": "uint8[]",
-            "erc20_symbol": "string",
-            "erc20_decimals": "uint8",
-            "erc721_name": "string",
-            "erc721_symbol": "string",
-            "erc1155_name": "string",
-            "erc1155_symbol": "string",
-            "usage_category": "string",
-            "version": "uint8",
-            "audit": "string",
-            "contract_monitored": "string",
-            "source_code_verified": "string"
+            "chain_id": "string",
+            "tags_json": "string"
           }
+
+  # ---- BELOW THIS LINE ARE ONLY DEPRECATED SCHEMAS ---- #
+
   - version: "0.1.1"
     date: "2025-01-15"
     schemas:
@@ -55,6 +38,41 @@ version_history:
             "owner_project": "string",
             "deployment_date": "uint256",
             "erc_type": "uint16[]",
+            "erc20_symbol": "string",
+            "erc20_decimals": "uint8",
+            "erc721_name": "string",
+            "erc721_symbol": "string",
+            "erc1155_name": "string",
+            "erc1155_symbol": "string",
+            "usage_category": "string",
+            "version": "uint8",
+            "audit": "string",
+            "contract_monitored": "string",
+            "source_code_verified": "string"
+          }
+
+  - version: "0.1.0"
+    date: "2024-12-05"
+    schemas:
+      - chain: "Optimism"
+        chain_id: "10"
+        schema_hash: "0xacb55ee4f0b0bf4987ba23f863e41e78ea1863e1c5aa881c520d16dae76a0c7b"
+        custom_resolver: "0xedfea228da3bdb0efd231707b2ee588224ee0886"
+        schema: |
+          {
+            "chain_id": "uint256",
+            "is_owner": "bool",
+            "is_eoa": "uint8",
+            "is_contract": "uint8",
+            "is_factory_contract": "uint8",
+            "is_proxy": "uint8",
+            "is_safe_contract": "uint8",
+            "name": "string",
+            "deployment_tx": "string",
+            "deployer_address": "address",
+            "owner_project": "string",
+            "deployment_date": "uint256",
+            "erc_type": "uint8[]",
             "erc20_symbol": "string",
             "erc20_decimals": "uint8",
             "erc721_name": "string",

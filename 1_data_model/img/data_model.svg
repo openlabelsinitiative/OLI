@@ -49,14 +49,14 @@
 </a>
 </g>
 </g>
-<!-- OLI_Framework -->
-<g id="OLI_Framework" class="node">
-<title>OLI_Framework</title>
-<g id="a_OLI_Framework"><a xlink:title="OLI_Framework&#10;A many&#45;to&#45;many relationship table that maps tags to addresses, allowing an address to have multiple tag_ids and a tag_id to be applied to multiple addresses.">
+<!-- Framework -->
+<g id="Framework" class="node">
+<title>Framework</title>
+<g id="a_Framework"><a xlink:title="Framework&#10;A many&#45;to&#45;many relationship table that maps tags to addresses, allowing an address to have multiple tag_ids and a tag_id to be applied to multiple addresses.">
 <ellipse fill="none" stroke="black" stroke-width="0" cx="267.99" cy="-432.24" rx="267.99" ry="214.92"/>
 <polygon fill="#1d71b8" stroke="transparent" points="80.99,-522.24 80.99,-582.24 455.99,-582.24 455.99,-522.24 80.99,-522.24"/>
 <polygon fill="none" stroke="#29235c" points="80.99,-522.24 80.99,-582.24 455.99,-582.24 455.99,-522.24 80.99,-522.24"/>
-<text text-anchor="start" x="91.58" y="-543.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;OLI_Framework &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="91.58" y="-543.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;Framework &#160;&#160;&#160;&#160;&#160;&#160;</text>
 <polygon fill="#e7e2dd" stroke="transparent" points="80.99,-462.24 80.99,-522.24 455.99,-522.24 455.99,-462.24 80.99,-462.24"/>
 <polygon fill="none" stroke="#29235c" points="80.99,-462.24 80.99,-522.24 455.99,-522.24 455.99,-462.24 80.99,-462.24"/>
 <text text-anchor="start" x="91.99" y="-483.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">address</text>
@@ -80,10 +80,10 @@
 </a>
 </g>
 </g>
-<!-- OLI_Framework&#45;&gt;Tags -->
-<!-- OLI_Framework&#45;&gt;Tags -->
+<!-- Framework&#45;&gt;Tags -->
+<!-- Framework&#45;&gt;Tags -->
 <g id="edge2" class="edge">
-<title>OLI_Framework:e&#45;&gt;Tags:w</title>
+<title>Framework:e&#45;&gt;Tags:w</title>
 <path fill="none" stroke="#29235c" stroke-width="3" d="M456.99,-372.24C548.47,-372.24 539.7,-483.5 623.74,-491.76"/>
 <polygon fill="#29235c" stroke="#29235c" stroke-width="3" points="623.72,-495.26 633.88,-492.24 624.05,-488.27 623.72,-495.26"/>
 <text text-anchor="middle" x="642.77" y="-501.84" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">1</text>
