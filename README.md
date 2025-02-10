@@ -10,57 +10,15 @@ By aligning on a single framework for address labels, we streamline our labeling
 
 The OLI repository functions as the community maintainer of the OLI framework. Additionally, it serves as a neutral entity that provides tools for data entry through attestations and automated activity tagging.
 
-## Tagging
-Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
-
-* `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
-* `chain_id`: unique identifier as defined by [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) or [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md)
-* `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](https://github.com/openlabelsinitiative/OLI/blob/main/data_model/tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed project based labelling. 
-* `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
-
-<img src="data_model/img/data_model.svg" alt="Data Model" width="400">
-
-
 ## The 3 pillars of OLI
-  - **OLI Data Model:** We all speak the same language when it comes to labels. This framework allows us to easily sync labels between different databases and align on the valuesets. More in [data_model](data_model/readme.md).
-  - **Label Pool:** A publicly accessible database of attested labels. Raw and simple. We use attestations to collect labels from anyone out there willing to share labels. All of these attestations will be accessible to anyone.
-  - **Label Confidence:** Use-case optimized trust algorithms applied to the raw labels. This way raw labels become useful labels, optimized either for analytics, security, or other use-cases.
+  - **1) Data Model:** We all speak the same language when it comes to labels. This framework allows us to easily sync labels between different databases and align on the valuesets. More in [data model](https://github.com/openlabelsinitiative/OLI/tree/main/1_data_model).
+  - **2) Label Pool:** A publicly accessible database of attested labels. Raw and simple. We use attestations to collect labels from anyone out there willing to share labels. All of these attestations will be accessible to anyone. More in [label pool](https://github.com/openlabelsinitiative/OLI/tree/main/2_label_pool)
+  - **3) Label Confidence:** Use-case optimized trust algorithms applied to the raw labels. This way raw labels become useful labels, optimized either for analytics, security, or other use-cases. More soon in [label confidence](https://github.com/openlabelsinitiative/OLI/tree/main/3_label_confidence).
 
 ![OLI pillars](src/images/oli_pillars.png)
 
-## Example Datasets
-Datasets can be stored according to the defined OLI Data Model, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.
-
-We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155-10)](sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
-
-A short excerpt:
-```
-[
-    {
-        "address": "0x087000A300DE7200382b55D40045000000E5d60E",
-        "chain_id": "eip155-10",
-        "name": "Aggregate3",
-        "owner_project": "worldcoin",
-        "usage_category": "airdrop",
-        "deployment_tx": "0xdd0f9cfb373020dd8d71c22d0853ac5d3ba1911ead94177ee09737f74a18b3d2",
-        "deployer_address": "0x7d896339A80DD38bC3BbB04383894C62b2eF2585",
-        "deployment_date": "2023-09-23 19:55:13"
-    },
-    {
-        "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
-        "chain_id": "eip155-10",
-        "name": "WLD",
-        "owner_project": "worldcoin",
-        "usage_category": "fungible_tokens",
-        "deployment_tx": "0x3f3231f6f4a036901a06d79a92ef7ffaedc81a8470126f4fdb436f7a57213de8",
-        "deployer_address": "0x36BDE71C97B33Cc4729cf772aE268934f7AB70B2",
-        "deployment_date": "2023-07-19 13:51:49"
-    }
-]
-```
-
 ## OLI-Compliant Tools
-- [growthepie - L2 Smart Contract Explorer](https://labels.growthepie.xyz/)
+- [growthepie - Smart Contract Explorer](https://labels.growthepie.xyz/)
 - ...
 - *please list your projects here*
 
@@ -70,7 +28,7 @@ A short excerpt:
 <details>
   <summary><strong>This sounds great, how can I get started / participate?</strong></summary>
 
-  Awesome to hear! You can join our [monthly OLI calls](https://calendar.google.com/calendar/u/3?cid=MmQ0MzYxNzQ3ZGFiY2M3ZDJkZjk0NjZiYmY3MmNmZDUwZTNjMjE2OTQ4YzgyNmI4OTBmYjYyN2VmNGRjNjQ4OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) if you want to be up-to-date with anything that is currently happening. You can also start submitting labels, either via our Frontend (WIP) or by using some of our [bulk_attesting scripts](data_pool/bulk_attesting/). If you are just interested in reading labels from the label pool you can retrieve them via the GraphQL endpoints (WIP).
+  Awesome to hear! You can join our [monthly OLI calls](https://calendar.google.com/calendar/u/3?cid=MmQ0MzYxNzQ3ZGFiY2M3ZDJkZjk0NjZiYmY3MmNmZDUwZTNjMjE2OTQ4YzgyNmI4OTBmYjYyN2VmNGRjNjQ4OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) if you want to be up-to-date with anything that is currently happening. You can also start submitting labels, either via our Frontend (WIP) or by using some of our [bulk_attesting scripts](2_label_pool/bulk_attesting/). If you are just interested in reading labels from the label pool you can retrieve them via the GraphQL endpoints (WIP).
 
 </details>
 
@@ -123,11 +81,6 @@ A short excerpt:
   A little bit of a WIP but the Ethereum Attestation Service has great GraphQL endpoints available. In the future we will also have public datasets availabe on BigQuery.
 
 </details>
-
-
-
-
-
 
 ## Contributors
 - [growthepie](https://www.growthepie.xyz/): Ethereum & Layer 2 analytics platform with focus on labeling smart contracts in terms of their usage and project owners.

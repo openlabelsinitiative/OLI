@@ -1,4 +1,4 @@
-# OLI Data Entry / Contract Labeling
+# Label Pool Overview
 
 ** OLI DATA ENTRY IS CURRENTLY IN BETA **
 
@@ -6,14 +6,22 @@ OLI Data Entry focuses specifically on the process of data entry for address lab
 
 This repository provides the latest schemas for attestations and a step by step workflow for creating and retrieving contract labels. The goal is to establish a single, decentralized point of data entry, ensuring an open and fair system where:
 
-- **Labelers** only need to label their contracts once, making their labels universally accessible to everyone.
-- **Data Consumers** can reliably and transparently access this information without duplicating efforts.
+- **Labelers / Data Submitters** fill the Label Pool with labels
+- **Data Consumers** can reliably and transparently access this information without needing to access multiple sources for labels
 
 With OLI Data Entry, we try to fix the labeling challenge by providing a straightforward, fair and universally accessible solution, enabling everyone to benefit from crowdsourced contract labels.
 
-## Attesting
+## Data Submission: Attesting
 
 Users can label a contract by attesting to the [EAS smart contract](https://github.com/ethereum-attestation-service/eas-contracts?tab=readme-ov-file#optimism). There are multiple ways to attest, and we present two options here: using the EAS front end or a bulk attestation tool. Whichever method you choose, ensure that you are attesting to the [latest OLI schema hash](attestation_schema/EAS_schema_versioning.yml).
+
+We identified 3 core user types as label submitters. They mostly differ in terms of label volume that they submit.
+
+| Submitter                | Volume        | Description | Entry method
+  |------------------------|--------------------|-------------|------------
+  | **High-volume labelers** | High (1000+)       | Data teams & indexing companies that have automated and highly optimized scripts running to label a high number of smart contracts. | Automated via data-pipelines |
+  | **Casual labelers**      | Medium (5-1000)    | Individuals who have a set of labels they want to submit. Could be analysts collecting labels manually or dApp teams that deployed multiple contracts and want to share metadata. | CSV/JSON upload |
+  | **Single labelers**      | Low (1-5)         | Individuals submitting a very small amount of labels, usually smart contract deployers who want to make metadata on their smart contract available. | Frontend with dropdowns |
 
 ### **Attesting: EAS Front End**
 
@@ -46,7 +54,7 @@ Ensure your wallet is connected and you are on the correct network (optimism).
 
       - **String Fields**: These can be left as `null` if no value is provided.
 
-      - Refer to [tag_definitions.yml](../data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
+      - Refer to [tag_definitions.yml](../1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
 
 4. **Sign and Submit Onchain or Offchain:**
    - Select your preferred submission method: onchain or offchain. Default should be set to offchain.
@@ -56,6 +64,6 @@ Ensure your wallet is connected and you are on the correct network (optimism).
 
 To bulk attest a CSV file, refer to the directory [bulk_attesting](bulk_attesting/README.md). This TypeScript project provides all the necessary tools to use ethers for signing and submitting the labels.
 
-### **Data Retrieval**
+## Data Retrieval
 
-coming soon
+WIP
