@@ -1,12 +1,13 @@
 version_history:
 
-  - version: "0.2.0"
+  - version: "1.0.0"
     date: "2025-02-10"
     schemas:
       - chain: "Base"
         chain_id: "8453"
-        schema_hash: ""
-        custom_resolver: NULL
+        schema_hash: "0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68"
+        custom_resolver: null
+        revocable: true
         schema: |
           {
             "chain_id": "string",
