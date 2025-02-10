@@ -1,3 +1,3 @@
 # bulk attesting
-data_pool/bulk_attesting/node_modules
-data_pool/bulk_attesting/attestation_logs_*.json
+2_label_pool/tooling_attesting/bulk_offchain_typescript/node_modules
+2_label_pool/tooling_attesting/bulk_offchain_typescript/attestation_logs_*.json
