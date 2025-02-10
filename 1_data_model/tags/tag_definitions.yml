@@ -2,7 +2,7 @@ version: 0.1.1
 tags:
 - tag_id: oli.contract_name
   name: Contract Name
-  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the name = 'router'.
+  description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the contract_name = 'router'.
   type: string(40)
   creator: OLI
 
