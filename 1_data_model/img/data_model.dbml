@@ -21,7 +21,7 @@ Table Tags {
   Note: "Individual tags or identifiers that can be applied to addresses for sorting, searching, and categorization purposes."
 }
 
-Table OLI_Framework {
+Table Framework {
   address string [pk, Note: "the hexadecimal public address of a smart contract or externally owned account (EOA)"]
   chain_id string [pk, Note: "unique identifier as defined by EIP-155 or CAIP-2"]
   tag_id string [pk, Note: "Tag IDs that can represent a wide range of concepts. For OLI-compliant tags, please refer to tag_defintions.yml in the OLI github repo"]
@@ -30,4 +30,4 @@ Table OLI_Framework {
   Note: "A many-to-many relationship table that maps tags to addresses, allowing an address to have multiple tag_ids and a tag_id to be applied to multiple addresses."
 }
 
-Ref: OLI_Framework.tag_id > Tags.tag_id
+Ref: Framework.tag_id > Tags.tag_id
