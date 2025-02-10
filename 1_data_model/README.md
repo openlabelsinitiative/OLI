@@ -4,7 +4,7 @@
 Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
 
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
-* `chain_id`: unique identifier as defined by [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) in [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md) standard.
+* `chain_id`: unique identifier as defined by [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md), which includes the [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) standard. Allows for referencing non-EVM chains such as Bitcoin, Starknet and Solana.
 * `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed internal labelling.
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 

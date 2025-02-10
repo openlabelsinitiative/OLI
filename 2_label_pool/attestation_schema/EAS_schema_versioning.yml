@@ -1,15 +1,15 @@
 version_history:
 
   - version: "0.2.0"
-    date: "2025-02-07"
+    date: "2025-02-10"
     schemas:
       - chain: "Base"
         chain_id: "8453"
         schema_hash: ""
-        custom_resolver: ""
+        custom_resolver: NULL
         schema: |
           {
-            "chain_id": "uint256",
+            "chain_id": "string",
             "tags_json": "string"
           }
 
