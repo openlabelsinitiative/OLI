@@ -1,7 +1,7 @@
 [
     {
         "address": "0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Universal Router",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -11,7 +11,7 @@
     },
     {
         "address": "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "V2 Router02",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -21,7 +21,7 @@
     },
     {
         "address": "0x2626664c2603336E57B271c5C0b26F421741e481",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "SwapRouter02",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -31,7 +31,7 @@
     },
     {
         "address": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "EntryPoint v2",
         "owner_project": null,
         "usage_category": "erc4337",
@@ -41,7 +41,7 @@
     },
     {
         "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "USDC",
         "owner_project": "circle",
         "usage_category": "stablecoin",
@@ -51,7 +51,7 @@
     },
     {
         "address": "0x1195Cf65f83B3A5768F3C496D3A05AD6412c64B7",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "CUBE",
         "owner_project": "layer3xyz",
         "usage_category": "non_fungible_tokens",
@@ -61,7 +61,7 @@
     },
     {
         "address": "0x198EF79F1F515F02dFE9e3115eD9fC07183f02fC",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "UniversalRouter",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -71,7 +71,7 @@
     },
     {
         "address": "0x1111111254EEB25477B68fb85Ed929f73A960582",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "AggregationRouterV5",
         "owner_project": "1-inch",
         "usage_category": "dex",
@@ -81,7 +81,7 @@
     },
     {
         "address": "0x0e22B5f3E11944578b37ED04F5312Dfc246f443C",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Diamond",
         "owner_project": "frenpet-xyz",
         "usage_category": "gaming",
@@ -91,7 +91,7 @@
     },
     {
         "address": "0x36db5034032fd240A1b3CdE369772049C8DcFB91",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -101,7 +101,7 @@
     },
     {
         "address": "0xaA877b9d9FbD4d6c40C3B9503F0D251531f1fB84",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -111,7 +111,7 @@
     },
     {
         "address": "0x39688b80e9902e0cD7d1246F789e4DEE9b77A1C0",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -121,7 +121,7 @@
     },
     {
         "address": "0x4200000000000000000000000000000000000006",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "WETH",
         "owner_project": "base-org",
         "usage_category": "fungible_tokens",
@@ -131,7 +131,7 @@
     },
     {
         "address": "0x802b65b5d9016621E66003aeD0b16615093f328b",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": "trading",
@@ -141,7 +141,7 @@
     },
     {
         "address": "0xECB03B9a0E7F7B5E261d3Ef752865af6621a54Fe",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Sniper Bot",
         "owner_project": "sigmabot",
         "usage_category": "dex",
@@ -151,7 +151,7 @@
     },
     {
         "address": "0xDef1C0ded9bec7F1a1670819833240f027b25EfF",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Exchange Proxy v4",
         "owner_project": "zeroex",
         "usage_category": "dex",
@@ -161,7 +161,7 @@
     },
     {
         "address": "0xCE4cF0d5DA97B7f4de1bA76609F2A1330411e7c0",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -171,7 +171,7 @@
     },
     {
         "address": "0x19cEeAd7105607Cd444F5ad10dd51356436095a1",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "RouterV2",
         "owner_project": "odos-xyz",
         "usage_category": "dex",
@@ -181,7 +181,7 @@
     },
     {
         "address": "0x4eB3621D59a1c4Ee08140006062D023389344e53",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -191,7 +191,7 @@
     },
     {
         "address": "0xcb566e3B6934Fa77258d68ea18E931fa75e1aaAa",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "SDK",
         "owner_project": "layer-zero",
         "usage_category": "cc_communication",
@@ -201,7 +201,7 @@
     },
     {
         "address": "0x47fbe95e981C0Df9737B6971B451fB15fdC989d9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": "dmail-web",
         "usage_category": "community",
@@ -211,7 +211,7 @@
     },
     {
         "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "USDbC",
         "owner_project": "circlefin",
         "usage_category": "stablecoin",
@@ -221,7 +221,7 @@
     },
     {
         "address": "0xD56e4eAb23cb81f43168F9F45211Eb027b9aC7cc",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Google Cloud Oracle",
         "owner_project": "layer-zero",
         "usage_category": "cc_communication",
@@ -231,7 +231,7 @@
     },
     {
         "address": "0x00005EA00Ac477B1030CE78506496e8C2dE24bf5",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Seadrop",
         "owner_project": "open-sea",
         "usage_category": "nft_marketplace",
@@ -241,7 +241,7 @@
     },
     {
         "address": "0x0ED09C8334b022d9148152f3B349bCE86488a790",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -251,7 +251,7 @@
     },
     {
         "address": "0xD1253aFc33386D9F0d546f1e5B105b328Ba1557a",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -261,7 +261,7 @@
     },
     {
         "address": "0x042c37762d1D126Bc61Eac2F5cEb7a96318f5DB9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": "tarot-finance",
         "usage_category": null,
@@ -271,7 +271,7 @@
     },
     {
         "address": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Router",
         "owner_project": "aerodrome-finance",
         "usage_category": "dex",
@@ -281,7 +281,7 @@
     },
     {
         "address": "0x1231DEB6f5749EF6cE6943a275A1D3E7486F4EaE",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "LiFiDiamond",
         "owner_project": "lifinance",
         "usage_category": "bridge",
@@ -291,7 +291,7 @@
     },
     {
         "address": "0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "FriendtechSharesV1",
         "owner_project": "friend-tech",
         "usage_category": "community",
@@ -301,7 +301,7 @@
     },
     {
         "address": "0x5FF292d70bA9cD9e7CCb313782811b3D7120535f",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": "avantis-labs",
         "usage_category": null,
@@ -311,7 +311,7 @@
     },
     {
         "address": "0x0389879e0156033202C44BF784ac18fC02edeE4f",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Route Processor 4",
         "owner_project": "sushi",
         "usage_category": "dex",
@@ -321,7 +321,7 @@
     },
     {
         "address": "0xe8e1268C5a724231905D0735f041fCdE1b0649E9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -331,7 +331,7 @@
     },
     {
         "address": "0x201e95f275F39a5890C976Dc8A3E1b4Af114E635",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Clubs",
         "owner_project": "friend-tech",
         "usage_category": "community",
@@ -341,7 +341,7 @@
     },
     {
         "address": "0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Degen",
         "owner_project": "degen-token",
         "usage_category": "fungible_tokens",
@@ -351,7 +351,7 @@
     },
     {
         "address": "0x8D871Ef2826ac9001fB2e33fDD6379b6aaBF449c",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -361,7 +361,7 @@
     },
     {
         "address": "0x6BDED42c6DA8FBf0d2bA55B2fa120C5e0c8D7891",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "V2 Router02",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -371,7 +371,7 @@
     },
     {
         "address": "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "NonfungiblePositionManager",
         "owner_project": "uniswap",
         "usage_category": "dex",
@@ -381,7 +381,7 @@
     },
     {
         "address": "0x50B6EbC2103BFEc165949CC946d739d5650d7ae4",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "RouterETH",
         "owner_project": "stargate-finance",
         "usage_category": "bridge",
@@ -391,7 +391,7 @@
     },
     {
         "address": "0x6131B5fae19EA4f9D964eAc0408E4408b66337b5",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "MetaAggregationRouterV2",
         "owner_project": "kyber-swap",
         "usage_category": "dex",
@@ -401,7 +401,7 @@
     },
     {
         "address": "0x09aea4b2242abC8bb4BB78D537A67a245A7bEC64",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": "across",
         "usage_category": null,
@@ -411,7 +411,7 @@
     },
     {
         "address": "0x84E69d44b186AaC19D30D2F85CBD90a4665b07FF",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -421,7 +421,7 @@
     },
     {
         "address": "0x6b2C0c7be2048Daa9b5527982C29f48062B34D58",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Router",
         "owner_project": "okx",
         "usage_category": "dex",
@@ -431,7 +431,7 @@
     },
     {
         "address": "0x3A6AE1e6aD00518bDcd485a6B4d428fb9c9a3120",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -441,7 +441,7 @@
     },
     {
         "address": "0x111111125421cA6dc452d289314280a0f8842A65",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Aggregation Router V6",
         "owner_project": "1-inch",
         "usage_category": "dex",
@@ -451,7 +451,7 @@
     },
     {
         "address": "0x31C7a231aBFA07E42Af4f620e0193a426E82c7F7",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Faulty Router",
         "owner_project": null,
         "usage_category": "dex",
@@ -461,7 +461,7 @@
     },
     {
         "address": "0x273cA93A52b817294830eD7572aA591Ccfa647fd",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "EIP-4844 is Based",
         "owner_project": "base-org",
         "usage_category": "non_fungible_tokens",
@@ -471,7 +471,7 @@
     },
     {
         "address": "0x3ccC78545F675A188B7521F7f4b4791995752635",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": "trading",
@@ -481,7 +481,7 @@
     },
     {
         "address": "0x6814acc39d3fBFC0581c0bC8aB6942e8B6b0D43d",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -491,7 +491,7 @@
     },
     {
         "address": "0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "SmartRouter",
         "owner_project": "pancakeswap",
         "usage_category": "dex",
@@ -501,7 +501,7 @@
     },
     {
         "address": "0xAc21e6333bA4Fc1dcD650f215BC38bF585Ab13C9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -511,7 +511,7 @@
     },
     {
         "address": "0x0000000000000068F116a894984e2DB1123eB395",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Seaport V15",
         "owner_project": "open-sea",
         "usage_category": "nft_marketplace",
@@ -521,7 +521,7 @@
     },
     {
         "address": "0x1A8f43e01B78979EB4Ef7feBEC60F32c9A72f58E",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": "bitkeep",
         "usage_category": "dex",
@@ -531,7 +531,7 @@
     },
     {
         "address": "0x000000338300A9a80000C868A40085B15dd000D0",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -541,7 +541,7 @@
     },
     {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "AERO",
         "owner_project": "aerodrome-finance",
         "usage_category": "fungible_tokens",
@@ -551,7 +551,7 @@
     },
     {
         "address": "0x4869892c8088D9057AD7d0e5189AE8C3278F8877",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": null,
         "usage_category": "dex",
@@ -561,7 +561,7 @@
     },
     {
         "address": "0xD1ca1F4dBB645710f5D5a9917AA984a47524f49A",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": "bitkeep",
         "usage_category": "dex",
@@ -571,7 +571,7 @@
     },
     {
         "address": "0x585fd0fdf3F9BC442F74F80E0F92E8450337632e",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "VirtualAssetEvents",
         "owner_project": null,
         "usage_category": "gaming",
@@ -581,7 +581,7 @@
     },
     {
         "address": "0x5e6bB47D89Fea09cf5a75ea7E3Fa2e804798Eb55",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": "trading",
@@ -591,7 +591,7 @@
     },
     {
         "address": "0x0bD4887f7D41B35CD75DFF9FfeE2856106f86670",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -601,7 +601,7 @@
     },
     {
         "address": "0x6Cb442acF35158D5eDa88fe602221b67B400Be3E",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "UniversalRouter",
         "owner_project": "aerodrome-finance",
         "usage_category": "dex",
@@ -611,7 +611,7 @@
     },
     {
         "address": "0x3a23F943181408EAC424116Af7b7790c94Cb97a5",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "SocketGateway",
         "owner_project": "socket",
         "usage_category": "cc_communication",
@@ -621,7 +621,7 @@
     },
     {
         "address": "0x0BcB92389C121E5b8eAc72247bd8E475fd6d6a8c",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -631,7 +631,7 @@
     },
     {
         "address": "0xB76AC3b124a5714867e81F2d2279182ec973a3f3",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -641,7 +641,7 @@
     },
     {
         "address": "0xB815e2C839fDafe8Fbb8589EdbB214B8B64843f6",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Faulty Router",
         "owner_project": null,
         "usage_category": "dex",
@@ -651,7 +651,7 @@
     },
     {
         "address": "0xE7351Fd770A37282b91D153Ee690B63579D6dd7f",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "DIn: Destination",
         "owner_project": "debridge-finance",
         "usage_category": "bridge",
@@ -661,7 +661,7 @@
     },
     {
         "address": "0x532f27101965dd16442E59d40670FaF5eBB142E4",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Brett",
         "owner_project": null,
         "usage_category": "fungible_tokens",
@@ -671,7 +671,7 @@
     },
     {
         "address": "0x32AED3Bce901DA12ca8489788F3A99fCe1056e14",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Router",
         "owner_project": "paraswap",
         "usage_category": "dex",
@@ -681,7 +681,7 @@
     },
     {
         "address": "0x818e30dC91322DD3dCF2F8906c8294f49ccdc101",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": null,
         "usage_category": "dex",
@@ -691,7 +691,7 @@
     },
     {
         "address": "0x3B9728bD65Ca2c11a817ce39A6e91808CceeF6FD",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "IHF",
         "owner_project": null,
         "usage_category": "fungible_tokens",
@@ -701,7 +701,7 @@
     },
     {
         "address": "0x10547695106686D1bB4fDFfE86AADA2C2bAc80f6",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -711,7 +711,7 @@
     },
     {
         "address": "0x1Fba6b0BBae2B74586fBA407Fb45Bd4788B7b130",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Router",
         "owner_project": "bananagun",
         "usage_category": "dex",
@@ -721,7 +721,7 @@
     },
     {
         "address": "0x1D6b183bD47F914F9f1d3208EDCF8BefD7F84E63",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Coin Earnings",
         "owner_project": "coinbase",
         "usage_category": "non_fungible_tokens",
@@ -731,7 +731,7 @@
     },
     {
         "address": "0xAd3c9359A2e4942C8eB9618FC981cC2B47a22002",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": null,
         "usage_category": "dex",
@@ -741,7 +741,7 @@
     },
     {
         "address": "0xBCe954fBbE0C57e826e95b5aA03dA9ECDbc990Da",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -751,7 +751,7 @@
     },
     {
         "address": "0x9ba6d87CE0C721E9e7B8D8CAc12A5334C8898F59",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -761,7 +761,7 @@
     },
     {
         "address": "0x6FBBa99eDD2Dd9f9dE4A6d7B7511752a32470322",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Order Manager",
         "owner_project": null,
         "usage_category": "trading",
@@ -771,7 +771,7 @@
     },
     {
         "address": "0xFf404f58Aea7cA290DaBB6F62b8287FCE28A6863",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -781,7 +781,7 @@
     },
     {
         "address": "0xeC63739dCC1dFD84dcB2617Af57ba5c481A1F6aE",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "VirtualAssetEvents",
         "owner_project": null,
         "usage_category": "gaming",
@@ -791,7 +791,7 @@
     },
     {
         "address": "0xF5306fF1D4585721a512d08ed545f4F35dE272F9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -801,7 +801,7 @@
     },
     {
         "address": "0x26637c9fDbD5Ecdd76a9E21Db7ea533e1B0713b6",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Check In",
         "owner_project": "owlto-finance",
         "usage_category": "community",
@@ -811,7 +811,7 @@
     },
     {
         "address": "0x85f66C49Dd72D90B33D88059512A46F5a49ece4A",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -821,7 +821,7 @@
     },
     {
         "address": "0x7161f940d3ca88e4035d7b7FBdE2a2870d176f87",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -831,7 +831,7 @@
     },
     {
         "address": "0xAfb89a09D82FBDE58f18Ac6437B3fC81724e4dF6",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "DOG",
         "owner_project": null,
         "usage_category": "fungible_tokens",
@@ -841,7 +841,7 @@
     },
     {
         "address": "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Router",
         "owner_project": "stargate-finance",
         "usage_category": "dex",
@@ -851,7 +851,7 @@
     },
     {
         "address": "0x5292d78c51FC76223a1Dd8236fA1ce80e3Ef4f68",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -861,7 +861,7 @@
     },
     {
         "address": "0x0000000000002Bdbf1Bf3279983603Ec279CC6dF",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Multicaller",
         "owner_project": "solady-vectorized",
         "usage_category": "developer_tools",
@@ -871,7 +871,7 @@
     },
     {
         "address": "0xAaB5A48CFC03Efa9cC34A2C1aAcCCB84b4b770e4",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "MultiSigOracle",
         "owner_project": "layer-zero",
         "usage_category": "cc_communication",
@@ -881,7 +881,7 @@
     },
     {
         "address": "0xD85Ee50da419cc5Af83a1e70A91d5C630b8C650a",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -891,7 +891,7 @@
     },
     {
         "address": "0x524254eedCd8221f8993BA234cB53771E68dcf4c",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -901,7 +901,7 @@
     },
     {
         "address": "0x4E5a7BC09C3144E5F5263509D261253f1480c674",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -911,7 +911,7 @@
     },
     {
         "address": "0x18dD5B087bCA9920562aFf7A0199b96B9230438b",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -921,7 +921,7 @@
     },
     {
         "address": "0xD93cb7092Fc1767D53BEA920E229996befdEB4C9",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "VirtualAssetEvents",
         "owner_project": null,
         "usage_category": "gaming",
@@ -931,7 +931,7 @@
     },
     {
         "address": "0x827922686190790b37229fd06084350E74485b72",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": "aerodrome-finance",
         "usage_category": null,
@@ -941,7 +941,7 @@
     },
     {
         "address": "0xBf250AE227De43deDaF01ccBFD8CC83027efc1E2",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -951,7 +951,7 @@
     },
     {
         "address": "0x3EA5fF7cD3000eDE819fe74FCcd911537946217F",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -961,7 +961,7 @@
     },
     {
         "address": "0xF2c4EBA901f4B75B7392A0D2e4b94A3166B5DfF7",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -971,7 +971,7 @@
     },
     {
         "address": "0xF9D64d54D32EE2BDceAAbFA60C4C438E224427d0",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": "Relay1 BalanceV2",
         "owner_project": "gelato",
         "usage_category": "developer_tools",
@@ -981,7 +981,7 @@
     },
     {
         "address": "0xBfBC4aa18A36A07a8aa563B0a0fc1be2c3f85072",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
@@ -991,7 +991,7 @@
     },
     {
         "address": "0x0Da2b06DBB440bB29DD821b62Bc136c75B422c43",
-        "chain_id": "eip155-8453",
+        "chain_id": "eip155:8453",
         "contract_name": null,
         "owner_project": null,
         "usage_category": null,
