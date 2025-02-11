@@ -26,9 +26,9 @@ type AttestationLog = {
 };
 
 // Configuration
-const baseURL = 'https://base-sepolia.easscan.org/';
+const baseURL = 'https://base-sepolia.easscan.org/'; // 'https://base.easscan.org/'
 const EASContractAddress = '0x4200000000000000000000000000000000000021';
-const schemaUID = '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
+const schemaUID = '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68'; // '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68'
 
 // Helper Functions
 function isHexString(value: any): boolean {
@@ -194,7 +194,7 @@ async function processRow(
 
 // Main Function
 async function main() {
-  const provider = new ethers.JsonRpcProvider('https://sepolia.base.org');//ethers.JsonRpcProvider('https://base-rpc.publicnode.com');
+  const provider = new ethers.JsonRpcProvider('https://sepolia.base.org'); // 'https://base-rpc.publicnode.com'
   const privateKey = '...'; // Replace with your private key
   const signer = new ethers.Wallet(privateKey, provider);
 

@@ -53,6 +53,8 @@ This script allows bulk attesting and uploading of labels to the OLI Label Pool 
 
 3. Add the `privateKey` variable with your private key (no funds required in the wallet, as it is used solely for reputation tracking + offchain signing) and the `fileContent` variable with your CSV file name.
 
+4. Once everything is working as expected, replace `baseURL`, `JsonRpcProvider`, and `schemaUID` with the production values that are currently commented out.
+
 ## Testing Environment
 
 The script is built for Base and directly attests to the live OLI Labels Pool.  
