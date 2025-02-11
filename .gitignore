@@ -1,6 +1,7 @@
 # bulk attesting typescript
 2_label_pool/tooling_attesting/bulk_offchain_typescript/node_modules
 2_label_pool/tooling_attesting/bulk_offchain_typescript/attestation_logs_*.json
+2_label_pool/tooling_attesting/bulk_offchain_typescript/package-lock.json
 # bulk attesting python
 2_label_pool/tooling_attesting/bulk_onchain_python/.venv
 2_label_pool/tooling_attesting/bulk_onchain_python/env

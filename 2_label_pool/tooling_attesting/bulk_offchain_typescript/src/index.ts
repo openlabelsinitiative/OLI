@@ -26,35 +26,11 @@ type AttestationLog = {
 };
 
 // Configuration
-const baseURL = 'https://optimism.easscan.org';
+const baseURL = 'https://base-sepolia.easscan.org/';
 const EASContractAddress = '0x4200000000000000000000000000000000000021';
-const schemaUID = '0x5283a290268ebd286c379b633b1f8f8241edb577a074d67a3ceea636461dd13f'; // use latest schema UID
+const schemaUID = '0xf60f408f2536ef7d93af7e1271e4ccec3fbf57e72c802902509a9690c6eaea4a';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
 
 // Helper Functions
-function convertBigIntToString(obj: any): any {
-  if (obj === null || obj === undefined) {
-    return obj;
-  }
-  
-  if (typeof obj === 'bigint') {
-    return obj.toString();
-  }
-  
-  if (Array.isArray(obj)) {
-    return obj.map(convertBigIntToString);
-  }
-  
-  if (typeof obj === 'object') {
-    const converted: any = {};
-    for (const key in obj) {
-      converted[key] = convertBigIntToString(obj[key]);
-    }
-    return converted;
-  }
-  
-  return obj;
-}
-
 function saveToLogFile(logs: AttestationLog[]) {
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const logFileName = `attestation_logs_${timestamp}.json`;
@@ -67,23 +43,11 @@ function saveToLogFile(logs: AttestationLog[]) {
   }
 }
 
-function parseErcType(ercType: string): number[] {
-  if (!ercType || ercType === '') {
-    return [];
-  }
-  return ercType.split(',').map(num => parseInt(num.trim()));
-}
-
-function parseBoolean(value: string): boolean {
-  return value.toLowerCase() === 'true';
-}
-
 // API Functions
 async function submitSignedAttestation(pkg: AttestationShareablePackageObject) {
-  const convertedPkg = convertBigIntToString(pkg);
   const data: StoreAttestationRequest = {
     filename: `eas.txt`,
-    textJson: JSON.stringify(convertedPkg),
+    textJson: JSON.stringify(pkg),
   };
   return await axios.post<StoreIPFSActionReturn>(
     `${baseURL}/offchain/store`,
@@ -102,32 +66,47 @@ async function processRow(
   const timestamp = new Date().toISOString();
   
   try {
+    // Create tags_json object only from fields that exist in the CSV
+    const tagsObject: { [key: string]: any } = {};
+    
+    // List of all possible tags as defined in the OLI Data Model
+    const possibleFields = [
+      'is_owner',
+      'is_eoa',
+      'is_contract',
+      'is_factory_contract',
+      'is_proxy',
+      'is_safe_contract',
+      'contract_name',
+      'deployment_tx',
+      'deployer_address',
+      'owner_project',
+      'deployment_date',
+      'erc_type',
+      'erc20_symbol',
+      'erc20_decimals',
+      'erc721_name',
+      'erc721_symbol',
+      'erc1155_name',
+      'erc1155_symbol',
+      'usage_category',
+      'version',
+      'audit',
+      'contract_monitored',
+      'source_code_verified'
+    ];
+
+    // Only add fields that exist in the row and have non-null values
+    for (const field of possibleFields) {
+      if (field in row && row[field] !== null && row[field] !== undefined && row[field] !== '') {
+        tagsObject[field] = row[field];
+      }
+    }
+
     const encodedData = schemaEncoder.encodeData([
-      { name: 'chain_id', value: parseInt(row.chain_id), type: 'uint256' },
-      { name: 'is_owner', value: parseBoolean(row.is_owner), type: 'bool' },
-      { name: 'is_eoa', value: parseInt(row.is_eoa), type: 'uint8' },
-      { name: 'is_contract', value: parseInt(row.is_contract), type: 'uint8' },
-      { name: 'is_factory_contract', value: parseInt(row.is_factory_contract), type: 'uint8' },
-      { name: 'is_proxy', value: parseInt(row.is_proxy), type: 'uint8' },
-      { name: 'is_safe_contract', value: parseInt(row.is_safe_contract), type: 'uint8' },
-      { name: 'name', value: row.name, type: 'string' },
-      { name: 'deployment_tx', value: row.deployment_tx, type: 'string' },
-      { name: 'deployer_address', value: row.deployer_address, type: 'address' },
-      { name: 'owner_project', value: row.owner_project, type: 'string' },
-      { name: 'deployment_date', value: parseInt(row.deployment_date), type: 'uint256' },
-      { name: 'erc_type', value: parseErcType(row.erc_type), type: 'uint16[]' },
-      { name: 'erc20_symbol', value: row.erc20_symbol, type: 'string' },
-      { name: 'erc20_decimals', value: parseInt(row.erc20_decimals), type: 'uint8' },
-      { name: 'erc721_name', value: row.erc721_name, type: 'string' },
-      { name: 'erc721_symbol', value: row.erc721_symbol, type: 'string' },
-      { name: 'erc1155_name', value: row.erc1155_name, type: 'string' },
-      { name: 'erc1155_symbol', value: row.erc1155_symbol, type: 'string' },
-      { name: 'usage_category', value: row.usage_category, type: 'string' },
-      { name: 'version', value: parseInt(row.version), type: 'uint8' },
-      { name: 'audit', value: row.audit, type: 'string' },
-      { name: 'contract_monitored', value: row.contract_monitored, type: 'string' },
-      { name: 'source_code_verified', value: row.source_code_verified, type: 'string' },
-    ]); // use latest OLI data model
+      { name: 'chain_id', value: row.chain_id || '', type: 'string' },
+      { name: 'tags_json', value: JSON.stringify(tagsObject), type: 'string' }
+    ]);
 
     const offchainAttestation = await offchain.signOffchainAttestation(
       {
@@ -156,8 +135,8 @@ async function processRow(
         timestamp,
         address: row.address,
         success: true,
-        ipfsHash: response.data.ipfsHash || undefined,  // Convert null to undefined if needed
-        offchainAttestationId: response.data.offchainAttestationId || undefined  // Convert null to undefined if needed
+        ipfsHash: response.data.ipfsHash || undefined,
+        offchainAttestationId: response.data.offchainAttestationId || undefined
     };
   } catch (error) {
     console.error(`Error processing attestation for address ${row.address}:`, error);
@@ -174,7 +153,7 @@ async function processRow(
 
 // Main Function
 async function main() {
-  const provider = new ethers.JsonRpcProvider('https://mainnet.optimism.io'); // change to your provider if needed
+  const provider = new ethers.JsonRpcProvider('wss://base-sepolia-rpc.publicnode.com');//ethers.JsonRpcProvider('https://base-rpc.publicnode.com');
   const privateKey = '...'; // Replace with your private key
   const signer = new ethers.Wallet(privateKey, provider);
 
@@ -185,13 +164,11 @@ async function main() {
   // Get offchain instance
   const offchain = await eas.getOffchain();
 
-  // Initialize SchemaEncoder
-  const schemaEncoder = new SchemaEncoder(
-    'uint256 chain_id,bool is_owner,uint8 is_eoa,uint8 is_contract,uint8 is_factory_contract,uint8 is_proxy,uint8 is_safe_contract,string name,string deployment_tx,address deployer_address,string owner_project,uint256 deployment_date,uint16[] erc_type,string erc20_symbol,uint8 erc20_decimals,string erc721_name,string erc721_symbol,string erc1155_name,string erc1155_symbol,string usage_category,uint8 version,string audit,string contract_monitored,string source_code_verified'
-  ); // use latest schema
+  // Initialize SchemaEncoder with new schema
+  const schemaEncoder = new SchemaEncoder('string chain_id,string tags_json');
 
   try {
-    const fileContent = fs.readFileSync('example-labels.csv', 'utf-8'); // Replace with your file name
+    const fileContent = fs.readFileSync('example-labels.csv', 'utf-8');
     const records = csv.parse(fileContent, {
       columns: true,
       skip_empty_lines: true
