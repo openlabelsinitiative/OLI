@@ -44,8 +44,8 @@ function convertBigIntToString(obj: any): any {
     return obj.toString();
   }
 
-  if (typeof obj === 'boolean') {
-    return obj;
+  if (typeof obj === 'boolean' || typeof obj === 'number') {
+    return obj; // Keep booleans and numbers as-is
   }
 
   if (Array.isArray(obj)) {
@@ -136,8 +136,10 @@ async function processRow(
           tagsObject[field] = true;
         } else if (row[field] === 'false') {
           tagsObject[field] = false;
+        } else if (!isNaN(row[field]) && row[field] !== '') {
+          tagsObject[field] = Number(row[field]);
         } else if (isHexString(row[field])) {
-          tagsObject[field] = String(row[field]); // Ensure it's treated as a string
+          tagsObject[field] = String(row[field]);
         } else {
           tagsObject[field] = row[field];
         }
