@@ -31,6 +31,30 @@ const EASContractAddress = '0x4200000000000000000000000000000000000021';
 const schemaUID = '0xf60f408f2536ef7d93af7e1271e4ccec3fbf57e72c802902509a9690c6eaea4a';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
 
 // Helper Functions
+function convertBigIntToString(obj: any): any {
+  if (obj === null || obj === undefined) {
+    return obj;
+  }
+  
+  if (typeof obj === 'bigint') {
+    return obj.toString();
+  }
+  
+  if (Array.isArray(obj)) {
+    return obj.map(convertBigIntToString);
+  }
+  
+  if (typeof obj === 'object') {
+    const converted: any = {};
+    for (const key in obj) {
+      converted[key] = convertBigIntToString(obj[key]);
+    }
+    return converted;
+  }
+  
+  return obj;
+}
+
 function saveToLogFile(logs: AttestationLog[]) {
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const logFileName = `attestation_logs_${timestamp}.json`;
@@ -45,9 +69,10 @@ function saveToLogFile(logs: AttestationLog[]) {
 
 // API Functions
 async function submitSignedAttestation(pkg: AttestationShareablePackageObject) {
+  const convertedPkg = convertBigIntToString(pkg);
   const data: StoreAttestationRequest = {
     filename: `eas.txt`,
-    textJson: JSON.stringify(pkg),
+    textJson: JSON.stringify(convertedPkg),
   };
   return await axios.post<StoreIPFSActionReturn>(
     `${baseURL}/offchain/store`,
