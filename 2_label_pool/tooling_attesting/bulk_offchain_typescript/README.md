@@ -41,10 +41,10 @@ This project allows bulk attesting and uploading of labels to the OLI data pool 
    npm run build
    ```
 
-3. Run the compiled script for `bulk_attest.ts`:
+3. Run the compiled script for `index.ts`:
 
    ```bash
-   node dist/bulk_attest.js
+   node dist/index.js
    ```
 
 ---

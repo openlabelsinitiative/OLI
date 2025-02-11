@@ -153,7 +153,7 @@ async function processRow(
 
 // Main Function
 async function main() {
-  const provider = new ethers.JsonRpcProvider('wss://base-sepolia-rpc.publicnode.com');//ethers.JsonRpcProvider('https://base-rpc.publicnode.com');
+  const provider = new ethers.JsonRpcProvider('https://sepolia.base.org');//ethers.JsonRpcProvider('https://base-rpc.publicnode.com');
   const privateKey = '...'; // Replace with your private key
   const signer = new ethers.Wallet(privateKey, provider);
 
