@@ -26,7 +26,7 @@ This project allows bulk attesting and uploading of labels to the OLI data pool 
 0. Navigate to the repository:
 
    ```bash
-   cd data_pool/bulk_attesting
+   cd 2_label_pool/tooling_attesting/bulk_offchain_typescript
    ```
    
 1. Install the required packages by running:

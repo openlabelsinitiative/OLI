@@ -1,15 +1,25 @@
 {
-  "name": "bulk_attesting",
+  "name": "bulk_offchain_attesting",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "@ethereum-attestation-service/eas-sdk": "^2.7.0",
     "axios": "^1.7.9",
-    "csv-parse": "^5.6.0"
+    "csv-parse": "^5.6.0",
+    "ethers": "^6.13.5"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
-    "typescript": "^5.7.2"
-  }
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  },
+  "description": "This project allows bulk attesting and uploading of labels to the OLI data pool by signing each attestation before submitting it to the EAS IPFS servers (offchain), which validate the signatures. The input is a CSV file containing labels in the [OLI-compliant format](./data_model) and the script processes each row iteratively, attesting one by one.",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-specifier-resolution=node dist/index.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": ""
 }
