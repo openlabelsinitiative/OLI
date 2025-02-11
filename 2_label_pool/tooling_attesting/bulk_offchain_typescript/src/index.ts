@@ -28,7 +28,7 @@ type AttestationLog = {
 // Configuration
 const baseURL = 'https://base-sepolia.easscan.org/';
 const EASContractAddress = '0x4200000000000000000000000000000000000021';
-const schemaUID = '0xf60f408f2536ef7d93af7e1271e4ccec3fbf57e72c802902509a9690c6eaea4a';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
+const schemaUID = '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
 
 // Helper Functions
 function isHexString(value: any): boolean {
@@ -133,15 +133,13 @@ async function processRow(
     for (const field of possibleFields) {
       if (field in row && row[field] !== null && row[field] !== undefined && row[field] !== '') {
         if (row[field] === 'true') {
-          tagsObject[field] = true;
+          tagsObject[field] = true; // Convert "true" string to boolean
         } else if (row[field] === 'false') {
-          tagsObject[field] = false;
-        } else if (!isNaN(row[field]) && row[field] !== '') {
-          tagsObject[field] = Number(row[field]);
-        } else if (isHexString(row[field])) {
-          tagsObject[field] = String(row[field]);
+          tagsObject[field] = false; // Convert "false" string to boolean
+        } else if (!isNaN(row[field]) && !isHexString(row[field])) {
+          tagsObject[field] = Number(row[field]); // Convert numeric values, but not hex strings
         } else {
-          tagsObject[field] = row[field];
+          tagsObject[field] = row[field]; // Keep everything else as is (like hex strings)
         }
       }
     }
