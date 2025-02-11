@@ -31,19 +31,27 @@ const EASContractAddress = '0x4200000000000000000000000000000000000021';
 const schemaUID = '0xf60f408f2536ef7d93af7e1271e4ccec3fbf57e72c802902509a9690c6eaea4a';//'0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
 
 // Helper Functions
+function isHexString(value: any): boolean {
+  return typeof value === "string" && /^0x[0-9a-fA-F]+$/.test(value);
+}
+
 function convertBigIntToString(obj: any): any {
   if (obj === null || obj === undefined) {
     return obj;
   }
-  
+
   if (typeof obj === 'bigint') {
     return obj.toString();
   }
-  
+
+  if (typeof obj === 'boolean') {
+    return obj;
+  }
+
   if (Array.isArray(obj)) {
     return obj.map(convertBigIntToString);
   }
-  
+
   if (typeof obj === 'object') {
     const converted: any = {};
     for (const key in obj) {
@@ -51,7 +59,7 @@ function convertBigIntToString(obj: any): any {
     }
     return converted;
   }
-  
+
   return obj;
 }
 
@@ -124,7 +132,15 @@ async function processRow(
     // Only add fields that exist in the row and have non-null values
     for (const field of possibleFields) {
       if (field in row && row[field] !== null && row[field] !== undefined && row[field] !== '') {
-        tagsObject[field] = row[field];
+        if (row[field] === 'true') {
+          tagsObject[field] = true;
+        } else if (row[field] === 'false') {
+          tagsObject[field] = false;
+        } else if (isHexString(row[field])) {
+          tagsObject[field] = String(row[field]); // Ensure it's treated as a string
+        } else {
+          tagsObject[field] = row[field];
+        }
       }
     }
 
