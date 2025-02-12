@@ -1,6 +1,6 @@
 # GraphQL Quickstart
 
-A simple quick start for your GraphQL queries can be found here: [main.ipynb](main.ipynb)  
+A simple quick start for your GraphQL queries using python can be found here: [main.ipynb](main.ipynb)  
 
 ## Endpoints  
 
