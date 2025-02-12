@@ -57,10 +57,10 @@ This script allows bulk attesting and uploading of labels to the OLI Label Pool 
 
 ## Testing Environment
 
-The script is built for Base and directly attests to the live OLI Labels Pool.  
+The script is built for Base and will directly attests to the in production OLI Labels Pool.  
 If you want to test first, use the following Base Sepolia testnet environment:
- 
+
 - JsonRpcProvider: `https://sepolia.base.org`
-- schemaUID: `0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68`
+- schemaUID (stays the same): `0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68`
 - baseURL: `https://base-sepolia.easscan.org/`
 - GraphQL: `https://base-sepolia.easscan.org/graphql`

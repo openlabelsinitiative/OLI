@@ -26,9 +26,9 @@ type AttestationLog = {
 };
 
 // Configuration
-const baseURL = 'https://base-sepolia.easscan.org/'; // 'https://base.easscan.org/'
+const baseURL = 'https://base.easscan.org/'; // 'https://base-sepolia.easscan.org/'
 const EASContractAddress = '0x4200000000000000000000000000000000000021';
-const schemaUID = '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68'; // '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68'
+const schemaUID = '0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68';
 
 // Helper Functions
 function isHexString(value: any): boolean {
@@ -116,12 +116,12 @@ async function processRow(
       'owner_project',
       'deployment_date',
       'erc_type',
-      'erc20_symbol',
-      'erc20_decimals',
-      'erc721_name',
-      'erc721_symbol',
-      'erc1155_name',
-      'erc1155_symbol',
+      'erc20.symbol',
+      'erc20.decimals',
+      'erc721.name',
+      'erc721.symbol',
+      'erc1155.name',
+      'erc1155.symbol',
       'usage_category',
       'version',
       'audit',
@@ -194,7 +194,7 @@ async function processRow(
 
 // Main Function
 async function main() {
-  const provider = new ethers.JsonRpcProvider('https://sepolia.base.org'); // 'https://base-rpc.publicnode.com'
+  const provider = new ethers.JsonRpcProvider('https://base-rpc.publicnode.com'); // `https://sepolia.base.org`
   const privateKey = '...'; // Replace with your private key
   const signer = new ethers.Wallet(privateKey, provider);
 
@@ -209,7 +209,7 @@ async function main() {
   const schemaEncoder = new SchemaEncoder('string chain_id,string tags_json');
 
   try {
-    const fileContent = fs.readFileSync('example-labels.csv', 'utf-8');
+    const fileContent = fs.readFileSync('gtp_labels_export_oli_compliant.csv', 'utf-8');
     const records = csv.parse(fileContent, {
       columns: true,
       skip_empty_lines: true
