@@ -1,32 +1,26 @@
 # Bulk Attestation Uploader
 
-This project allows bulk attesting and uploading of labels to the OLI data pool by signing each attestation before submitting it to the EAS IPFS servers (offchain), which validate the signatures. The input is a CSV file containing labels in the [OLI-compliant format](./data_model) and the script processes each row iteratively, attesting one by one.
-
----
+This script allows bulk attesting and uploading of labels to the OLI Label Pool by signing each attestation before submitting it to the EAS IPFS servers (offchain). Every attestation signatures is validated by the EAS IPFS server. The input is a CSV file containing labels in the [OLI-compliant Data Model format](/1_data_model/README.md) and the script processes each row iteratively, attesting one by one.
 
 ## Features
 
 - Bulk attestation of labels from a CSV file  
-- Local signing of attestations (schema v0.1.1)
+- Local signing of attestations (schema v1.0.0)
 - Submit signed attestations to the EAS network  
 - Generates attestation logs, including success and error details  
-
---- 
 
 ## Requirements
 
 - Node.js (version 16 or later)
 - npm (Node Package Manager)
-- A valid Ethereum private key with sufficient funds for gas fees on the Optimism network.
-
----
+- A valid Ethereum private key (no need for funds on that wallet)
 
 ## Usage
 
 0. Navigate to the repository:
 
    ```bash
-   cd data_pool/bulk_attesting
+   cd 2_label_pool/tooling_attesting/bulk_offchain_typescript
    ```
    
 1. Install the required packages by running:
@@ -41,59 +35,32 @@ This project allows bulk attesting and uploading of labels to the OLI data pool 
    npm run build
    ```
 
-3. Run the compiled script for `bulk_attest.ts`:
+3. Run the compiled script for `index.ts`:
 
    ```bash
-   node dist/bulk_attest.js
+   node dist/index.js
    ```
-
----
 
 ## Important Preparations
 
-1. Prepare your CSV file containing the attestation data. The column names must match the following format exactly ([OLI data model v0.1.1](../attestation_schema/EAS_schema_versioning.yml)), along with their corresponding data types:
+1. Prepare your CSV file containing the attestation data. In addition to `chain_id` and `address`, all column names must match the OLI-compliant `tag_id`s as defined in [tag_definitions.yaml](/1_data_model/tags/tag_definitions.yml).
 
-   - `address (address)`
-   - `chain_id (uint256)`
-   - `is_owner (bool)`
-   - `is_eoa (uint8)`
-   - `is_contract (uint8)`
-   - `is_factory_contract (uint8)`
-   - `is_proxy (uint8)`
-   - `is_safe_contract (uint8)`
-   - `name (string)`
-   - `deployment_tx (string)`
-   - `deployer_address (address)`
-   - `owner_project (string)`
-   - `deployment_date (uint256)`
-   - `erc_type (uint16[])`
-   - `erc20_symbol (string)`
-   - `erc20_decimals (uint8)`
-   - `erc721_name (string)`
-   - `erc721_symbol (string)`
-   - `erc1155_name (string)`
-   - `erc1155_symbol (string)`
-   - `usage_category (string)`
-   - `version (uint8)`
-   - `audit (string)`
-   - `contract_monitored (string)`
-   - `source_code_verified (string)`
+   An example CSV file can be found [here](/2_label_pool/tooling_attesting/bulk_offchain_typescript/example-labels.csv).
 
-   An example CSV file can be found at: `data_entry/bulk_attesting/example-labels.csv`
+   Refer to [tag_definitions.yml](/1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag and its data type.
 
-   Refer to [tag_definitions.yml](../../data_model/tags/tag_definitions.yml) for a detailed explanation of each tag.
+2. Place your converted CSV file in the project's root directory (2_label_pool/tooling_attesting/bulk_offchain_typescript).
 
-   Important Notes:
-   - **Boolean Values**: Columns representing boolean values (e.g., `is_owner`, `is_eoa`) must be converted to `uint8` format:
-     - `0` = No Value
-     - `1` = True
-     - `2` = False
-   - **Address Fields**: Any field requiring an address cannot be left empty. If no value is available, use `0x0000000000000000000000000000000000000000`.
-   - **Uint Fields**: Any `uint` fields, such as `deployment_date` or `erc20_decimals`, should be set to `0` if no value is provided.
-   - **String Fields**: These can be left as `null` if no value is provided.
+3. Add the `privateKey` variable with your private key (no funds required in the wallet, as it is used solely for reputation tracking + offchain signing) and the `fileContent` variable with your CSV file name.
 
-   For more details on the attestation format, see [data_pool README.md](../README.md).
+4. Once everything is working as expected, replace `baseURL`, `JsonRpcProvider`, and `schemaUID` with the production values that are currently commented out.
 
-2. Place your converted CSV file in the project root directory.
+## Testing Environment
 
-3. Replace the `privateKey` variable with your private key (no need for funds in the wallet) and `fileContent` with your csv file name.
+The script is built for Base and will directly attests to the in production OLI Labels Pool.  
+If you want to test first, use the following Base Sepolia testnet environment:
+
+- JsonRpcProvider: `https://sepolia.base.org`
+- schemaUID (stays the same): `0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68`
+- baseURL: `https://base-sepolia.easscan.org/`
+- GraphQL: `https://base-sepolia.easscan.org/graphql`
