@@ -1,23 +1,23 @@
 # Open Labels Initiative
-***A standardized framework and data model for EVM address labeling***
+***A standardized framework and data model for address labeling***
 
 Upcoming community calls can be found in our [Google Calendar](https://calendar.google.com/calendar/u/3?cid=MmQ0MzYxNzQ3ZGFiY2M3ZDJkZjk0NjZiYmY3MmNmZDUwZTNjMjE2OTQ4YzgyNmI4OTBmYjYyN2VmNGRjNjQ4OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)!
 
 ## Goal
-This initiative tackles the issue of isolated and non-standardized datasets of address labels within the blockchain community. It introduces a flexible, open and community owned data framework for anyone to use and contribute to. 
+This initiative tackles the issue of isolated and non-standardized datasets of address labels within the blockchain community. It introduces a flexible, open and community owned framework for anyone to use and contribute to. 
 
-By aligning on a single framework for address labels, we streamline our labeling efforts, avoid redundant work and make it easier to share datasets within the community.
+By aligning on a single framework for address labels, we avoid redundant work and make it easier to share datasets within the community.
 
-The OLI repository functions as the community maintainer of the OLI framework. Additionally, it serves as a neutral entity that provides tools for data entry through attestations and automated activity tagging.
+The OLI repository functions as the community maintainer. Additionally, it serves as a neutral entity that provides tooling to get started.
 
-## The 3 pillars of OLI
-  - **1) Data Model:** We all speak the same language when it comes to labels. This framework allows us to easily sync labels between different databases and align on the valuesets. More in [data model](https://github.com/openlabelsinitiative/OLI/tree/main/1_data_model).
-  - **2) Label Pool:** A publicly accessible database of attested labels. Raw and simple. We use attestations to collect labels from anyone out there willing to share labels. All of these attestations will be accessible to anyone. More in [label pool](https://github.com/openlabelsinitiative/OLI/tree/main/2_label_pool)
-  - **3) Label Confidence:** Use-case optimized trust algorithms applied to the raw labels. This way raw labels become useful labels, optimized either for analytics, security, or other use-cases. More soon in [label confidence](https://github.com/openlabelsinitiative/OLI/tree/main/3_label_confidence).
+## The 3 Pillars of OLI Framework
+  - **1) Data Model:** We should all speak the same language when it comes to labels. The first step is implementing a unified data model that enables seamless synchronization of labels across different databases and ensures alignment on value sets. More details in [1_data_model](/1_data_model/README.md).
+  - **2) Label Pool:** Sharing labels in a decentralized manner is the next logical step. Using attestations, we've created a pool of raw labels that anyone can contribute to. By consolidating all labels in one place, both labellers and data teams can share their work, reducing redundant work. All attestations will remain permanently accessible, fostering a collaborative, community-driven labeling effort. More details in [2_label_pool](/2_label_pool/README.md)
+  - **3) Label Confidence:** Trust algorithms optimized for specific use cases are applied to the raw labels contributed to the Label Pool. In doing so, raw labels are transformed into valuable, use-case-specific labels—optimized for analytics, security and beyond. More details coming soon in [3_label_confidence](/3_label_confidence/README.md).
 
 ![OLI pillars](src/images/oli_pillars.png)
 
-## OLI-Compliant Tools
+## Products Using OLI
 - [growthepie - Smart Contract Explorer](https://labels.growthepie.xyz/)
 - ...
 - *please list your projects here*

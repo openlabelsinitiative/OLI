@@ -1,6 +1,6 @@
 # Open Labels Initiative: Data Model
 
-## Framework
+## Data Model
 Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
 
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
@@ -45,7 +45,7 @@ A short excerpt:
 [
     {
         "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
-        "chain_id": "eip155-10",
+        "chain_id": "eip155:10",
         "name": "WLD",
         "owner_project": "worldcoin",
         "usage_category": "fungible_tokens",
@@ -55,7 +55,7 @@ A short excerpt:
     },
     {
         "address": "0x087000A300DE7200382b55D40045000000E5d60E",
-        "chain_id": "eip155-10",
+        "chain_id": "eip155:10",
         "name": "Aggregate3",
         "owner_project": "worldcoin",
         "usage_category": "airdrop",
