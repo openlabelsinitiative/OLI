@@ -18,13 +18,13 @@ To simplify the labeling process, we provide various tools for submitting and re
 ### Contributing Labels to The Data Pool
 
 1. **[EAS Frontend Implementation](https://base.easscan.org/attestation/attestWithSchema/0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68)** (*onchain & offchain*): A basic frontend that allows users to attest individual labels, featuring a wallet connect button. *To be replaced by our own custom white label front end soon*.
-2. **[Bulk TypeScript Attestation Script](tooling_attesting/bulk_offchain_typescript/README.md)** (*offchain*): Utilizes the EAS SDK to sign attestations and pins them to the EAS IPFS server.
-3. **[Bulk Python Attestation Script](tooling_attesting/bulk_onchain_python/README.md)** (*onchain*): Uses Web3.py to interact with the blockchain and submit attestations.
+2. **[Bulk TypeScript Attestation Script](tooling_write/bulk_offchain_typescript/README.md)** (*offchain*): Utilizes the EAS SDK to sign attestations and pins them to the EAS IPFS server.
+3. **[Bulk Python Attestation Script](tooling_write/bulk_onchain_python/README.md)** (*onchain*): Uses Web3.py to interact with the blockchain and submit attestations.
 
 ### Retrieving Labels From The Data Pool
 
 1. **[GraphQL](https://base.easscan.org/graphql)**: Provided by the EAS, this GraphQL endpoint allows querying all attestations with custom filters.  
-2. **[GraphQL Python Quick Start](tooling_retrieval/graphql_python/README.md)**: A Jupyter Notebook with basic examples for querying the GraphQL endpoint and applying filters.  
+2. **[GraphQL Python Quick Start](tooling_read/graphql_python/README.md)**: A Jupyter Notebook with basic examples for querying the GraphQL endpoint and applying filters.  
 
 ### User Segmentation 
 
