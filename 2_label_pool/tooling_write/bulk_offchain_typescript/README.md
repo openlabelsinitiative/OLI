@@ -45,11 +45,11 @@ This script allows bulk attesting and uploading of labels to the OLI Label Pool 
 
 1. Prepare your CSV file containing the attestation data. In addition to `chain_id` and `address`, all column names must match the OLI-compliant `tag_id`s as defined in [tag_definitions.yaml](/1_data_model/tags/tag_definitions.yml).
 
-   An example CSV file can be found [here](/2_label_pool/tooling_attesting/bulk_offchain_typescript/example-labels.csv).
+   An example CSV file can be found [here](/2_label_pool/tooling_write/bulk_offchain_typescript/example-labels.csv).
 
    Refer to [tag_definitions.yml](/1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag and its data type.
 
-2. Place your converted CSV file in the project's root directory (2_label_pool/tooling_attesting/bulk_offchain_typescript).
+2. Place your converted CSV file in the project's root directory (2_label_pool/tooling_write/bulk_offchain_typescript).
 
 3. Add the `privateKey` variable with your private key (no funds required in the wallet, as it is used solely for reputation tracking + offchain signing) and the `fileContent` variable with your CSV file name.
 
