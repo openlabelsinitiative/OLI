@@ -61,6 +61,6 @@ The script is built for Base and will directly attests to the in production OLI 
 If you want to test first, use the following Base Sepolia testnet environment:
 
 - JsonRpcProvider: `https://sepolia.base.org`
-- schemaUID (stays the same): `0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68`
+- schemaUID (the same): `0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68`
 - baseURL: `https://base-sepolia.easscan.org/`
 - GraphQL: `https://base-sepolia.easscan.org/graphql`

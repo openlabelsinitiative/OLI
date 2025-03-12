@@ -4,6 +4,8 @@
   "description": "This project allows bulk attesting and uploading of labels to the OLI data pool by signing each attestation before submitting it to the EAS IPFS servers (offchain), which validate the signatures. The input is a CSV file containing labels in the [OLI-compliant format](./data_model) and the script processes each row iteratively, attesting one by one.",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

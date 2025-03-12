@@ -209,7 +209,7 @@ async function main() {
   const schemaEncoder = new SchemaEncoder('string chain_id,string tags_json');
 
   try {
-    const fileContent = fs.readFileSync('gtp_labels_export_oli_compliant.csv', 'utf-8');
+    const fileContent = fs.readFileSync('example-labels.csv', 'utf-8');
     const records = csv.parse(fileContent, {
       columns: true,
       skip_empty_lines: true
