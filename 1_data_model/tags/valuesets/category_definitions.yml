@@ -124,7 +124,7 @@ utility:
   - category_id: cybercrime
     name: Cybercrime
     description: Contracts specifically designed as malware or used for hacks and exploits.
-  - category_id: contract_deplyoment
+  - category_id: contract_deployment
     name: Contract Deployments
     description: Contracts that are used for other contract deployments.
   - category_id: other
