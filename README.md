@@ -104,3 +104,4 @@ Individuals or data teams that are involved in active feedback for this initiati
 - [Ethereum Attestation Service](https://attest.org/)
 - [Blockscout](https://www.blockscout.com/)
 - [Guild](https://guild.xyz/)
+- [sourcify.eth](https://sourcify.dev)
