@@ -4,3 +4,4 @@
 **/node_modules/
 **/dist/
 2_label_pool/tooling_write/bulk_offchain_typescript/attestation_logs_*.json
+*.parquet
