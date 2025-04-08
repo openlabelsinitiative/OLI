@@ -2,9 +2,6 @@ version: 1.0
 cefi:
   main_category_name: CeFi
   categories:
-  - category_id: mev
-    name: MEV
-    description: MEV and arbitrage bots
   - category_id: trading
     name: Trading
     description: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies.
@@ -88,15 +85,12 @@ token_transfers:
 utility:
   main_category_name: Utility
   categories:
-  - category_id: middleware
-    name: Middleware
-    description: Contracts that facilitate communication and interoperability between different blockchain protocols.
   - category_id: erc4337
     name: Account Abstraction (ERC4337)
     description: Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts.
   - category_id: inscriptions
     name: Inscriptions
-    description: Contract that are used for inscribing calldata.
+    description: Contracts and EOAs used to inscribe arbitrary data into calldata by acting as the to-address of a transaction, enabling onchain data embedding without execution.
   - category_id: oracle
     name: Oracle
     description: Contracts that feed external, real-world data onto the blockchain.
@@ -105,7 +99,7 @@ utility:
     description: Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks.
   - category_id: developer_tools
     name: Developer Tool
-    description: Contracts that assist developers in creating, testing, and deploying smart contracts.
+    description: Contracts and infrastructure that assist developers in creating, testing, deploying and interacting with smart contracts. This includes middleware contracts that abstracts complexity, automates tasks and streamlines development workflows within one blockchain ecosystem.
   - category_id: identity
     name: Identity
     description: Contracts that provide digital identification and verification services on the blockchain.
@@ -124,9 +118,6 @@ utility:
   - category_id: cybercrime
     name: Cybercrime
     description: Contracts specifically designed as malware or used for hacks and exploits.
-  - category_id: contract_deployment
-    name: Contract Deployments
-    description: Contracts that are used for other contract deployments.
   - category_id: other
     name: Others
     description: Miscellaneous utility contracts that do not fit into the other specified categories.
