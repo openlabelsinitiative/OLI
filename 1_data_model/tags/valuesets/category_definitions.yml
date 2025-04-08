@@ -8,9 +8,16 @@ cefi:
   - category_id: trading
     name: Trading
     description: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies.
+    examples: unverified contracts with high-cost per tx, low amount of daily active addresses, with many swaps and token transfer txs and high failure rates: 
+      - https://basescan.org/address/0x2183998847184AF8acDDfE49D16272753D2B56fC
+      - https://optimistic.etherscan.io/address/0x802b65b5d9016621E66003aeD0b16615093f328b
+      - https://dashboard.tenderly.co/contract/34443/0x536688ef204ba2b035f77be1bf4b1a0dd675b266/transactions
   - category_id: cex
     name: Centralized Exchange
     description: Contracts or wallets under the control of centralized exchanges.
+    examples: Liqudators, Exchange Wallets, CEX-Owned Mev Contracts
+    - Wintermute_1 https://etherscan.io/address/0x51C72848c68a965f66FA7a88855F9f7784502a7F
+    - SimpleFiatTokenUtil https://basescan.org/address/0x887749aBB233682aa7D5594A54659c51501445b1
 
 defi:
   main_category_name: DeFi
