@@ -2,151 +2,174 @@ version: 1.0
 cefi:
   main_category_name: CeFi
   categories:
-  - category_id: mev
-    name: MEV
-    description: MEV and arbitrage bots
   - category_id: trading
     name: Trading
-    description: Contracts whose primary objective is to trade tokens or NFTs based on arbitrage, MEV (Miner Extractable Value) or market-making strategies.
-    examples: unverified contracts with high-cost per tx, low amount of daily active addresses, with many swaps and token transfer txs and high failure rates: 
+    description: Contracts primarily used for automated trading strategies like arbitrage, market-making, or complex MEV exploitation, often characterized by frequent, high-volume transactions.
+    examples: Unverified contracts with high-cost per tx, low amount of daily active addresses, with many swaps and token transfer txs and high failure rates:
       - https://basescan.org/address/0x2183998847184AF8acDDfE49D16272753D2B56fC
       - https://optimistic.etherscan.io/address/0x802b65b5d9016621E66003aeD0b16615093f328b
       - https://dashboard.tenderly.co/contract/34443/0x536688ef204ba2b035f77be1bf4b1a0dd675b266/transactions
   - category_id: cex
     name: Centralized Exchange
-    description: Contracts or wallets under the control of centralized exchanges.
-    examples: Liqudators, Exchange Wallets, CEX-Owned Mev Contracts
-    - Wintermute_1 https://etherscan.io/address/0x51C72848c68a965f66FA7a88855F9f7784502a7F
-    - SimpleFiatTokenUtil https://basescan.org/address/0x887749aBB233682aa7D5594A54659c51501445b1
+    description: Wallets and contracts directly managed or operated by centralized exchanges (CEXs), used for deposits, withdrawals, internal transfers, or CEX-specific functions like liquidation engines.
+    examples: CEX Deposit/Withdrawal Wallets, Liquidation Engines, CEX-Owned MEV Contracts.
+      - Wintermute_1 (Market Maker interacting with CEXs): https://etherscan.io/address/0x51C72848c68a965f66FA7a88855F9f7784502a7F
+      - Coinbase SimpleFiatTokenUtil (Internal utility): https://basescan.org/address/0x887749aBB233682aa7D5594A54659c51501445b1
 
 defi:
   main_category_name: DeFi
   categories:
   - category_id: dex
     name: Decentralized Exchange
-    description: Contracts whose primary focus is on routing token swaps through liquidity pools (LPs).
+    description: Contracts facilitating peer-to-peer token swaps using automated market makers (AMMs) and liquidity pools, allowing users to trade assets directly without intermediaries.
+    examples: Uniswap Routers, Curve Pools, SushiSwap Routers.
   - category_id: lending
     name: Lending
-    description: Contracts that enable lending with the use of collateral.
+    description: Contracts allowing users to lend their crypto assets to earn interest or borrow assets by providing collateral, typically using over-collateralization mechanisms.
+    examples: Aave LendingPool, Compound cToken Contracts, MakerDAO Vaults.
   - category_id: derivative
     name: Derivative Exchange
-    description: Contracts that facilitate the trading of derivatives, which are financial instruments deriving their value from an underlying asset or benchmark.
+    description: Contracts enabling the creation and trading of financial derivatives (like futures, options, perpetual swaps) based on underlying crypto assets or indices.
+    examples: Synthetix Synths, GMX Vault, dYdX Perpetual Contracts, Perpetual Protocol Clearinghouse.
   - category_id: staking
     name: Staking
-    description: Contracts where the primary activity is staking tokens or LP positions. Additionally, LP pools are included here, as contributing tokens to an LP is considered a form of staking.
+    description: Contracts enabling users to lock up tokens (native, governance, or LP tokens) to secure a network, participate in governance, or earn yield. Includes direct staking contracts and liquidity pool (LP) deposit contracts.
+    examples: Lido stETH (not the fungible token), Rocket Pool Staking Contracts, Uniswap V3 Positions NFT (as representation of staked LP), Curve Gauge Contracts, Convex Finance Pools.
   - category_id: index
     name: Index
     description: Crypto indexes that are designed to represent the overall performance of a specific segment of the cryptocurrency market or the entire market.
   - category_id: rwa
     name: Real World Assets
-    description: Contracts for tangible asset management such as real estate. Transforming real-world assets into digital tokens, introducing fractional ownership opportunities, and increasing accessibility to a broader range of investors.
+    description: Contracts focused on tokenizing real-world assets (like real estate, commodities, bonds) on the blockchain, enabling fractional ownership, lending, and trading of these assets.
+    examples:
   - category_id: insurance
     name: Insurance
-    description: Contracts that provide risk management and insurance coverage for various aspects of blockchain and crypto operations.
+    description: Contracts from protocols offering insurance coverage against specific risks in the crypto space, such as smart contract hacks, stablecoin de-pegging, or slashing events.
+    examples:
   - category_id: custody
     name: Custody
     description: Services involved in the secure storage and management of digital assets on behalf of individuals, institutional investors, or businesses. 
   - category_id: yield_vaults
     name: Yield Vaults
-    description: Protocols that specialize in building vaults that maximize yields.
- 
+    description: Contracts with automated strategies (vaults) designed to maximize returns on deposited assets by employing complex yield farming techniques across various DeFi protocols.
+    examples: Yearn Finance Vaults, Beefy Finance Vaults, Harvest Finance Vaults.
+
 nft:
   main_category_name: NFT
   categories:
   - category_id: nft_fi
     name: NFT Finance
-    description: Contracts that involve the financialization of NFTs, which includes lending NFTs.
+    description: Contracts from protocols bridging the gap between NFTs and DeFi, enabling financial activities like lending against NFTs as collateral, fractionalizing NFTs, or creating NFT-based derivatives.
+    examples: NFTfi Lending Contracts, BendDAO, Fractional.art Vaults, Sudoswap AMM Pools.
   - category_id: nft_marketplace
     name: NFT Marketplace
-    description: Platform contracts for the sale or minting of NFTs.
+    description: Contracts from platforms facilitating the discovery, minting, buying, selling, and auctioning of Non-Fungible Tokens (NFTs).
+    examples: OpenSea Seaport, Blur Marketplace, Foundation Marketplace, Zora Minting Contracts, Rarible Exchange.
   - category_id: non_fungible_tokens
     name: Non-Fungible Tokens
-    description: Contracts that mostly adhere to the ERC721 or ERC1155 token standard.
-    
+    description: The core smart contracts defining specific NFT collections, adhering to standards like ERC721 (unique items) or ERC1155 (multiple copies of items).
+    examples: CryptoPunks Contract, Bored Ape Yacht Club (BAYC) Contract, Art Blocks Engine Contracts, ENS (.eth names), Pudgy Penguins Contract.
+
 social:
   main_category_name: Social
   categories:
   - category_id: community
     name: Community
-    description: Contracts designed to support social interactions, networking or education.
+    description: Contracts and tools fostering community building, social interaction, content creation, or decentralized social networking on the blockchain.
+    examples: Lens Protocol Profile NFTs and Posts, POAP (Proof of Attendance Protocol) Contracts, Mirror.xyz Publishing Contracts, Farcaster Hub Contracts, Quest contracts from protocols like Galxe or Layer 3.
   - category_id: gambling
     name: Gambling
-    description: Contracts that govern games of chance.
+    description: Contracts of applications where outcomes are primarily determined by chance, involving wagering crypto assets on events like dice rolls, lotteries, or prediction markets with probabilistic outcomes.
+    examples: PoolTogether Prize Pools, Decentral Games ICE Poker (aspects), Augur Markets (prediction markets), Polymarket Contracts.
   - category_id: gaming
     name: Gaming
-    description: Contracts that are integrated into digital games, providing functionalities such as tokenized in-game assets, character progression, and digital ownership. Unlike gambling contracts, the outcomes in these games are influenced by the player's decisions, strategies or skill rather than by chance alone.
+    description: Contracts supporting blockchain-integrated games, managing in-game assets (NFTs), currencies (tokens), player progression, and game logic where player skill or strategy significantly influences outcomes.
+    examples: Axie Infinity Contracts (Ronin), Gods Unchained Cards (Immutable X), Decentraland LAND Contracts, The Sandbox ASSET Contracts.
   - category_id: governance
     name: Governance
-    description: Platforms for managing voting and treasury.
+    description: Contracts enabling decentralized decision-making processes for protocols, including token-based voting on proposals, treasury management, and parameter updates.
+    examples: Compound Governor Bravo, Uniswap Governor, Aragon DAOs, Snapshot (off-chain voting records linked on-chain), Tally Governance Frontend (contract interactions).
 
 token_transfers:
   main_category_name: Token Transfers
   categories:
   - category_id: native_transfer
     name: Native Transfer
-    description: All native transfers (primarily ETH transfers, but the native token can vary depending on the L2).
+    description: Direct transfers of a blockchain's native currency (e.g., ETH on Ethereum, MATIC on Polygon) between Externally Owned Accounts (EOAs) or contracts, not involving ERC20 or other token standards.
+    examples: Standard ETH transfer between wallets, Contract interactions resulting in ETH payment (e.g., msg.value > 0).
   - category_id: stablecoin
     name: Stablecoin
-    description: ERC20 token contracts whose primary purpose is to maintain a value pegged to a fiat currency.
+    description: ERC20 (or similar standard) tokens designed to maintain a stable value, typically pegged 1:1 to a fiat currency like the US Dollar. Includes algorithmic, crypto-collateralized, and fiat-backed stablecoins.
+    examples: USDC Contract, USDT Contract, DAI Contract, FRAX Contract, LUSD Contract.
   - category_id: fungible_tokens
     name: Fungible Tokens
-    description: Contracts that mostly adhere to the ERC20 token standard. This category does not include stablecoins.
+    description: Standardized token contracts (primarily ERC20) representing interchangeable assets like governance tokens, utility tokens, or protocol-specific currencies. Excludes stablecoins and NFTs.
+    examples: UNI Token Contract, AAVE Token Contract, LINK Token Contract, WETH (Wrapped Ether) Contract, WBTC (Wrapped Bitcoin) Contract.
 
 utility:
   main_category_name: Utility
   categories:
-  - category_id: middleware
-    name: Middleware
-    description: Contracts that facilitate communication and interoperability between different blockchain protocols.
   - category_id: erc4337
     name: Account Abstraction (ERC4337)
-    description: Contracts that adhere to the ERC4337 standard for account abstraction, including all entry point contracts.
+    description: Contracts implementing the ERC-4337 standard for Account Abstraction, enabling smart contract wallets with features like gas sponsorship, batch transactions, and social recovery. Includes EntryPoint, Paymaster, and Smart Account contracts.
+    examples: EntryPoint Contract (Singleton), Stackup Paymasters, Biconomy Smart Accounts, Pimlico Paymasters.
   - category_id: inscriptions
     name: Inscriptions
-    description: Contract that are used for inscribing calldata.
+    description: Contracts or transactions primarily used to embed arbitrary data (often text or images mimicking NFTs) into transaction calldata, following standards like Ethscriptions or Blobscriptions.
+    examples: Ethscriptions Protocol interactions, Blobscriptions minting transactions, Ordinals-style inscriptions on EVM chains.
   - category_id: oracle
     name: Oracle
-    description: Contracts that feed external, real-world data onto the blockchain.
+    description: Services providing reliable external data (e.g., asset prices, weather information, election results) to smart contracts, bridging the gap between off-chain information and on-chain logic.
+    examples: Chainlink Price Feeds, Tellor Oracles, Band Protocol Oracles, Pyth Network Oracles.
   - category_id: depin
     name: Decentralized Physical Infrastructure
-    description: Infrastructure that supports decentralized operations, including but not limited to physical hardware and networks.
+    description: Protocols coordinating or incentivizing the deployment and operation of physical infrastructure networks (e.g., wireless networks, storage, compute power) using blockchain and tokenomics.
+    examples: Helium Network Contracts (IoT/5G), Filecoin Storage Contracts, Arweave Storage Contracts, Render Network Contracts.
   - category_id: developer_tools
     name: Developer Tool
-    description: Contracts that assist developers in creating, testing, and deploying smart contracts.
+    description: Tools, contracts, and transactions designed to aid the blockchain development lifecycle. This includes testing frameworks, deployment scripts, contract registries, on-chain debugging tools, factory contracts, and the act of contract creation itself.
+    examples: Hardhat deployment scripts interacting with chain, Tenderly Forks (contract interactions), Foundry test contract deployments, Etherscan verification API interactions (off-chain tool, on-chain result), Uniswap V2 Factory, CREATE2 deployer contracts, Proxy factory contracts.
   - category_id: identity
     name: Identity
-    description: Contracts that provide digital identification and verification services on the blockchain.
+    description: Contracts from protocols managing decentralized digital identities, allowing users to control their personal data and enabling verification services (e.g., KYC, attestations) on-chain.
+    examples: Worldcoin Identity Contracts, ENS (Ethereum Name Service - as identifier), Polygon ID Contracts, BrightID Verifications, Gitcoin Passport Stamps, EAS (Ethereum Attestation Service), Verax.
   - category_id: privacy
     name: Privacy
-    description: Contracts designed to enhance privacy for transactions and interactions on the blockchain.
+    description: Protocols using cryptographic techniques (like zero-knowledge proofs) to obfuscate transaction details (sender, receiver, amount), enhancing user privacy on public blockchains.
+    examples: Tornado Cash Contracts (historical example), Aztec Network Contracts, Railgun Privacy Contracts, Nocturne Privacy Vaults.
   - category_id: airdrop
     name: Airdrop
-    description: Contracts that help to distribute tokens or NFTs to multiple wallet addresses.
+    description: Smart contracts specifically designed to distribute tokens or NFTs to a large number of addresses simultaneously, often used for initial token distributions or community rewards.
+    examples: Merkle Distributor Contracts, Disperse.app Contract, Custom airdrop claim contracts.
   - category_id: payments
     name: Payments
-    description: Contracts that facilitate transactions and payments within the blockchain ecosystem.
+    description: Contracts and platforms enabling streamlined or specialized payment flows, such as subscriptions, streaming payments, or payroll using cryptocurrencies.
+    examples: Superfluid Finance Streams, Sablier Streams, Request Network Invoices, Utopia Payroll Contracts.
   - category_id: donation
     name: Donation
-    description: Fundraising efforts where individuals, organizations, or charitable causes seek financial contributions in the form of digital currencies.
+    description: Platforms and contracts facilitating charitable donations and fundraising campaigns using cryptocurrencies, often providing transparency in fund allocation.
+    examples: Gitcoin Grants Contracts, The Giving Block donation addresses (contract interactions), Endaoment Contracts.
   - category_id: cybercrime
     name: Cybercrime
-    description: Contracts specifically designed as malware or used for hacks and exploits.
-  - category_id: contract_deployment
-    name: Contract Deployments
-    description: Contracts that are used for other contract deployments.
+    description: Contracts involved in malicious activities, including phishing scams, rug pulls, exploit contracts used in DeFi hacks, or malware distribution via smart contracts.
+    examples: Known phishing contracts (e.g., SetApprovalForAll drainers), Exploit contracts identified post-hack, Addresses associated with OFAC sanctions, Honeypot contracts.
   - category_id: other
     name: Others
-    description: Miscellaneous utility contracts that do not fit into the other specified categories.
+    description: Utility contracts that serve a specific purpose but don't neatly fit into the predefined utility categories. Use sparingly.
+    examples: Proxy contracts (if not part of a known protocol), Simple multisig wallets not part of a major platform, Gas token minters/burners, Timelock contracts (if standalone).
 
 cross_chain:
   main_category_name: Cross-Chain
   categories:
   - category_id: cc_communication
     name: Cross-Chain Communication
-    description: Contracts that facilitate the exchange of information or data between different blockchain networks. This sub-category does not include contracts that facilitate actual token or NFT transfers.
+    description: Protocols enabling messaging and arbitrary data transfer between different blockchains, without moving assets. Used for cross-chain state synchronization or contract calls.
+    examples: LayerZero Endpoints, Axelar Gas Receiver/Gateway, L2 to L1 Communication Contracts.
   - category_id: bridge
     name: Bridge
-    description: Contracts that facilitate cross-chain token or NFT transfers, enabling the movement of assets across various chains. This category includes cross-chain swap platforms, as users primarily utilize these DEXs to ensure better liquidity for their bridged assets.
+    description: Contracts facilitating the transfer of assets (tokens or NFTs) between different blockchains, typically involving locking assets on one chain and minting wrapped versions on another, or using liquidity pools for atomic swaps.
+    examples: Polygon PoS Bridge, Arbitrum Bridge, Across Protocol Bridge, Synapse Protocol Bridge, Hop Protocol Bridge, Stargate Finance Pools.
   - category_id: settlement
-    name: Settlement & DA 
-    description: Contracts used by scaling solutions (L2s, L3s) to post proofs, states, and data availability to the host chain. 
+    name: Settlement & Data Availability
+    description: Contracts on a Layer 1 (Ethereum) used by Layer 2 or Layer 3 scaling solutions to post transaction batches, state roots, fraud proofs, or validity proofs, ensuring data availability and inheriting security from the L1.
+    examples: Optimism CanonicalTransactionChain / StateCommitmentChain, Arbitrum SequencerInbox / Outbox, StarkNet Core Contract, zkSync Verifier Contract, Polygon zkEVM Contract.
