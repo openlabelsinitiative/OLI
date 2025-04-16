@@ -1,12 +1,13 @@
 version: 1.0
-cefi:
-  main_category_name: CeFi
-  categories:
+categories:
+
+  # CeFi Categories
   
   - category_id: trading
     name: Trading
     description: Contracts primarily used for automated trading strategies like arbitrage, market-making, or complex MEV exploitation, often characterized by frequent, high-volume transactions.
-    examples: Unverified contracts with high-cost per tx, low amount of daily active addresses, with many swaps and token transfer txs and high failure rates:
+    examples: |
+      Unverified contracts with high-cost per tx, low amount of daily active addresses, with many swaps and token transfer txs and high failure rates:
       - https://basescan.org/address/0x2183998847184AF8acDDfE49D16272753D2B56fC
       - https://optimistic.etherscan.io/address/0x802b65b5d9016621E66003aeD0b16615093f328b
       - https://dashboard.tenderly.co/contract/34443/0x536688ef204ba2b035f77be1bf4b1a0dd675b266/transactions
@@ -14,13 +15,12 @@ cefi:
   - category_id: cex
     name: Centralized Exchange
     description: Wallets and contracts directly managed or operated by centralized exchanges (CEXs), used for deposits, withdrawals, internal transfers, or CEX-specific functions like liquidation engines.
-    examples: CEX Deposit/Withdrawal Wallets, Liquidation Engines, CEX-Owned MEV Contracts.
+    examples: |
+      CEX Deposit/Withdrawal Wallets, Liquidation Engines, CEX-Owned MEV Contracts.
       - Wintermute_1 (Market Maker interacting with CEXs): https://etherscan.io/address/0x51C72848c68a965f66FA7a88855F9f7784502a7F
       - Coinbase SimpleFiatTokenUtil (Internal utility): https://basescan.org/address/0x887749aBB233682aa7D5594A54659c51501445b1
-
-defi:
-  main_category_name: DeFi
-  categories:
+      
+  # DeFi Categories
   
   - category_id: dex
     name: Decentralized Exchange
@@ -65,9 +65,7 @@ defi:
     description: Contracts with automated strategies (vaults) designed to maximize returns on deposited assets by employing complex yield farming techniques across various DeFi protocols.
     examples: Yearn Finance Vaults, Beefy Finance Vaults, Harvest Finance Vaults.
 
-nft:
-  main_category_name: NFT
-  categories:
+  # NFT Categories
   
   - category_id: nft_fi
     name: NFT Finance
@@ -84,9 +82,7 @@ nft:
     description: The core smart contracts defining specific NFT collections, adhering to standards like ERC721 (unique items) or ERC1155 (multiple copies of items).
     examples: CryptoPunks Contract, Bored Ape Yacht Club (BAYC) Contract, Art Blocks Engine Contracts, ENS (.eth names), Pudgy Penguins Contract.
 
-social:
-  main_category_name: Social
-  categories:
+  # Social Categories
   
   - category_id: community
     name: Community
@@ -108,14 +104,7 @@ social:
     description: Contracts enabling decentralized decision-making processes for protocols, including token-based voting on proposals, treasury management, and parameter updates.
     examples: Compound Governor Bravo, Uniswap Governor, Aragon DAOs, Snapshot (off-chain voting records linked on-chain), Tally Governance Frontend (contract interactions).
 
-token_transfers:
-  main_category_name: Token Transfers
-  categories:
-  
-  - category_id: native_transfer
-    name: Native Transfer
-    description: Direct transfers of a blockchain's native currency (e.g., ETH on Ethereum, MATIC on Polygon) between Externally Owned Accounts (EOAs) or contracts, not involving ERC20 or other token standards.
-    examples: Standard ETH transfer between wallets, Contract interactions resulting in ETH payment (e.g., msg.value > 0).
+  # Token Transfers Categories
   
   - category_id: stablecoin
     name: Stablecoin
@@ -127,9 +116,7 @@ token_transfers:
     description: Standardized token contracts (primarily ERC20) representing interchangeable assets like governance tokens, utility tokens, or protocol-specific currencies. Excludes stablecoins and NFTs.
     examples: UNI Token Contract, AAVE Token Contract, LINK Token Contract, WETH (Wrapped Ether) Contract, WBTC (Wrapped Bitcoin) Contract.
 
-utility:
-  main_category_name: Utility
-  categories:
+  # Utility Categories
   
   - category_id: erc4337
     name: Account Abstraction (ERC4337)
@@ -190,9 +177,7 @@ utility:
     description: Utility contracts that serve a specific purpose but don't neatly fit into the predefined utility categories. Use sparingly.
     examples: Proxy contracts (if not part of a known protocol), Simple multisig wallets not part of a major platform, Gas token minters/burners, Timelock contracts (if standalone).
 
-cross_chain:
-  main_category_name: Cross-Chain
-  categories:
+  # Cross-Chain Categories
   
   - category_id: cc_communication
     name: Cross-Chain Communication
