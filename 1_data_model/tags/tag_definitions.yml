@@ -146,5 +146,8 @@ tags:
   type: string
   creator: OLI
 
-
-
+- tag_id: oli.paymaster_category
+  name: Paymaster Category
+  description: The category of paymaster contract.
+  type: string
+  creator: OLI
