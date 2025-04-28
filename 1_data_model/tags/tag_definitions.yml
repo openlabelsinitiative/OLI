@@ -150,4 +150,5 @@ tags:
   name: Paymaster Category
   description: The category of paymaster contract.
   type: string
+  value_set: ['verifying', 'token', 'verifying_and_token']
   creator: OLI
