@@ -146,5 +146,23 @@ tags:
   type: string
   creator: OLI
 
+- tag_id: oli.paymaster_category
+  name: Paymaster Category
+  description: The category of paymaster contract.
+  type: string
+  value_set: ['verifying', 'token', 'verifying_and_token']
+  creator: OLI
 
+- tag_id: oli.is_bundler
+  name: Is Bundler
+  description: Is the address an ERC-4337 bundler?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
 
+- tag_id: oli.is_paymaster
+  name: Is Paymaster
+  description: Is the address an ERC-4337 paymaster?
+  type: boolean
+  value_set: [true, false]
+  creator: OLI
