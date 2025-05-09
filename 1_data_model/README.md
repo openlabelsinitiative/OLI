@@ -24,6 +24,8 @@ Each `tag_id` is linked to a `value` in the OLI-framework, allowing it to flexib
 
 These tags will be expanded based on the need from the community.
 
+Tags prefixed with an underscore (e.g., `_source`) do not describe the address or contract itself, but rather provide metadata about the label that is being submitted.
+
 ### Predefined `value_set`
 Certain tags can only take values from predefined value sets. Examples of such tags include the `tag_ids`: `oli.owner_project` and `oli.usage_category`. 
 
