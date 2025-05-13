@@ -122,7 +122,7 @@ tags:
   name: Usage Category
   description: The category of usage for the contract.
   type: string
-  value_set: https://github.com/openlabelsinitiative/OLI/blob/main/1_data_model/tags/valuesets/category_definitions.yml
+  value_set: https://github.com/openlabelsinitiative/OLI/blob/main/1_data_model/tags/valuesets/usage_category.yml
   creator: growthepie
 
 - tag_id: version
