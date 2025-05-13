@@ -3,153 +3,153 @@ tags:
 
 # The following tags are used to label the address/contract.
 
-- tag_id: oli.contract_name
+- tag_id: contract_name
   name: Contract Name
   description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the contract_name = 'router'.
   type: string(40)
   creator: growthepie
 
-- tag_id: oli.is_eoa
+- tag_id: is_eoa
   name: Is EOA
   description: Is the account an Externally Owned Account (EOA)?
   type: boolean
   value_set: [true, false]
   creator: growthepie
 
-- tag_id: oli.is_contract
+- tag_id: is_contract
   name: Is Contract
   description: Is the address a contract?
   type: boolean
   value_set: [true, false]
   creator: growthepie
 
-- tag_id: oli.is_factory_contract
+- tag_id: is_factory_contract
   name: Is Factory Contract
   description: Is the address a factory contract? Does it have functions which are able to deploy another contract?
   type: boolean
   value_set: [true, false]
   creator: growthepie
 
-- tag_id: oli.deployment_tx
+- tag_id: deployment_tx
   name: Deployment Transaction
   description: The transaction that deployed the contract.
   type: bytea
   creator: growthepie
 
-- tag_id: oli.deployer_address
+- tag_id: deployer_address
   name: Deployer Address
   description: The address that deployed the contract.
   type: bytea
   creator: growthepie
 
-- tag_id: oli.owner_project
+- tag_id: owner_project
   name: Owner Project
   description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
   type: string
   value_set: https://github.com/opensource-observer/oss-directory
   creator: growthepie
 
-- tag_id: oli.deployment_date
+- tag_id: deployment_date
   name: Deployment Date
   description: The date the contract was deployed.
   type: date (YYYY-MM-DD HH:MM:SS)
   creator: growthepie
 
-- tag_id: oli.is_proxy
+- tag_id: is_proxy
   name: Is Proxy
   description: Is the contract a proxy contract?
   type: boolean
   value_set: [true, false]
   creator: growthepie
 
-- tag_id: oli.is_safe_contract
+- tag_id: is_safe_contract
   name: Is Multisig
   description: Is the address a Safe or Multisig contract?
   type: boolean
   value_set: [true, false]
   creator: growthepie
 
-- tag_id: oli.erc_type
+- tag_id: erc_type
   name: ERC Type
   description: Array of all ERC standards the contract implements.
   type: string
   value_set: [ERC20, ERC173, ERC223, ERC621, ERC677, ERC721, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1203, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC1820, ERC4626]
   creator: growthepie
 
-- tag_id: oli.erc20.name
+- tag_id: erc20.name
   name: ERC20 Name
   description: The name of the token assigned through the ERC20 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.erc20.symbol
+- tag_id: erc20.symbol
   name: ERC20 Symbol
   description: The symbol of the token assigned through the ERC20 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.erc20.decimals
+- tag_id: erc20.decimals
   name: ERC20 Decimals
   description: The number of decimals of the token assigned through the ERC20 standard.
   type: int
   creator: growthepie
 
-- tag_id: oli.erc721.name
+- tag_id: erc721.name
   name: ERC721 Name
   description: The name of the collection assigned through the ERC721 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.erc721.symbol
+- tag_id: erc721.symbol
   name: ERC721 Symbol
   description: The symbol of the collection assigned through the ERC721 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.erc1155.name
+- tag_id: erc1155.name
   name: ERC1155 Name
   description: The name of the collection assigned through the ERC1155 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.erc1155.symbol
+- tag_id: erc1155.symbol
   name: ERC1155 Symbol
   description: The symbol of the collection assigned through the ERC1155 standard.
   type: string
   creator: growthepie
 
-- tag_id: oli.usage_category
+- tag_id: usage_category
   name: Usage Category
   description: The category of usage for the contract.
   type: string
   value_set: https://github.com/openlabelsinitiative/OLI/blob/main/1_data_model/tags/valuesets/category_definitions.yml
   creator: growthepie
 
-- tag_id: oli.version
+- tag_id: version
   name: Version
   description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
   type: int
   creator: growthepie
 
-- tag_id: oli.audit
+- tag_id: audit
   name: Audit
   description: Link to information on security audit or audit report.
   type: string
   creator: Simon Brown
 
-- tag_id: oli.contract_monitored
+- tag_id: contract_monitored
   name: Smart Contract Monitoring
   description: Link to information on whether the contract is actively monitored by smart contract monitoring services.
   type: string
   creator: Simon Brown
 
-- tag_id: oli.source_code_verified
+- tag_id: source_code_verified
   name: Verified Source Code
   description: Link to verified source code, e.g., through a source code verification service or block explorer.
   type: string
   creator: Simon Brown
 
-- tag_id: oli.paymaster_category
+- tag_id: paymaster_category
   name: Paymaster Category
   description: >
     Specifies the category of the ERC-4337 Paymaster contract. Paymasters are contracts that can sponsor gas fees for UserOperations (UserOps) by depositing ETH in the EntryPoint contract. Different types of Paymasters implement different logic to determine when to pay. 
@@ -160,14 +160,14 @@ tags:
   value_set: ['verifying', 'token', 'verifying_and_token']
   creator: 0xKofi
 
-- tag_id: oli.is_bundler
+- tag_id: is_bundler
   name: Is Bundler
   description: Indicates whether the address functions as a Bundler in the ERC-4337 architecture. Bundlers are EOAs that aggregate multiple UserOperations (UserOps) and submit them to the EntryPoint contract via the handleOps function. They can collect UserOps either directly (common today) or from the ERC-4337 mempool (less widely adopted). Their role is essential in batching transactions and enabling efficient execution of account abstraction flows.
   type: boolean
   value_set: [true, false]
   creator: 0xKofi
 
-- tag_id: oli.is_paymaster
+- tag_id: is_paymaster
   name: Is Paymaster
   description: Indicates whether the address is an ERC-4337 Paymaster contract. Paymasters deposit ETH into the EntryPoint contract and can be selected by users to sponsor their gas fees. The EntryPoint contract calls the Paymaster to verify whether it is willing to pay for a given UserOperation, based on custom criteria like app whitelisting or token exchange.
   type: boolean
@@ -176,13 +176,13 @@ tags:
 
 # The following tags provide additional context or reference sources to support and clarify the assigned label.
 
-- tag_id: oli._comment
+- tag_id: _comment
   name: Comment
   description: A internal description or public comment of the label.
   type: string
   creator: growthepie
 
-- tag_id: oli._source
+- tag_id: _source
   name: Source
   description: A source or reference to support the label provided.
   type: string
