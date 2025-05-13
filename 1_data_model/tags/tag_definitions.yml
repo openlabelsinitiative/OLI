@@ -6,7 +6,7 @@ tags:
 - tag_id: contract_name
   name: Contract Name
   description: This tag refers to the fundamental descriptor that provides a clear and immediate understanding of an address's purpose or role. It should offer a straightforward one-word detailed definition into the functionality of the address. For example, the Uniswap router contract would have the contract_name = 'router'.
-  type: string(40)
+  type: string
   creator: growthepie
 
 - tag_id: is_eoa
@@ -33,13 +33,13 @@ tags:
 - tag_id: deployment_tx
   name: Deployment Transaction
   description: The transaction that deployed the contract.
-  type: bytea
+  type: string(66)
   creator: growthepie
 
 - tag_id: deployer_address
   name: Deployer Address
   description: The address that deployed the contract.
-  type: bytea
+  type: string(42)
   creator: growthepie
 
 - tag_id: owner_project
@@ -91,7 +91,7 @@ tags:
 - tag_id: erc20.decimals
   name: ERC20 Decimals
   description: The number of decimals of the token assigned through the ERC20 standard.
-  type: int
+  type: integer
   creator: growthepie
 
 - tag_id: erc721.name
@@ -128,7 +128,7 @@ tags:
 - tag_id: version
   name: Version
   description: The release version of the dApp (i.e. 2 for Uniswap v2 contracts).
-  type: int
+  type: integer
   creator: growthepie
 
 - tag_id: audit
