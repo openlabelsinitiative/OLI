@@ -73,7 +73,7 @@ tags:
   name: ERC Type
   description: Array of all ERC standards the contract implements.
   type: list
-  value_set: [ERC20, ERC173, ERC223, ERC621, ERC677, ERC721, ERC777, ERC827, ERC884, ERC918, ERC948, ERC965, ERC998, ERC1155, ERC1203, ERC1400, ERC1404, ERC1594, ERC1643, ERC1644, ERC1820, ERC4626]
+  value_set: [erc20, erc173, erc223, erc621, erc677, erc721, erc777, erc827, erc884, erc918, erc948, erc965, erc998, erc1155, erc1203, erc1400, erc1404, erc1594, erc1643, erc1644, erc1820, erc4626]
   creator: growthepie
 
 - tag_id: erc20.name
