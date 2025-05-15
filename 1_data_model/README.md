@@ -4,9 +4,9 @@
 Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
 
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
-* `chain_id`: unique identifier as defined by [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md), which includes the [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) standard. Allows for referencing all EVM & non-EVM chains such as Bitcoin, Starknet and Solana. 
-To support labeling EOAs that may operate across many EVM-compatible chains, the special value "eip155:any" is permitted as `chain_id`. This value must be accompanied by the `tag_id` "is_eoa" that is set to "True".
-* `tag_id`: tag IDs represent a wide range of concepts. For OLI-compliant tags, please refer to [tag_defintions.yml](tags/tag_definitions.yml). We encourage anyone to submit a PR to contribute new tags to the framework. The framework also allows for other tag ID namespaces for more detailed internal labelling.
+* `chain_id`: unique identifier as defined by [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md), which includes the [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) standard. Allows for referencing all EVM & non-EVM chains such as Base (`eip155:8453`), Arbitrum (`eip155:42161`), Starknet (`SN_MAIN`) and Solana (`solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp`) to name a few. 
+To support labeling EOAs that may operate across multiple EVM-compatible chains, the special value `eip155:any` is permitted as a `chain_id`. However, it should be used with caution especially for labeling smart contracts, as contracts can share the same address across chains but serve different purposes.
+* `tag_id`: Tag IDs can represent a wide range of concepts. For OLI-compliant tags, refer to [tag\_definitions.yml](tags/tag_definitions.yml). We very much encourage contributions via PRs to expand the OLI framework. The use of custom, non-OLI-compliant `tag_id`s is possible, though not recommended. If you choose to use your own namespace, we suggest using a clear and descriptive identifier e.g.`custom_namespace.new_tag_id`.
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 
 <img src="img/data_model.svg" alt="Data Model" width="400">
@@ -28,15 +28,15 @@ These tags will be expanded based on the need from the community.
 Tags prefixed with an underscore (e.g., `_source`) do not describe the address or contract itself, but rather provide metadata about the label that is being submitted.
 
 ### Predefined `value_set`
-Certain tags can only take values from predefined value sets. Examples of such tags include the `tag_ids`: `oli.owner_project` and `oli.usage_category`. 
+Certain tags can only take values from predefined value sets. Examples of such tags include the `tag_ids`: `owner_project` and `usage_category`. 
 
 These predefined value sets can reside and be maintained in the OLI GitHub repository under the [tags/valuesets](tags/valuesets) folder or in external directories.
 
 #### External `value_set`
-An example of an external `value_set` is `tag_id` = `oli.deployer_project`, which uses the names from the [OSS-directory](https://github.com/opensource-observer/oss-directory/tree/main) as unique identifiers for projects.
+An example of an external `value_set` is `tag_id` = `deployer_project`, which uses the names from the [OSS-directory](https://github.com/opensource-observer/oss-directory/tree/main) as unique identifiers for projects.
 
 #### Internal `value_set`
-An example of an internal `value_set` is `tag_id` = `oli.usage_category`, for which we defined a value set to ensure standardization. The full list with the hierarchical mapping can be found [here](tags/valuesets/category_definitions.yml). The OLI-maintained value sets are community-based and can be expanded through a PR.
+An example of an internal `value_set` is `tag_id` = `usage_category`, for which we defined a value set to ensure standardization. The full list with the hierarchical mapping can be found [here](tags/valuesets/category_definitions.yml). The OLI-maintained value sets are community-based and can be expanded through a PR.
 
 # Example OLI Compliant Datasets
 Datasets can be stored according to the defined Data Model above, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.
