@@ -1,4 +1,4 @@
-# Bulk Attestation Uploader
+# TypeScript: Bulk Offchain Attestation Uploader
 
 This script allows bulk attesting and uploading of labels to the OLI Label Pool by signing each attestation before submitting it to the EAS IPFS servers (offchain). Every attestation signatures is validated by the EAS IPFS server. The input is a CSV file containing labels in the [OLI-compliant Data Model format](/1_data_model/README.md) and the script processes each row iteratively, attesting one by one.
 
