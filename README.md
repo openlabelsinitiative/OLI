@@ -36,15 +36,15 @@ The OLI repository functions as the community maintainer. Additionally, it serve
 </details>
 
 <details>
-  <summary><strong>Who will submit labels to the label pool?</strong></summary>
+  <summary><strong>Who will submit labels to the OLI Label Pool?</strong></summary>
 
   We identified three core user groups among label submitters, which primarily differ in the volume of labels they contribute.
 
 | Submitter                | Volume        | Description | Entry method
   |------------------------|--------------------|-------------|------------
-  | **High-volume labelers** | High (1000+)       | Data teams & indexing companies that have automated and highly optimized scripts running to label a high number of smart contracts. | Automated via data-pipelines |
-  | **Casual labelers**      | Medium (5-1000)    | Individuals who have a set of labels they want to submit. Could be analysts collecting labels manually or dApp teams that deployed multiple contracts and want to share metadata. | CSV/JSON upload |
-  | **Single labelers**      | Low (1-5)         | Individuals submitting a very small amount of labels, usually smart contract deployers who want to make metadata on their smart contract available. | Frontend with dropdowns |
+  | **High-volume labelers** | High (1000+)       | Data teams & indexing companies that have automated and highly optimized scripts running to label a high number of smart contracts. | pip package or typescript script |
+  | **Casual labelers**      | Medium (5-1000)    | Individuals who have a set of labels they want to submit. Could be analysts collecting labels manually or dApp teams that deployed multiple contracts and want to share metadata. | OLI frontend end or pip package |
+  | **Single labelers**      | Low (1-5)         | Individuals submitting a very small amount of labels, usually smart contract deployers who want to make metadata on their smart contract available. | OLI front end |
 
 </details>
 
@@ -79,9 +79,9 @@ The OLI repository functions as the community maintainer. Additionally, it serve
 </details>
 
 <details>
-  <summary><strong>How can I access the labels in the label pool?</strong></summary>
+  <summary><strong>How can I access the labels in the OLI Label Pool?</strong></summary>
 
-  Currently, the Ethereum Attestation Service offers a great [GraphQL endpoint](2_label_pool/tooling_read/graphql_python) for querying attestations. In the future, we will also have public datasets available on BigQuery (WIP).
+  There are multiple ways to access all labels in the OLI Label Pool, please see [tooling documentation](2_label_pool/README.md).
 
 </details>
 
