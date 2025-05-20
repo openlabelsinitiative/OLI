@@ -46,7 +46,7 @@ tags:
   name: Owner Project
   description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
   type: string
-  value_set: https://github.com/opensource-observer/oss-directory
+  value_set: https://github.com/opensource-observer/oss-directory/tree/main/data/projects
   creator: growthepie
 
 - tag_id: deployment_date
