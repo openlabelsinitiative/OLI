@@ -131,12 +131,6 @@ tags:
   type: integer
   creator: growthepie
 
-- tag_id: audit
-  name: Audit
-  description: Link to information on security audit or audit report.
-  type: string
-  creator: Simon Brown
-
 - tag_id: contract_monitored
   name: Smart Contract Monitoring
   description: Link to information on whether the contract is actively monitored by smart contract monitoring services.
@@ -187,3 +181,13 @@ tags:
   description: A source or reference to support the label provided.
   type: string
   creator: growthepie
+  
+- tag_id: external_links
+  name: External Links
+  description: Collection of external resources and documentation.
+  type: object_array
+  schema:
+    - type: string (required) # docs, github, audit, whitepaper, etc.
+    - value: string (required) # URL
+    - title: string (optional) # Title of the link, es: 'Callisto Network - July 10th, 2019'
+  creator: IperGiove

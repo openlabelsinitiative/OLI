@@ -13,8 +13,9 @@ Table Tags {
   tag_id string [pk, Note: "unique identifier for the tag"]
   name string [Note: "descriptive name of the tag"]
   description string [Note: "short explanation of what the tag represents"]
-  type string [Note: "data type of the tag"]
+  type string [Note: "data type of the tag: string, boolean, object_array"]
   value_set list [Note: "predefined value set or URL to an external value set"]
+  schema jsonb [Note: "JSON schema definition for object and object_array types"]
   creator string [Note: "entity responsible for creating the tag"]
   version float [Note: "version of this tag_id"]
 
