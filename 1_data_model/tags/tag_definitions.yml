@@ -182,6 +182,12 @@ tags:
   type: string
   creator: growthepie
   
+# Deprecated Tags, migrate to exteranl_links tag
+- tag_id: audit
+  name: Audit
+  description: Link to information on security audit or audit report.
+  type: string
+  creator: Simon Brown
   
 - tag_id: external_links
   name: External Links
