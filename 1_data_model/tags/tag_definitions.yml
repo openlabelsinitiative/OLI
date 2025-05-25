@@ -182,12 +182,26 @@ tags:
   type: string
   creator: growthepie
   
+  
 - tag_id: external_links
   name: External Links
   description: Collection of external resources and documentation.
   type: object_array
   schema:
-    - type: string (required) # docs, github, audit, whitepaper, etc.
-    - value: string (required) # URL
-    - title: string (optional) # Title of the link, es: 'Callisto Network - July 10th, 2019'
+    type: array
+    items:
+      type: object
+      required: [type, value]
+      properties:
+        type:
+          type: string
+          description: "Type of external link"
+          value_set: [docs, github, audit, whitepaper, website, twitter, discord, telegram, blog]
+        value:
+          type: string
+          format: uri
+          description: "URL of the external resource"
+        title:
+          type: string
+          description: "Title of the link, e.g. 'Callisto Network - July 10th, 2019'"
   creator: IperGiove
