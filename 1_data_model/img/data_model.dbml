@@ -10,16 +10,13 @@ Project OLI {
 }
 
 Table Tags {
-  tag_id string [pk, Note: "unique identifier for the tag"]
-  name string [Note: "descriptive name of the tag"]
-  description string [Note: "short explanation of what the tag represents"]
-  type string [Note: "data type of the tag: string, boolean, object_array"]
-  value_set list [Note: "predefined value set or URL to an external value set"]
-  schema jsonb [Note: "JSON schema definition for object and object_array types"]
-  creator string [Note: "entity responsible for creating the tag"]
-  version float [Note: "version of this tag_id"]
+  tag_id      string  [pk, note: "Unique identifier for the tag."]
+  name        string  [note: "Descriptive name of the tag."]
+  description string  [note: "Short explanation of what the tag represents."]
+  schema      jsonb   [note: "JSON Schema fragment defining the type, format, and constraints for the tag value."]
+  creator     string  [note: "Entity responsible for creating the tag."]
 
-  Note: "Individual tags or identifiers that can be applied to addresses for sorting, searching, and categorization purposes."
+  note: "Tags are metadata labels used for sorting, searching, and categorizing blockchain addresses. Each tag includes a schema that defines its structure and validation rules."
 }
 
 Table Framework {
