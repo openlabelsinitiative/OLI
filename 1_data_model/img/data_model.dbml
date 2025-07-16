@@ -1,7 +1,7 @@
 Project OLI {
   database_type: 'PostgreSQL'
   Note: '''
-    *A standardized framework and data model for EVM address labeling*
+    *A standardized framework and data model for EVM address labeling* 
 
     This initiative tackles the issue of isolated and non-standardized datasets of address labels within the blockchain community. It introduces a flexible, open and community owned data framework for anyone to use and contribute to. 
 
