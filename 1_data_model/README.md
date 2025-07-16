@@ -11,32 +11,54 @@ To support labeling EOAs that may operate across multiple EVM-compatible chains,
 
 <img src="img/data_model.svg" alt="Data Model" width="400">
 
-## Tags
+**Tags**
 
-Each `tag_id` is linked to a `value` in the OLI-framework, allowing it to flexibly represent complex concepts. The definition of each `tag_id` is stored in the [tag_definitions.yml](tags/tag_definitions.yml) file, which contains key information such as `name`, `description` and `creator` for each `tag_id`.
+Each `tag_id` is linked to a `value` in the OLI-framework, allowing it to flexibly represent complex concepts. The definition of each `tag_id` is stored in the tag_definitions.yml file, which contains key information such as `name`, `description`, `schema` and `creator` for each `tag_id`.
 
-- **`tag_id`**: unique identifier for the tag
-- **`name`**: descriptive name of the tag
-- **`description`**: short explanation of what the tag represents
-- **`type`**: data type of the value associated with this tag
-- **`value_set`** (optional): predefined value set or URL to an external value set
-- **`creator`**: entity responsible for creating the tag
-- **`version`**: version of this `tag_id`
+* `tag_id`: unique identifier for the tag
+* `name`: descriptive name of the tag
+* `description`: short explanation of what the tag represents
+* `schema`: defines the data type, structure and validation rules for the value associated with this tag
+* `creator`: entity responsible for creating the tag
+* `version`: version of this `tag_id`
 
 These tags will be expanded based on the need from the community.
 
 Tags prefixed with an underscore (e.g., `_source`) do not describe the address or contract itself, but rather provide metadata about the label that is being submitted.
 
-### Predefined `value_set`
-Certain tags can only take values from predefined value sets. Examples of such tags include the `tag_ids`: `owner_project` and `usage_category`. 
+**Schema Definition**
 
-These predefined value sets can reside and be maintained in the OLI GitHub repository under the [tags/valuesets](tags/valuesets) folder or in external directories.
+The `schema` field defines the structure and validation rules for tag values. It includes:
 
-#### External `value_set`
-An example of an external `value_set` is `tag_id` = `deployer_project`, which uses the names from the [OSS-directory](https://github.com/opensource-observer/oss-directory/tree/main) as unique identifiers for projects.
+* **Data types**: Supports basic types (string, boolean, integer) and complex types (array, object)
+* **Validation constraints**: Length restrictions (minLength, maxLength), format specifications (date-time, uri, date) and value restrictions (enum)
+* **Array specifications**: Defines item types and structures for array values
+* **Object structures**: Specifies required properties and their types for complex data
+* **Value set references**: Comments within the schema that point to authoritative sources of valid values
 
-#### Internal `value_set`
-An example of an internal `value_set` is `tag_id` = `usage_category`, for which we defined a value set to ensure standardization. The full list with the hierarchical mapping can be found [here](tags/valuesets/category_definitions.yml). The OLI-maintained value sets are community-based and can be expanded through a PR.
+Example schema for a string with predefined values:
+```yaml
+schema:
+  type: string
+  enum: [erc20, erc721, erc1155, erc4626]
+```
+
+Example schema referencing an external value set:
+```yaml
+schema:
+  type: string
+  # Valid values defined in: https://github.com/opensource-observer/oss-directory
+```
+
+**Predefined Value Sets**
+
+Certain tags can only take values from predefined value sets, which are defined in three ways:
+
+1. **Fixed in schema** - Using `enum` arrays for stable value sets (e.g., `erc_type`, `paymaster_category`)
+2. **OLI-maintained** - Referenced via comments to valuesets in this repository (e.g., `usage_category`)
+3. **External references** - Referenced via comments to third-party sources (e.g., `owner_project` uses OSS Directory)
+
+OLI-maintained value sets are community-based and can be expanded through a PR, while external references leverage authoritative sources maintained by other organizations.
 
 # Example OLI Compliant Datasets
 Datasets can be stored according to the defined Data Model above, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.

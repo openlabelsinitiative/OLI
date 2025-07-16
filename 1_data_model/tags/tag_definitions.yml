@@ -51,9 +51,10 @@ tags:
 
 - tag_id: owner_project
   name: Owner Project
-  description: The project that owns the contract or eoa. Link to project registry https://github.com/opensource-observer/oss-directory.
+  description: The project that owns the contract or EOA. Project identifiers are standardized and defined in the OSS Directory, which maintains a comprehensive registry of open source projects in the blockchain ecosystem.
   schema:
     type: string
+    # Valid values defined in: https://github.com/opensource-observer/oss-directory
   creator: growthepie
 
 - tag_id: deployment_date
@@ -142,6 +143,7 @@ tags:
   description: The category of usage for the contract.
   schema:
     type: string
+    # Valid values defined in: https://github.com/openlabelsinitiative/OLI/blob/main/1_data_model/tags/valuesets/usage_category.yml
   creator: growthepie
 
 - tag_id: version
