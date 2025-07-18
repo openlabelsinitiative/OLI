@@ -220,14 +220,14 @@ tags:
   description: Gives the ticker symbol linked to the ETF
   schema:
     type: string
-  creator: johnc h/t hildobby
+  creator: johnc
 
-- tag_id: inverse_values
-  name: Inverse Valuese
-  description: Indicates whether the ETF tracking logic should be inversed (outflows - inflows)
+- tag_id: track_outflow
+  name: ETF Track Outflow
+  description: Indicates whether the ETF tracking logic should include outflows
   schema:
     type: boolean
-  creator: johnc h/t hildobby
+  creator: johnc
   
 # The following tags provide additional context or reference sources to support and clarify the assigned label.
 
