@@ -215,6 +215,20 @@ tags:
           description: "Publication date of the audit report (YYYY-MM-DD)"
   creator: "Simon Brown, IperGiove"
 
+- tag_id: etf_ticker
+  name: ETF Ticker
+  description: Gives the ticker symbol linked to the ETF
+  schema:
+    type: string
+  creator: johnc
+
+- tag_id: track_outflow
+  name: ETF Track Outflow
+  description: Indicates whether the ETF tracking logic should include outflows
+  schema:
+    type: boolean
+  creator: johnc
+  
 # The following tags provide additional context or reference sources to support and clarify the assigned label.
 
 - tag_id: _comment
