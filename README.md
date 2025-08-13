@@ -18,10 +18,11 @@ The OLI repository functions as the community maintainer. Additionally, it serve
 ![OLI pillars](src/images/oli_pillars.png)
 
 ## Products Using OLI
-- [growthepie - Smart Contract Explorer](https://labels.growthepie.xyz/)
-- [growthepie - Applications Page](https://www.growthepie.xyz/applications)
+- [growthepie - Smart Contract Explorer](https://labels.growthepie.com/)
+- [growthepie - Applications Page](https://www.growthepie.com/applications/)
 - [Agnostic - Public Data Warehouse](https://agx.app/)
 - [Sourcify - Verified Contract Repository](https://repo.sourcify.dev/)
+- [Enscribe - Tool to Assign ENS to contracts](https://app.enscribe.xyz/)
 - ...
 - *please list your projects here*
 
