@@ -162,10 +162,25 @@ tags:
 
 - tag_id: source_code_verified
   name: Verified Source Code
-  description: Link to verified source code, e.g., through a source code verification service or block explorer.
+  description: Indicates whether the source code of the contract has been verified. Information about the verification source code should be added using the _source tag.
+  schema:
+    type: boolean
+  creator: Sourcify
+
+- tag_id: code_verified_exact_match
+  name: Code Verified Exact Match
+  description: Indicates whether the verified source code exactly matches the on-chain bytecode.
+  schema:
+    type: boolean
+  creator: Sourcify
+
+- tag_id: code_language
+  name: Programming Language
+  description: Indicates the programming language used in the smart contract's source code.
   schema:
     type: string
-  creator: Simon Brown
+    enum: [solidity, vyper]
+  creator: Sourcify
 
 - tag_id: paymaster_category
   name: Paymaster Category
