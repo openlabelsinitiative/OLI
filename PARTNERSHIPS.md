@@ -33,7 +33,7 @@ This document is a live, collaborative effort, not just a report. Everyone is en
 **Use Case:** Data infrastructure providers can integrate OLI labels into their APIs and indexing services. This enriches their data offerings, allowing developers to build applications with more contextual information about addresses. This enhances products like analytics dashboards and portfolio trackers, making their platforms more valuable.
 
 | Partner   | Status        | What can be integrated      | What is already integrated    | Notes |
-|-----------|---------------|-----------------------------|-------------------------------|-------|
+|-----------|---------------|-----------------------------|----------------------------|-------|
 | Alchemy   | ⚪ Identified  | Consume OLI labels          | -                             | -     |
 | Moralis   | ⚪ Identified | Consume OLI labels          | -                             | -     |
 | The Graph | ⚪ Identified | Consume OLI labels for indexing | -                          | -     |
@@ -101,8 +101,17 @@ This document is a live, collaborative effort, not just a report. Everyone is en
 | LayerZero                       | ⚪ Identified | Cross-chain protocol labels  | -                           | -     |
 | Chainlink                       | ⚪ Identified | Oracle network labels        | -                           | -     |
 
+## Developer Tools
+**Use Case:** Developer tools like Foundry, Hardhat, and thirdweb can significantly streamline the labeling process for developers, even during initial deployments. By integrating OLI labels, these tools can provide developers with immediate insights and context about the addresses and transactions they interact with, enhancing transparency and trust in their applications.
 
-
+| Partner   | Status        | What can be integrated      | What is already integrated | Notes |
+|-----------|---------------|-----------------------------|----------------------------|-------|
+| Foundry   | ⚪ Identified  | Labeling integration for smart contract deployment | -      | Foundry is a blazing fast, portable, and modular toolkit for Ethereum application development. |
+| Hardhat   | ⚪ Identified  | Labeling integration for smart contract deployment | -      | Hardhat is a development environment to compile, deploy, test, and debug Ethereum software. |
+| thirdweb  | ⚪ Identified  | Labeling integration for smart contract deployment | -      | thirdweb provides a suite of tools to simplify the process of building and deploying web3 applications. |
+| Truffle   | ⚪ Identified  | Labeling integration for smart contract development | -      | Truffle is a popular development framework for Ethereum that provides a suite of tools for smart contract development, testing, and deployment. |
+| Remix     | ⚪ Identified  | Labeling integration for smart contract development | -      | Remix is an online IDE for Ethereum development that allows developers to write, compile, and deploy smart contracts directly from the browser. |
+| Brownie   | ⚪ Identified  | Labeling integration for smart contract development | -      | Brownie is a Python-based development and testing framework for Ethereum, useful for developers who prefer Python over JavaScript. |
 
 ## Next Steps
 1. Prioritize outreach to high-impact partners in Security & Analytics category
