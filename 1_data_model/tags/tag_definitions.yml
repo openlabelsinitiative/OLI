@@ -178,7 +178,7 @@ tags:
 
 - tag_id: code_compiler
   name: Compiler
-  description: Indicates the compiler used to generate the smart contract's bytecode.
+  description: Indicates the compiler and the version used to generate the smart contract's bytecode.
   schema:
     type: string
   creator: Sourcify
