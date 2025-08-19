@@ -65,6 +65,13 @@ tags:
     format: date-time
   creator: growthepie
 
+- tag_id: deployment_block
+  name: Deployment Block
+  description: The block number in which the contract was deployed.
+  schema:
+    type: integer
+  creator: Sourcify
+
 - tag_id: is_proxy
   name: Is Proxy
   description: Is the contract a proxy contract?
@@ -162,10 +169,26 @@ tags:
 
 - tag_id: source_code_verified
   name: Verified Source Code
-  description: Link to verified source code, e.g., through a source code verification service or block explorer.
+  description: Indicates whether the source code of the contract has been verified with one of the public verifiers.
   schema:
     type: string
-  creator: Simon Brown
+    enum: [sourcify, blockscout, etherscan]
+  creator: Sourcify
+
+- tag_id: code_language
+  name: Programming Language
+  description: Indicates the programming language used in the smart contract's source code.
+  schema:
+    type: string
+    enum: [solidity, vyper]
+  creator: Sourcify
+
+- tag_id: code_compiler
+  name: Compiler
+  description: Indicates the compiler and the version used to generate the smart contract's bytecode.
+  schema:
+    type: string
+  creator: Sourcify
 
 - tag_id: paymaster_category
   name: Paymaster Category
