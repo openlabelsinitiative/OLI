@@ -65,6 +65,13 @@ tags:
     format: date-time
   creator: growthepie
 
+- tag_id: deployment_block
+  name: Deployment Block
+  description: The block number in which the contract was deployed.
+  schema:
+    type: integer
+  creator: Sourcify
+
 - tag_id: is_proxy
   name: Is Proxy
   description: Is the contract a proxy contract?
