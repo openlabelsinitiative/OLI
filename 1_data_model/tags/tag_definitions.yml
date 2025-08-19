@@ -267,3 +267,12 @@ tags:
   schema:
     type: string
   creator: growthepie
+
+- tag_id: _blacklist
+  name: Blacklist
+  description: An array of protocols that have blacklisted the address.
+  schema:
+    type: array
+    items:
+      type: string
+  creator: denhampreen
