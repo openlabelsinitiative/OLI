@@ -180,7 +180,7 @@ tags:
   description: Indicates the programming language used in the smart contract's source code.
   schema:
     type: string
-    enum: [solidity, vyper]
+    enum: [solidity, vyper, yul, fe, huff]
   creator: Sourcify
 
 - tag_id: code_compiler
