@@ -1,6 +1,6 @@
-# Open Labels Initiative: Data Model
+# Open Labels Initiative: Label Schema
 
-## Data Model
+## Label Schema
 Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
 
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
