@@ -180,7 +180,7 @@ tags:
   description: Indicates the programming language used in the smart contract's source code.
   schema:
     type: string
-    enum: [solidity, vyper]
+    enum: [solidity, vyper, yul, fe, huff]
   creator: Sourcify
 
 - tag_id: code_compiler
@@ -251,6 +251,20 @@ tags:
   schema:
     type: boolean
   creator: johnc
+
+- tag_id: is_blacklist.usdc
+  name: Blacklist
+  description: Indicates if the address is blacklisted from transferring USDC.
+  schema:
+    type: boolean
+  creator: denhampreen
+
+- tag_id: is_blacklist.usdt
+  name: Blacklist
+  description: Indicates if the address is blacklisted from transferring USDT.
+  schema:
+    type: boolean
+  creator: denhampreen
   
 # The following tags provide additional context or reference sources to support and clarify the assigned label.
 
