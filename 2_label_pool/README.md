@@ -1,6 +1,6 @@
 # Open Labels Initiative: Label Pool
 
-The OLI Label Pool is a neutral entry point and a shared data pool for OLI-compliant labels. While the [OLI Data Model](/././1_data_model/README.md) defines how labels are stored, the Label Pool provides the tools and guidelines for contributing contract labels as part of a collaborative community effort.
+The OLI Label Pool is a neutral entry point and a shared data pool for OLI-compliant labels. While the [OLI Label Schema](/././1_label_schema/README.md) defines how labels are stored, the Label Pool provides the tools and guidelines for contributing contract labels as part of a collaborative community effort.
 
 The goal with Label Pool is to establish a single, decentralized point of data entry, ensuring an open and fair system where:
 

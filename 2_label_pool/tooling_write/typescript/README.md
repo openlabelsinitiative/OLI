@@ -1,6 +1,6 @@
 # TypeScript: Bulk Offchain Attestation Uploader
 
-This script allows bulk attesting and uploading of labels to the OLI Label Pool by signing each attestation before submitting it to the EAS IPFS servers (offchain). Every attestation signatures is validated by the EAS IPFS server. The input is a CSV file containing labels in the [OLI-compliant Data Model format](/1_data_model/README.md) and the script processes each row iteratively, attesting one by one.
+This script allows bulk attesting and uploading of labels to the OLI Label Pool by signing each attestation before submitting it to the EAS IPFS servers (offchain). Every attestation signatures is validated by the EAS IPFS server. The input is a CSV file containing labels in the [OLI Label Schema format](/1_label_schema/README.md) and the script processes each row iteratively, attesting one by one.
 
 ## Features
 
@@ -43,11 +43,11 @@ This script allows bulk attesting and uploading of labels to the OLI Label Pool 
 
 ## Important Preparations
 
-1. Prepare your CSV file containing the attestation data. In addition to `chain_id` and `address`, all column names must match the OLI-compliant `tag_id`s as defined in [tag_definitions.yaml](/1_data_model/tags/tag_definitions.yml).
+1. Prepare your CSV file containing the attestation data. In addition to `chain_id` and `address`, all column names must match the OLI-compliant `tag_id`s as defined in [tag_definitions.yaml](/1_label_schema/tags/tag_definitions.yml).
 
    An example CSV file can be found [here](/2_label_pool/tooling_write/bulk_offchain_typescript/example-labels.csv).
 
-   Refer to [tag_definitions.yml](/1_data_model/tags/tag_definitions.yml) for a detailed explanation of each tag and its data type.
+   Refer to [tag_definitions.yml](/1_label_schema/tags/tag_definitions.yml) for a detailed explanation of each tag and its data type.
 
 2. Place your converted CSV file in the project's root directory (2_label_pool/tooling_write/bulk_offchain_typescript).
 

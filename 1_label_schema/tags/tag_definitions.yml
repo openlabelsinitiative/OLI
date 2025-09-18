@@ -150,7 +150,7 @@ tags:
   description: The category of usage for the contract.
   schema:
     type: string
-    # Valid values defined in: https://github.com/openlabelsinitiative/OLI/blob/main/1_data_model/tags/valuesets/usage_category.yml
+    # Valid values defined in: https://github.com/openlabelsinitiative/OLI/blob/main/1_label_schema/tags/valuesets/usage_category.yml
   creator: growthepie
 
 - tag_id: version

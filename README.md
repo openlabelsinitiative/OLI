@@ -11,9 +11,9 @@ By aligning on a single framework for address labels, we avoid redundant work an
 The OLI repository functions as the community maintainer. Additionally, it serves as a neutral entity that provides tooling to get started.
 
 ## The 3 Pillars of OLI Framework
-  - **1) Data Model:** We should all speak the same language when it comes to labels. The first step is implementing a unified data model that enables seamless synchronization of labels across different databases and ensures alignment on value sets. More details in [1_data_model](/1_data_model/README.md).
+  - **1) Label Schema:** We should all speak the same language when it comes to labels. The first step is implementing a unified data model that enables seamless synchronization of labels across different databases and ensures alignment on value sets. More details in [1_label_schema](/1_label_schema/README.md).
   - **2) Label Pool:** Sharing labels in a decentralized manner is the next logical step. Using attestations, we've created a pool of raw labels that anyone can contribute to. By consolidating all labels in one place, both labellers and data teams can share their work, reducing redundant work. All attestations will remain permanently accessible, fostering a collaborative, community-driven labeling effort. More details in [2_label_pool](/2_label_pool/README.md)
-  - **3) Label Confidence:** Trust algorithms optimized for specific use cases are applied to the raw labels contributed to the Label Pool. In doing so, raw labels are transformed into valuable, use-case-specific labels—optimized for analytics, security and beyond. More details coming soon in [3_label_confidence](/3_label_confidence/README.md).
+  - **3) Label Trust:** Trust algorithms optimized for specific use cases are applied to the raw labels contributed to the Label Pool. In doing so, raw labels are transformed into valuable, use-case-specific labels—optimized for analytics, security and beyond. More details coming soon in [3_label_confidence](/3_label_confidence/README.md).
 
 ![OLI pillars](src/images/oli_pillars.png)
 
@@ -75,7 +75,7 @@ The OLI repository functions as the community maintainer. Additionally, it serve
 <details>
   <summary><strong>I want to submit metadata, but I couldn't find a fitting tag in the data model. What should I do?</strong></summary>
 
-  Great! Simply open a pull request to our [tag_definitions.yml](1_data_model/tags/tag_definitions.yml) file in this repository and include an explanation for why this tag should be added to OLI. We'll periodically review all new tags and incorporate them into the schema.
+  Great! Simply open a pull request to our [tag_definitions.yml](1_label_schema/tags/tag_definitions.yml) file in this repository and include an explanation for why this tag should be added to OLI. We'll periodically review all new tags and incorporate them into the schema.
 
 </details>
 

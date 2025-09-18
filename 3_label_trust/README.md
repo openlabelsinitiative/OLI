@@ -1,4 +1,4 @@
-# Label Confidence Overview
+# Open Labels Initiative: Label Trust
 WIP
 
 ## Whitelist
