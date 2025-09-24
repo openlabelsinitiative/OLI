@@ -1,5 +1,6 @@
 # Open Labels Initiative: Label Trust
-WIP
+
+
 
 ## Whitelist
 
