@@ -74,7 +74,7 @@ The three pillars of OLI are designed to build on one another, like stacking Leg
 <details>
   <summary><strong>Can every label in the label pool be blindly trusted?</strong></summary>
 
-  No. Currently, these labels are raw and haven't undergone any additional trust verification. A straightforward trust layer involves relying solely on labels submitted by verified, whitelisted entities — a process made easy since every label is associated with an attestation. Looking ahead, we plan to develop trust algorithms tailored to specific use cases. All future tools related to this will be made available [here](3_label_confidence).
+  No. Currently, these labels are raw and haven't undergone any additional trust verification. A straightforward trust layer involves relying solely on labels submitted by verified, whitelisted entities — a process made easy since every label is associated with an attestation. Looking ahead, we plan to develop trust algorithms tailored to specific use cases. All future tools related to this will be made available [here](3_label_trust).
 
 </details>
 
