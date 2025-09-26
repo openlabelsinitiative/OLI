@@ -17,6 +17,12 @@ The OLI repository functions as the community maintainer. Additionally, it serve
 
 ![OLI pillars](src/images/oli_pillars.png)
 
+The three pillars of OLI are designed to build on one another, like stacking Lego blocks. At the base lies the OLI Label Schema, providing the core structure. On top of that comes the Label Pool, which enables broad collaboration and sharing. Finally, the Label Trust layer builds on both to establish confidence and reliability. You don’t need to adopt all three pillars at once, start small and implement only what you need.
+
+<div align="center">
+<img src="src/images/oli_lego.png" alt="OLI pillars" width="300">
+</div>
+
 ## Products Using OLI
 - [growthepie - Smart Contract Explorer](https://labels.growthepie.com/)
 - [growthepie - Applications Page](https://www.growthepie.com/applications/)

@@ -3,67 +3,51 @@
 ## Label Schema
 Labelling is performed by assigning a pre-defined `tag_id` with a `value` to an `address` & `chain_id` combination. Each address can have as many tags assigned as it wants, but each `tag_id` can only be assigned once per `address`.
 
+<img src="img/data_model.svg" alt="Data Model">
+
 * `address`: the hexadecimal public address of a smart contract or externally owned account (EOA)
-* `chain_id`: unique identifier as defined by [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md), which includes the [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) standard. Allows for referencing all EVM & non-EVM chains such as Base (`eip155:8453`), Arbitrum (`eip155:42161`), Starknet (`SN_MAIN`) and Solana (`solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp`) to name a few. 
-To support labeling EOAs that may operate across multiple EVM-compatible chains, the special value `eip155:any` is permitted as a `chain_id`. However, it should be used with caution especially for labeling smart contracts, as contracts can share the same address across chains but serve different purposes.
-* `tag_id`: Tag IDs can represent a wide range of concepts. For OLI-compliant tags, refer to [tag\_definitions.yml](tags/tag_definitions.yml). We very much encourage contributions via PRs to expand the OLI framework. The use of custom, non-OLI-compliant `tag_id`s is possible, though not recommended. If you choose to use your own namespace, we suggest using a clear and descriptive identifier e.g.`custom_namespace.new_tag_id`.
+* `chain_id`: unique identifier as defined by [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/main/CAIPs/caip-2.md), which includes the [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md) standard. Allows for referencing all EVM & some non-EVM chains such as Base (`eip155:8453`), Arbitrum (`eip155:42161`) or Starknet (`SN_MAIN`) to name a few. 
+To support labeling EOAs that may operate across multiple EVM-compatible chains, the special value `eip155:any` is permitted as `chain_id`. However, it should be used with caution especially for labeling smart contracts, as contracts can share the same address across chains but serve different purposes.
+* `tag_id`: Tag IDs can represent a wide range of things. For OLI-compliant tags, refer to [tag\_definitions.yml](tags/tag_definitions.yml). We very much encourage contributions via PRs to expand the OLI Label Schema. The use of custom, non-OLI-compliant `tag_id`s is possible, though not recommended. If you choose to use your own namespace, we suggest using a clear and descriptive identifier e.g.`custom_namespace.custom_tag_id`.
 * `value`: Each `tag_id` has a value field that specifies the content of the tag applied.
 
-<img src="img/data_model.svg" alt="Data Model" width="400">
+### Tag IDs
 
-**Tags**
-
-Each `tag_id` is linked to a `value` in the OLI-framework, allowing it to flexibly represent complex concepts. The definition of each `tag_id` is stored in the tag_definitions.yml file, which contains key information such as `name`, `description`, `schema` and `creator` for each `tag_id`.
+Each `tag_id` is linked to a `value` in the OLI Label Schema, allowing it to flexibly represent complex concepts. The definition of each `tag_id` is stored in the [tag\_definitions.yml](tags/tag_definitions.yml) file, which contains key information such as `name`, `description`, `schema` and `creator` for each `tag_id`.
 
 * `tag_id`: unique identifier for the tag
 * `name`: descriptive name of the tag
 * `description`: short explanation of what the tag represents
 * `schema`: defines the data type, structure and validation rules for the value associated with this tag
 * `creator`: entity responsible for creating the tag
-* `version`: version of this `tag_id`
 
 These tags will be expanded based on the need from the community.
 
-Tags prefixed with an underscore (e.g., `_source`) do not describe the address or contract itself, but rather provide metadata about the label that is being submitted.
+Tags prefixed with an underscore (e.g., `_source` & `_comment`) do not describe the address or contract itself, but rather provide information about the label that is being submitted.
 
-**Schema Definition**
+### Tag ID Schema
 
-The `schema` field defines the structure and validation rules for tag values. It includes:
+The `schema` field within each `tag_id` in [tag\_definitions.yml](tags/tag_definitions.yml) defines the structure and validation rules for the values associated to the `tag_id`. It can include:
 
-* **Data types**: Supports basic types (string, boolean, integer) and complex types (array, object)
-* **Validation constraints**: Length restrictions (minLength, maxLength), format specifications (date-time, uri, date) and value restrictions (enum)
-* **Array specifications**: Defines item types and structures for array values
-* **Object structures**: Specifies required properties and their types for complex data
-* **Value set references**: Comments within the schema that point to authoritative sources of valid values
+* **Data types**: Using `type` the data type of the `tag_id` can be defined. Possible types: boolean, integer, string, array, object. In case object is choosen, `properties` need to be defined. In case array is set, `items` needs to be defined.
+* **Format constraints**: Using `format` length restrictions (minLength, maxLength) or string format specifications (date-time, uri, date) can be specified.
+* **Description**: A `description` can be added to explain the `schema` of the `tag_id`.
+* **Value sets**: Value sets with predefined values can be specified using `enum` followed by an array. For OLI-maintained or external-maintained value sets `enum_uri` can be set pointing to the external set of values via an URI.
 
-Example schema for a string with predefined values:
-```yaml
-schema:
-  type: string
-  enum: [erc20, erc721, erc1155, erc4626]
-```
+**Value Sets**
 
-Example schema referencing an external value set:
-```yaml
-schema:
-  type: string
-  # Valid values defined in: https://github.com/opensource-observer/oss-directory
-```
+Certain `tag_id`s can only take values from predefined value sets, which can be defined in three different ways:
 
-**Predefined Value Sets**
+1. **Defined in OLI Label Schema**: Using `enum` value sets are defined from an array of options inside [tag\_definitions.yml](tags/tag_definitions.yml).
+2. **OLI-maintained**: Referenced via `enum_uri`, linking to a value set within the OLI Label Schema repository.
+3. **External-maintained**: Referenced via `enum_uri`, linking to a value set maintained outside the OLI Label Schema repository by a 3rd party.
 
-Certain tags can only take values from predefined value sets, which are defined in three ways:
+[OLI-maintained value sets](tags/valuesets) are community-based and can be expanded via PRs in this repo, while external-maintained rely on authoritative sources maintained by other organizations.
 
-1. **Fixed in schema** - Using `enum` arrays for stable value sets (e.g., `erc_type`, `paymaster_category`)
-2. **OLI-maintained** - Referenced via comments to valuesets in this repository (e.g., `usage_category`)
-3. **External references** - Referenced via comments to third-party sources (e.g., `owner_project` uses OSS Directory)
+# Example of OLI Compliant Labels
+Datasets of OLI compliant labels can be stored according to the defined Label Schema above, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a user.
 
-OLI-maintained value sets are community-based and can be expanded through a PR, while external references leverage authoritative sources maintained by other organizations.
-
-# Example OLI Compliant Datasets
-Datasets can be stored according to the defined Data Model above, or the `tag_id` can be pivoted into columns, which is particularly useful when not all `tag_id`s are relevant for a data team.
-
-We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155-10)](./sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155-8453)](./sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
+We have uploaded some OLI compliant sample data (`tag_id` is pivoted into columns) for [OP Mainnet (eip155:10)](./sample_data/op-mainnet_top_100_contracts_by_txcount_2024_07_24.json) and [Base (eip155:8453)](./sample_data/base_top_100_contracts_by_txcount_2024_07_24.json).
 
 A short excerpt:
 ```
