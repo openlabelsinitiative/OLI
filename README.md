@@ -10,10 +10,10 @@ By aligning on a single framework for address labels, we avoid redundant work an
 
 The OLI repository functions as the community maintainer. Additionally, it serves as a neutral entity that provides tooling to get started.
 
-## Three Pillars
-  - **1) Label Schema:** We should all speak the same language when it comes to labels. The first step is implementing a unified data model that enables seamless synchronization of labels across different databases and ensures alignment on value sets. More details in [1_label_schema](/1_label_schema/README.md).
-  - **2) Label Pool:** Sharing labels in a decentralized manner is the next logical step. Using attestations, we've created a pool of raw labels that anyone can contribute to. By consolidating all labels in one place, both labellers and data teams can share their work, reducing redundant work. All attestations will remain permanently accessible, fostering a collaborative, community-driven labeling effort. More details in [2_label_pool](/2_label_pool/README.md)
-  - **3) Label Trust:** Trust algorithms optimized for specific use cases are applied to the raw labels contributed to the Label Pool. In doing so, raw labels are transformed into valuable, use-case-specific labels—optimized for analytics, security and beyond. More details coming soon in [3_label_confidence](/3_label_confidence/README.md).
+## The 3 Pillars of OLI Framework
+  - **1) Label Schema:** We should all speak the same language when it comes to labels. The first step is implementing a unified data model that enables seamless synchronization of labels across different databases and ensures alignment on value sets. More details in [Label Schema](/1_label_schema/README.md).
+  - **2) Label Pool:** Sharing labels in a decentralized manner is the next logical step. Using attestations, we've created a pool of raw labels that anyone can contribute to. By consolidating all labels in one place, both labellers and data teams can share their work, reducing redundant work. All attestations will remain permanently accessible, fostering a collaborative, community-driven labeling effort. More details in [Label Pool](/2_label_pool/README.md)
+  - **3) Label Trust:** Trust algorithms optimized for specific use cases are applied to the raw labels contributed to the Label Pool. In doing so, raw labels are transformed into valuable, use-case-specific labels—optimized for analytics, security and beyond. More details coming soon in [Label Trust](/3_label_trust/README.md).
 
 ![OLI pillars](src/images/oli_pillars.png)
 
@@ -74,7 +74,7 @@ The three pillars of OLI are designed to build on one another, like stacking Leg
 <details>
   <summary><strong>Can every label in the label pool be blindly trusted?</strong></summary>
 
-  No. Currently, these labels are raw and haven't undergone any additional trust verification. A straightforward trust layer involves relying solely on labels submitted by verified, whitelisted entities — a process made easy since every label is associated with an attestation. Looking ahead, we plan to develop trust algorithms tailored to specific use cases. All future tools related to this will be made available [here](3_label_confidence).
+  No. Currently, these labels are raw and haven't undergone any additional trust verification. A straightforward trust layer involves relying solely on labels submitted by verified, whitelisted entities — a process made easy since every label is associated with an attestation. Looking ahead, we plan to develop trust algorithms tailored to specific use cases. All future tools related to this will be made available [here](3_label_trust).
 
 </details>
 
