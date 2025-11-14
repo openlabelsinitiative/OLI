@@ -55,7 +55,7 @@ A short excerpt:
     {
         "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
         "chain_id": "eip155:10",
-        "name": "WLD",
+        "contract_name": "WLD",
         "owner_project": "worldcoin",
         "usage_category": "fungible_tokens",
         "deployment_tx": "0x3f3231f6f4a036901a06d79a92ef7ffaedc81a8470126f4fdb436f7a57213de8",
@@ -65,7 +65,7 @@ A short excerpt:
     {
         "address": "0x087000A300DE7200382b55D40045000000E5d60E",
         "chain_id": "eip155:10",
-        "name": "Aggregate3",
+        "contract_name": "Aggregate3",
         "owner_project": "worldcoin",
         "usage_category": "airdrop",
         "deployment_tx": "0xdd0f9cfb373020dd8d71c22d0853ac5d3ba1911ead94177ee09737f74a18b3d2",
