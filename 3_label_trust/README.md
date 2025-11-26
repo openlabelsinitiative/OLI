@@ -9,3 +9,9 @@ Label Trust is a product that allows users to extract only the highest-quality l
 more soon
 
 ## Transitive Trust
+
+Let N(G) be the set of all nodes in G.
+
+Let F(G, A, B) be the trust score of node B from the perspective of node A.
+
+0 ≤ W(G, S, T) ≤ 1
