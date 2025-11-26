@@ -1,0 +1,25 @@
+owner: "growthepie"
+trusted:
+  - attester: "0xA725646c05e6Bb813d98C5aBB4E72DF4bcF00B56"
+    description: "growthepie manual labelling"
+    tags:
+      - tag_id: "*"
+        score: 80
+  - attester: "0x10dBAc4d35f4aD47E85f70c74e4449c632EC4047"
+    description: "Krzys Tech"
+    tags:
+      - tag_id: "is_contract"
+        score: 90
+      - tag_id: "*"
+        score: 40
+    chains:
+      - chain_id: "eip155:48900"
+        score: 40
+  - attestation: "0x080fdf1d04f5a3191942126ab96e2d4327b3b062ffff3fbf4b2d2ab1c281e2fd"
+    description: "spam"
+    score: 1
+untrusted:
+  - attester: "0x0000000000000000000000000000000000000000"
+    description: "Null address is not a trusted attester"
+  - attestation: "0x080fdf1d04f5a3191942126ab96e2d4327b3b062ffff3fbf4b2d2ab1c281e2fd"
+    description: "spam"
