@@ -2,7 +2,7 @@
 
 This document tracks potential partnerships and outreach efforts for the Open Labels Initiative (OLI). It is structured around key use cases to highlight how various partners can integrate with and benefit from OLI.
 
-This document is a live, collaborative effort, not just a report. Everyone is encouraged to add potential partners and outreach efforts they think could match with OLI. Feel free to contact us directly and provide contact details to our representative for follow-up. You can also find us on our Telegram channel at [https://t.me/olilabels](https://t.me/olilabels) or any social channel of GrowThePie.
+This document is a live, collaborative effort, not just a report. Everyone is encouraged to add potential partners and outreach efforts they think could match with OLI. Feel free to contact us directly and provide contact details to our representative for follow-up. You can also find us on our Telegram channel at [https://t.me/olilabels](https://t.me/olilabels) or any social channel of growthepie.
 
 ## Status Legend
 - 🟢 **Active**: Currently engaged/partnership established
