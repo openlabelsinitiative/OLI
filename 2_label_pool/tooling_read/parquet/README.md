@@ -1,6 +1,6 @@
 ### Parquet Exports
 
-Parquet exports of all labels in the OLI Label Pool are provided by growthepie at the following links:
+Parquet exports of all labels in the OLI Label Pool are provided by [growthepie.com](https://growthepie.com/) under the following links:
 
 * **Raw**:
 
