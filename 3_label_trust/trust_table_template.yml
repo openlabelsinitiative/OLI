@@ -1,0 +1,22 @@
+owner_name: "template_trust_table"
+attesters:
+  - address: "0xA725646c05e6Bb813d98C5aBB4E72DF4bcF00B56"
+    description: "growthepie attest"
+    confidence: 0.8
+  - address: "0xE7d1405C20A23a8e8f9F1BD572d1320c479233EE"
+    description: "0xKofi"
+    filters:
+      - tag_id: "is_paymaster"
+        confidence: 0.7
+      - tag_id: "paymaster_category"
+        confidence: 0.7
+      - tag_id: "is_bundler"
+        confidence: 0.7
+      - tag_id: "*"
+        confidence: 0.4
+  - address: "0x10dBAc4d35f4aD47E85f70c74e4449c632EC4047"
+    description: "Krzys Tech"
+    filters:
+      - tag_id: "contract_name"
+        chain_id: "eip155:48900"
+        confidence: 0.25

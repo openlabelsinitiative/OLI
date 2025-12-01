@@ -1,8 +1,6 @@
 version: 1.0
 categories:
 
-  # CeFi Categories
-  
   - category_id: trading
     name: Trading
     description: Contracts primarily used for automated trading strategies like arbitrage, market-making, or complex MEV exploitation, often characterized by frequent, high-volume transactions.
@@ -19,8 +17,6 @@ categories:
       CEX Deposit/Withdrawal Wallets, Liquidation Engines, CEX-Owned MEV Contracts.
       - Wintermute_1 (Market Maker interacting with CEXs): https://etherscan.io/address/0x51C72848c68a965f66FA7a88855F9f7784502a7F
       - Coinbase SimpleFiatTokenUtil (Internal utility): https://basescan.org/address/0x887749aBB233682aa7D5594A54659c51501445b1
-      
-  # DeFi Categories
   
   - category_id: dex
     name: Decentralized Exchange
@@ -64,8 +60,6 @@ categories:
     name: Yield Vaults
     description: Contracts with automated strategies (vaults) designed to maximize returns on deposited assets by employing complex yield farming techniques across various DeFi protocols.
     examples: Yearn Finance Vaults, Beefy Finance Vaults, Harvest Finance Vaults.
-
-  # NFT Categories
   
   - category_id: nft_fi
     name: NFT Finance
@@ -81,8 +75,6 @@ categories:
     name: Non-Fungible Tokens
     description: The core smart contracts defining specific NFT collections, adhering to standards like ERC721 (unique items) or ERC1155 (multiple copies of items).
     examples: CryptoPunks Contract, Bored Ape Yacht Club (BAYC) Contract, Art Blocks Engine Contracts, ENS (.eth names), Pudgy Penguins Contract.
-
-  # Social Categories
   
   - category_id: community
     name: Community
@@ -103,8 +95,6 @@ categories:
     name: Governance
     description: Contracts enabling decentralized decision-making processes for protocols, including token-based voting on proposals, treasury management, and parameter updates.
     examples: Compound Governor Bravo, Uniswap Governor, Aragon DAOs, Snapshot (off-chain voting records linked on-chain), Tally Governance Frontend (contract interactions).
-
-  # Token Transfers Categories
   
   - category_id: stablecoin
     name: Stablecoin
@@ -115,8 +105,6 @@ categories:
     name: Fungible Tokens
     description: Standardized token contracts (primarily ERC20) representing interchangeable assets like governance tokens, utility tokens, or protocol-specific currencies. Excludes stablecoins and NFTs.
     examples: UNI Token Contract, AAVE Token Contract, LINK Token Contract, WETH (Wrapped Ether) Contract, WBTC (Wrapped Bitcoin) Contract.
-
-  # Utility Categories
   
   - category_id: erc4337
     name: Account Abstraction (ERC4337)
@@ -176,8 +164,6 @@ categories:
     name: Others
     description: Utility contracts that serve a specific purpose but don't neatly fit into the predefined utility categories. Use sparingly.
     examples: Proxy contracts (if not part of a known protocol), Simple multisig wallets not part of a major platform, Gas token minters/burners, Timelock contracts (if standalone).
-
-  # Cross-Chain Categories
   
   - category_id: cc_communication
     name: Cross-Chain Communication
