@@ -157,6 +157,14 @@ Each item within the `attesters` list (representing a single entity you trust) m
 | `confidence` | Float | A confidence score between $0.0$ and $1.0$ that applies to this attester for all topics, unless overridden by a specific filter. |
 | `filters` | List/Array | (Optional) A list of rules that allow you to define granular trust based on the topic (`tag_id` or `chain_id`). |
 
+### Common Errors
+
+Error:
+`Error adding private trust list: The node 0x_YOUR_ADDRESS is not in the digraph.`
+
+Explanation:
+This error occurs when your trust graph has no starting point. The source address for the trust graph is automatically set to the public address derived from your private key. If you do not include your own wallet in your trust list, the graph has nowhere to begin, so your address does not appear in the trust graph. Make sure to add your own wallet address to your trust list.
+
 ## Using Your Trust Table
 
 To activate and utilize your trust list, you must attest it on the EAS Schema. To do this, we highly recommend using the official OLI Python package: `oli-python`.
