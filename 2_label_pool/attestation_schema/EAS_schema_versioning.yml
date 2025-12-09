@@ -1,10 +1,11 @@
 version_history:
 
   - version: "1.0.0"
-    date: "2025-02-10"
+    type: "attestations"
     schemas:
       - chain: "Base"
         chain_id: "8453"
+        date: "2025-02-10"
         schema_hash: "0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68"
         custom_resolver: null
         revocable: true
@@ -12,6 +13,45 @@ version_history:
           {
             "chain_id": "string",
             "tags_json": "string"
+          }
+      - chain: "Arbitrum"
+        chain_id: "42161"
+        date: "2025-10-15"
+        schema_hash: "0xb763e62d940bed6f527dd82418e146a904e62a297b8fa765c9b3e1f0bc6fdd68"
+        custom_resolver: null
+        revocable: true
+        schema: |
+          {
+            "chain_id": "string",
+            "tags_json": "string"
+          }
+  
+  - version: "1.0.0"
+    type: "trust_lists"
+    schemas:
+      - chain: "Base"
+        chain_id: "8453"
+        date: "2025-11-04"
+        schema_hash: "0x6d780a85bfad501090cd82868a0c773c09beafda609d54888a65c106898c363d"
+        custom_resolver: null
+        revocable: true
+        schema: |
+          {
+            "owner_name": "string",
+            "attesters": "string",
+            "attestations": "string"
+          }
+      - chain: "Arbitrum"
+        chain_id: "42161"
+        date: "2025-12-09"
+        schema_hash: "0x6d780a85bfad501090cd82868a0c773c09beafda609d54888a65c106898c363d"
+        custom_resolver: null
+        revocable: true
+        schema: |
+          {
+            "owner_name": "string",
+            "attesters": "string",
+            "attestations": "string"
           }
 
   # ---- BELOW THIS LINE ARE ONLY DEPRECATED SCHEMAS ---- #
