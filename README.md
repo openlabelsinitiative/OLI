@@ -104,7 +104,6 @@ The [Ethereum Foundation](https://ethereum.foundation/) funded this effort as pa
 ### Other Supporters
 Individuals or data teams that are involved in active feedback for this initiative and/or opened up their labeled databases.
 
-- [walletlabels](https://www.walletlabels.xyz/): Wallet labeling platform with focus on labels for Ethereum as well as social labels / labeling of EOAs.
 - [Carl Cervone](https://github.com/ccerv1) & [Raymond Cheng](https://github.com/ryscheng) | [Open Source Observer](https://github.com/opensource-observer)
 - [Hildobby](https://x.com/hildobby_) | [Dragonfly](https://x.com/dragonfly_xyz)
 - [Michael Silberling](https://github.com/MSilb7) | [OP Labs](https://www.oplabs.co/)
@@ -112,5 +111,8 @@ Individuals or data teams that are involved in active feedback for this initiati
 - Simon Brown | [Consensys](https://consensys.io/)
 - [Ethereum Attestation Service](https://attest.org/)
 - [Blockscout](https://www.blockscout.com/)
+- [Routescan](https://routescan.io/)
 - [Guild](https://guild.xyz/)
 - [sourcify.eth](https://sourcify.dev)
+- Adam Spiees | [Rolod0x](https://rolod0x.io/)
+- [Enscribe](https://www.enscribe.xyz/)
