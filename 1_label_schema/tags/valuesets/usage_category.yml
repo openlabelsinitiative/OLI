@@ -86,6 +86,11 @@ categories:
     description: Contracts of applications where outcomes are primarily determined by chance, involving wagering crypto assets on events like dice rolls, lotteries, or prediction markets with probabilistic outcomes.
     examples: PoolTogether Prize Pools, Decentral Games ICE Poker (aspects), Augur Markets (prediction markets), Polymarket Contracts.
   
+  - category_id: prediction_markets
+    name: Prediction Markets
+    description: Markets and infrastructure for creating, trading and settling outcome-based markets on real-world or onchain events.
+    examples: Polymarket, Augur Markets, Gnosis Conditional Tokens.
+  
   - category_id: gaming
     name: Gaming
     description: Contracts supporting blockchain-integrated games, managing in-game assets (NFTs), currencies (tokens), player progression, and game logic where player skill or strategy significantly influences outcomes.
