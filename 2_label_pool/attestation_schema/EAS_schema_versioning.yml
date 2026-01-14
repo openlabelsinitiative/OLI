@@ -1,7 +1,21 @@
 version_history:
 
+attestations:
+  - version: "2.0.0"
+    schemas: 
+      - chain: "Base"
+        chain_id: "8453"
+        date: "2026-01-08"
+        schema_hash: "0xcff83309b59685fdae9dad7c63d969150676d51d8eeda66799d1c4898b84556a"
+        custom_resolver: null
+        revocable: true
+        schema: |
+          {
+            "CAIP10": "string",
+            "tags_json": "string"
+          }
   - version: "1.0.0"
-    type: "attestations"
+    depreciated_date: "2026-03-31"
     schemas:
       - chain: "Base"
         chain_id: "8453"
@@ -26,8 +40,9 @@ version_history:
             "tags_json": "string"
           }
   
+
+trust_lists:
   - version: "1.0.0"
-    type: "trust_lists"
     schemas:
       - chain: "Base"
         chain_id: "8453"
@@ -53,5 +68,3 @@ version_history:
             "attesters": "string",
             "attestations": "string"
           }
-
-  # ---- BELOW THIS LINE ARE ONLY DEPRECATED SCHEMAS ---- #
