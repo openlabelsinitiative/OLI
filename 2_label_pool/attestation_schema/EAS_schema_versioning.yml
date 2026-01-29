@@ -14,6 +14,17 @@ attestations:
             "CAIP10": "string",
             "tags_json": "string"
           }
+      - chain: "Arbitrum"
+        chain_id: "42161"
+        date: "2026-01-29"
+        schema_hash: "0xcff83309b59685fdae9dad7c63d969150676d51d8eeda66799d1c4898b84556a"
+        custom_resolver: null
+        revocable: true
+        schema: |
+          {
+            "chain_id": "string",
+            "tags_json": "string"
+          }
   - version: "1.0.0"
     depreciated_date: "2026-03-31"
     schemas:
