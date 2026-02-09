@@ -130,6 +130,11 @@ categories:
     name: Decentralized Physical Infrastructure
     description: Protocols coordinating or incentivizing the deployment and operation of physical infrastructure networks (e.g., wireless networks, storage, compute power) using blockchain and tokenomics.
     examples: Helium Network Contracts (IoT/5G), Filecoin Storage Contracts, Arweave Storage Contracts, Render Network Contracts.
+
+  - category_id: ai
+    name: AI
+    description: Contracts and infrastructure for AI-related onchain activity, including agent wallets, model marketplaces, model/data provenance, inference verification and protocol standards such as EIP-8004.
+    examples: EIP-8004 implementations, autonomous agent wallets, decentralized inference networks, model registry contracts, AI compute marketplace contracts.
   
   - category_id: developer_tools
     name: Developer Tool
