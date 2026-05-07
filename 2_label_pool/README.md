@@ -25,9 +25,10 @@ To simplify the labeling process, we provide various tools for submitting and re
 ### Retrieving Labels From The OLI Label Pool
 
 1. **[OLI Search](https://www.openlabelsinitiative.org/attest)**: Browse labels through a beginner-friendly UI. *Best for manual use cases.*
-2. **[OLI Pip Package](tooling_read/python/README.md)**: Use the official OLI pip package to query the rest API endpoint or download full Parquet exports of all labels. *Ideal for most use cases.*
-3. **[OLI API](https://www.openlabelsinitiative.org/docs?section=api-reference)**: Access labels via the REST API. *Best suited for advanced applications.*
-4. **[OLI SDK](tooling_read/typescript/README.md)**: TypeScript client library for interacting with OLI endpoints. *Ideal for web apps and backend integrations.*
+2. **[Public BigQuery Tables](tooling_read/bigquery/README.md)**: Query the full historical OLI dataset directly in BigQuery. *Ideal for analytics, backfills, and bulk data access.*
+3. **[OLI Pip Package](tooling_read/python/README.md)**: Use the official OLI pip package to query the REST API for operational integrations and scripted lookups. *Ideal for Python users.*
+4. **[OLI API](https://www.openlabelsinitiative.org/docs?section=api-reference)**: Access labels via the REST API. *Best suited for advanced applications.*
+5. **[OLI SDK](tooling_read/typescript/README.md)**: TypeScript client library for interacting with OLI endpoints. *Ideal for web apps and backend integrations.*
 
 ### User Segmentation 
 

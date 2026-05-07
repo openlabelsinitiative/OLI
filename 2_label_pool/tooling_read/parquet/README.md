@@ -1,17 +1,11 @@
-### Parquet Exports
+### Historical Data Access
 
-Parquet exports of all labels in the OLI Label Pool are provided by [growthepie.com](https://growthepie.com/) under the following links:
+The old parquet download flow is deprecated. Historical OLI data is now published through public BigQuery tables instead.
 
-* **Raw**:
+Use the BigQuery documentation here:
 
-  ```
-  https://api.growthepie.xyz/v1/oli/labels_raw.parquet
-  ```
+- [Public BigQuery Tables](../bigquery/README.md)
 
-* **Decoded**:
+If you still need operational API access from Python, see:
 
-  ```
-  https://api.growthepie.xyz/v1/oli/labels_decoded.parquet
-  ```
-
-See `2_label_pool/tooling_read/python` for instructions on how to use Python to download and work with these files.
+- [Python Pip Package](../python/README.md)

@@ -10,3 +10,5 @@ You can find the documentation for the OLI Python package here:
 * **PyPI**: [https://pypi.org/project/oli-python/](https://pypi.org/project/oli-python/)
 
 This package provides the primary implementation of all three OLI products: Label Schema, Label Pool and Label Trust. It enables you to access and utilize all features of the Open Labels Initiative.
+
+For full historical backfills and bulk analytics, use the public BigQuery tables documented in [../bigquery/README.md](../bigquery/README.md).
