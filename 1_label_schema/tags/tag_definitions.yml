@@ -172,7 +172,7 @@ tags:
   description: Indicates whether the source code of the contract has been verified with one of the public verifiers.
   schema:
     type: string
-    enum: [sourcify, blockscout, etherscan]
+    enum: [sourcify, blockscout, etherscan, routescan]
   creator: Sourcify
 
 - tag_id: code_language
