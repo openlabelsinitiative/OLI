@@ -29,6 +29,7 @@ The three pillars of OLI are designed to build on one another, like stacking Leg
 - [Agnostic - Public Data Warehouse](https://agx.app/)
 - [Sourcify - Verified Contract Repository](https://repo.sourcify.dev/)
 - [Enscribe - Tool to Assign ENS to contracts](https://app.enscribe.xyz/)
+- [X-RAY - Pages of Web3 Organisations with Their Labeled Contracts](https://x-ray.me/)
 - ...
 - *please list your projects here*
 
